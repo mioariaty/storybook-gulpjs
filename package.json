@@ -48,7 +48,9 @@
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {},
+  "dependencies": {
+    "include-media": "^1.4.9"
+  },
   "resolutions": {
     "graceful-fs": "4.2.3"
   }
