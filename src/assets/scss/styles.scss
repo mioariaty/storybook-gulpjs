@@ -12,7 +12,10 @@
 
 /* 2. Components
 ======================================================================== */
-@import "components/**/*.scss";
+// @import "components/**/*.scss";
+@import "components/button.scss";
+@import "components/divider.scss";
+@import "components/tab.scss";
 
 /* 3. Layouts
 ======================================================================== */

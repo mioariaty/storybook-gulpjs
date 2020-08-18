@@ -1,5 +1,4 @@
 import dividerImage from '../assets/images/divider.png';
-
 export default {
   title: 'Components/Divider',
 };

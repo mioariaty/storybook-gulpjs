@@ -7,6 +7,8 @@ const Tab = function (options) {
   const tabPanes = el.querySelectorAll(options.tabPanes);
 
   console.log(el);
+  console.log(tabLinks);
+  console.log(tabPanes);
   let activeIndex = 0;
   let initCalled = false;
 
@@ -19,6 +21,7 @@ const Tab = function (options) {
     }
   };
 
+  // handle tab link click
   const _handleClick = (link, index) => {
     link.addEventListener('click', (e) => {
       e.preventDefault();
@@ -47,11 +50,10 @@ const Tab = function (options) {
 
 // export global namespace
 window.Tab = Tab;
-// module.exports = Tab;
 
 // const testTab = Tab({
 //   el: '.tab-wrapper',
-//   navLinks: '.tab__link',
-//   navPanes: '.tab__pane',
+//   tabLinks: '.tab__link',
+//   tabPanes: '.tab__pane',
 // }).render;
 // testTab.render();
