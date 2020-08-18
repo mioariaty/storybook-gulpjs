@@ -46,10 +46,8 @@ const Tab = function (options) {
 };
 
 // export global namespace
-// window.Tab = Tab;
+window.Tab = Tab;
 // module.exports = Tab;
-
-export default Tab;
 
 // const testTab = Tab({
 //   el: '.tab-wrapper',

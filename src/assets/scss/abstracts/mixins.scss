@@ -35,3 +35,10 @@
     }
   }
 }
+
+@mixin set-space($top, $right, $bottom, $left) {
+  margin-top: $top;
+  margin-right: $right;
+  margin-bottom: $bottom;
+  margin-left: $left;
+}
