@@ -6,7 +6,7 @@ export default {
 
 export const Horizontal = () => {
   return /* html */ `
-    <div id="tab-demo"  class="tab-wrapper tab--horizontal">
+    <div id="tab-horizon"  class="tab-wrapper tab--horizontal">
       <ul class="tab__nav">
         <li class="tab__item">
           <a href="#" class="tab__link is-active">tab link 1</a>
@@ -39,16 +39,10 @@ export const Horizontal = () => {
     </div>
   `;
 };
-// const testTab = Tab({
-//   el: '#tab-demo',
-//   navLinks: '.tab__link',
-//   navPanes: '.tab__pane',
-// });
-// testTab.render();
 
 export const Vertical = () => {
   return /*html*/ `
-    <div class="tab-wrapper tab--vertical">
+    <div id="tab-vertical" class="tab-wrapper tab--vertical">
       <ul class="tab__nav">
         <li class="tab__item">
           <a href="#" class="tab__link is-active">tab link 1</a>
