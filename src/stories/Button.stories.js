@@ -21,7 +21,7 @@ export const Secondary = () => {
 export const Tertiary = () => {
   return /*html*/ `
     <button class="btn btn--tertiary">
-      Button tertiary
+      Button Tertiary
     </button>
   `;
 };
