@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Components</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+  <h1>Element page</h1>
+  <button id="button">Javascript Test</button>
+  <header>
+    <button class="btn">
+      Button Primary
+    </button>
+
+  </header>
+
+  <hr>
+
+  <main class="main">
+    <div class="grid">
+      <div class="col-desk-12">
+        <h2>Tab</h2>
+      </div>
+      <div class="col-desk-6">
+        <div id="tab-horizon" class="tab-wrapper tab--horizontal">
+          <ul class="tab__nav">
+            <li class="tab__item">
+              <a href="#" class="tab__link is-active">tab link 1</a>
+            </li>
+            <li class="tab__item">
+              <a href="#" class="tab__link">tab link 2</a>
+            </li>
+            <li class="tab__item">
+              <a href="#" class="tab__link">tab link 3</a>
+            </li>
+          </ul>
+
+          <div class="tab__content">
+            <div class="tab__pane is-active">
+              <p>
+                content thứ 1
+              </p>
+            </div>
+            <div class="tab__pane">
+              <p>
+                content thứ 2
+              </p>
+            </div>
+            <div class="tab__pane">
+              <p>
+                content thứ 3
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-desk-6">
+        <div id="tab2" class="tab-wrapper tab--vertical">
+          <ul class="tab__nav">
+            <li class="tab__item">
+              <a href="#" class="tab__link is-active">tab link 1</a>
+            </li>
+            <li class="tab__item">
+              <a href="#" class="tab__link">tab link 2</a>
+            </li>
+            <li class="tab__item">
+              <a href="#" class="tab__link">tab link 3</a>
+            </li>
+          </ul>
+
+          <div class="tab__content">
+            <div class="tab__pane is-active">
+              <p>
+                content thứ 1
+              </p>
+            </div>
+            <div class="tab__pane">
+              <p>
+                content thứ 2
+              </p>
+            </div>
+            <div class="tab__pane">
+              <p>
+                content thứ 3
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="grid">
+      <div class="col-desk-12">
+        <h2>
+          Divider image
+        </h2>
+      </div>
+      <div class="col-desk-6">
+        <div class="divider">
+          <img src="./assets/images/divider.png">
+        </div>
+      </div>
+      <div class="col-desk-6">
+        <div class="divider divider--vertical">
+          <img src="./assets/images/divider.png">
+        </div>
+      </div>
+    </div>
+
+    <div class="grid">
+      <div class="col-desk-12">
+        <h2>
+          Form
+        </h2>
+      </div>
+
+      <div class="col-desk-6">
+        <form class="form form--horizontal">
+          <div class="form-item row">
+            <label class="form-item__label col-desk-3">Email</label>
+            <input type="email" class="form-item__input col-desk-9">
+          </div>
+          <div class="form-item row">
+            <label class="form-item__label col-desk-3">Password</label>
+            <input type="password" class="form-item__input col-desk-9">
+          </div>
+          <button class="btn btn--rounded mx-auto">
+            Submit
+          </button>
+        </form>
+      </div>
+
+      <div class="col-desk-6">
+        <form class="form form--vertical">
+          <div class="form-item row">
+            <label class="form-item__label ">Email</label>
+            <input type="email" class="form-item__input">
+          </div>
+          <div class="form-item row">
+            <label class="form-item__label">Password</label>
+            <input type="password" class="form-item__input">
+          </div>
+          <button class="btn btn--rounded mx-auto">
+            Submit
+          </button>
+        </form>
+      </div>
+    </div>
+    </div>
+  </main>
+
+
+  <script src="assets/js/scripts.js"></script>
+  <script src="assets/js/tab.js"></script>
+  <script>
+    const horizonTab = Tab({
+      el: '#tab-horizon',
+      tabLinks: '.tab__link',
+      tabPanes: '.tab__pane',
+    }).render();
+
+    const verticalTab = Tab({
+      el: '#tab2',
+      tabLinks: '.tab__link',
+      tabPanes: '.tab__pane',
+    }).render();
+
+  </script>
+</body>
+
+</html>
