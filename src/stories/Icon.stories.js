@@ -4,6 +4,7 @@ export default {
 
 export const Icon = () => {
   return /* html */ `
-    <span class="icon"></span>
+    <span class="icon">
+    a</span>
   `;
 };
