@@ -1,21 +1,17 @@
 'use strict';
-
 const Tab = function (options) {
   // select tab element
   const el = document.querySelector(options.el);
   const tabLinks = el.querySelectorAll(options.tabLinks);
   const tabPanes = el.querySelectorAll(options.tabPanes);
 
-  console.log(el);
-  console.log(tabLinks);
-  console.log(tabPanes);
   let activeIndex = 0;
-  let initCalled = false;
+  let isTabRender = false;
 
   // init
   const render = () => {
-    if (!initCalled) {
-      initCalled = true;
+    if (!isTabRender) {
+      isTabRender = true;
       el.classList.remove('no-js');
       tabLinks.forEach((link, index) => _handleClick(link, index));
     }

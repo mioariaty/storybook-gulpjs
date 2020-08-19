@@ -3,6 +3,9 @@ html {
 }
 body {
   font-size: px(16);
+  font-family: $font-primary;
+  font-weight: $font-regular;
+  color: $color-dark;
 }
 img {
   max-width: 100%;

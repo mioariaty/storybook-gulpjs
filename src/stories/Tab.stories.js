@@ -1,5 +1,3 @@
-import Tab from '../assets/js/tab';
-
 export default {
   title: 'Components/Tab',
 };
@@ -9,13 +7,13 @@ export const Horizontal = () => {
     <div id="tab-horizon"  class="tab-wrapper tab--horizontal">
       <ul class="tab__nav">
         <li class="tab__item">
-          <a href="#" class="tab__link is-active">tab link 1</a>
+          <a href="#" class="tab__link is-active">Tab 1</a>
         </li>
         <li class="tab__item">
-          <a href="#" class="tab__link">tab link 2</a>
+          <a href="#" class="tab__link">Tab 2</a>
         </li>
         <li class="tab__item">
-          <a href="#" class="tab__link">tab link 3</a>
+          <a href="#" class="tab__link">Tab 3</a>
         </li>
       </ul>
 
@@ -45,13 +43,13 @@ export const Vertical = () => {
     <div id="tab-vertical" class="tab-wrapper tab--vertical">
       <ul class="tab__nav">
         <li class="tab__item">
-          <a href="#" class="tab__link is-active">tab link 1</a>
+          <a href="#" class="tab__link is-active">Tab 1</a>
         </li>
         <li class="tab__item">
-          <a href="#" class="tab__link">tab link 2</a>
+          <a href="#" class="tab__link">Tab 2</a>
         </li>
         <li class="tab__item">
-          <a href="#" class="tab__link">tab link 3</a>
+          <a href="#" class="tab__link">Tab 3</a>
         </li>
       </ul>
 

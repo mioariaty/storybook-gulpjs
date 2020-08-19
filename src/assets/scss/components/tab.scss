@@ -15,11 +15,6 @@
   text-decoration: none;
   color: #000000;
   transition: 0.3s all ease;
-
-  &.is-active,
-  &:hover {
-    background-color: #ebebeb;
-  }
 }
 
 .tab__pane {
@@ -32,6 +27,28 @@
 
 .tab--horizontal {
   @include flex(flex-start, stretch, wrap, column);
+
+  .tab__link {
+    background-color: #ebebeb;
+    border: 1px solid #f0f0f0;
+    border-radius: 4px 4px 0px 0px;
+
+    &.is-active,
+    &:hover {
+      background-color: #fff !important;
+      border-bottom-color: #fff !important;
+    }
+  }
+
+  .tab__item {
+    margin-right: 3px;
+    border-bottom: 1px solid #fff;
+    margin-bottom: -1px;
+  }
+
+  .tab__nav {
+    border-bottom: 1px solid #f0f0f0;
+  }
 }
 
 .tab--vertical {
@@ -40,6 +57,7 @@
   .tab__nav {
     flex-direction: column;
     margin: 0;
+    border-right: 1px solid $color-primary;
   }
 
   .tab__content {
@@ -48,6 +66,13 @@
 
     p {
       margin: 0;
+    }
+  }
+
+  .tab__link {
+    &.is-active {
+      color: $color-primary;
+      font-weight: $font-medium;
     }
   }
 }
