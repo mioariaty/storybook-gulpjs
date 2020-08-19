@@ -1,9 +1,10 @@
-import getBody from "./utils";
-import home from "!source-loader!../index.html";
-import about from "!source-loader!../about.html";
+import getBody from './utils';
+import home from '!source-loader!../index.html';
+import about from '!source-loader!../about.html';
+import element from '!source-loader!../element.html';
 
 export default {
-  title: "Pages",
+  title: 'Pages',
 };
 
 export const Home = () => {
@@ -12,4 +13,7 @@ export const Home = () => {
 
 export const About = () => {
   return getBody(about);
+};
+export const Element = () => {
+  return getBody(element);
 };
