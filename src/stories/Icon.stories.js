@@ -1,44 +1,55 @@
+import { solidIcon, regularIcon, brandIcon } from './fontawesome';
 export default {
-  title: 'Components/Icon',
+  title: 'Components/FontAwesome',
 };
 
-export const FontAwesome = () => {
+export const Solid = () => {
   return /* html */ `
-    <div class="grid">
-      <div class="col-desk-2 text-center">
-        <i class="fab fa-facebook-f"></i>
-        <p>fa-facebook</p>
-      </div>
-      <div class="col-desk-2 text-center">
-        <i class="fab fa-facebook-square"></i>
-        <p>fa-facebook-square</p>
-      </div>
-      <div class="col-desk-2 text-center">
-        <i class="fab fa-twitter"></i>
-        <p>fa-twitter</p>
-      </div>
-      <div class="col-desk-2 text-center">
-        <i class="fab fa-twitter-square"></i>
-        <p>fa-twitter-square</p>
-      </div>
-      <div class="col-desk-2 text-center">
-        <i class="fab fa-pinterest"></i>
-        <p>fa-pinterest</p>
-      </div>
-      <div class="col-desk-2 text-center">
-        <i class="fab fa-pinterest-square"></i>
-        <p>fa-pinterest-square</p>
-      </div>
-      <div class="col-desk-2 text-center">
-        <i class="fab fa-instagram"></i>
-        <p>fa-instagram</p>
-      </div>
-      <div class="col-desk-2 text-center">
-        <i class="fal fa-play"></i>
-        <p>fa-play</p>
-      </div>
+    <div class="grid-fluid">
+      ${solidIcon
+        .map((icon) => {
+          return /* html */ `
+          <div class="col-desk-2 text-center">
+            <i class="${icon}"></i>
+            <p>${icon}</p>
+          </div>
+        `;
+        })
+        .join('')}
     </div>
   `;
 };
 
-// console.log(FontAwesome.split());
+export const Regular = () => {
+  return /* html */ `
+    <div class="grid-fluid">
+      ${regularIcon
+        .map((icon) => {
+          return /* html */ `
+          <div class="col-desk-2 text-center">
+            <i class="${icon}"></i>
+            <p>${icon}</p>
+          </div>
+        `;
+        })
+        .join('')}
+    </div>
+  `;
+};
+
+export const Brand = () => {
+  return /* html */ `
+    <div class="grid-fluid">
+      ${brandIcon
+        .map((icon) => {
+          return /* html */ `
+          <div class="col-desk-2 text-center">
+            <i class="${icon}"></i>
+            <p>${icon}</p>
+          </div>
+        `;
+        })
+        .join('')}
+    </div>
+  `;
+};
