@@ -1,21 +1,21 @@
 /* 0. Abstracts
 ======================================================================== */
-@import "abstracts/include_media.scss";
-@import "abstracts/variables.scss";
-@import "abstracts/extends.scss";
-@import "abstracts/mixins.scss";
-@import "abstracts/functions.scss";
-
+// @import "abstracts/include_media.scss";
+// @import "abstracts/variables.scss";
+// @import "abstracts/extends.scss";
+// @import "abstracts/mixins.scss";
+// @import "abstracts/functions.scss";
+@import "abstracts/**/*.scss";
 /* 1. Base
 ======================================================================== */
 @import "base/**/*.scss";
 
 /* 2. Components
 ======================================================================== */
-// @import "components/**/*.scss";
 @import "components/**/*.scss";
+
 /* 3. Layouts
 ======================================================================== */
-@import "layouts/grid.scss";
+@import "layouts/**/*.scss";
 
 @import "../vendors/fontawesome/all.min.css";

@@ -1,0 +1,27 @@
+.input--rounded {
+  border-radius: px(19.5);
+  font-family: $font-primary;
+  font-weight: $font-light;
+
+  &::placeholder {
+    color: $color-light;
+  }
+}
+.input--search {
+  height: 42px;
+  padding-left: px(15) !important;
+  padding-right: px(15) !important;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  background-color: $color-dark;
+  color: $color-light;
+  flex: 1;
+  border: unset;
+
+  transition: 0.4s all ease;
+
+  @include media("<desktop") {
+    width: 100% !important;
+    height: 42px !important;
+  }
+}

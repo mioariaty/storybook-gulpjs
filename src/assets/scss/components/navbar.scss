@@ -1,0 +1,116 @@
+.navbar,
+.navbar-collapse {
+  @include flex(flex-start, center, wrap, row);
+  position: relative;
+
+  a {
+    text-decoration: none;
+    color: $color-dark;
+  }
+  transition: 0.4s all ease;
+}
+.navbar {
+  padding: px(8) px(16);
+  transition: 0.4s all ease;
+
+  @include media("<desktop") {
+    justify-content: space-between;
+  }
+
+  .btn--search {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .input--search:focus,
+  .input--search:active {
+    outline: none;
+  }
+  .input--search {
+    width: 0px;
+    height: 0px;
+    transform: translateX(0);
+
+    @include media(">=desktop") {
+      visibility: hidden;
+      opacity: 0;
+    }
+  }
+  .form-item:hover {
+    .input--search {
+      width: 100%;
+      height: 42px;
+      display: block;
+      visibility: visible;
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+}
+.navbar__brand {
+  font-family: $font-secondary !important;
+  font-weight: $font-bold;
+  color: $color-dark;
+  font-size: px(38);
+  letter-spacing: px(1);
+  padding: px(5) 0;
+  line-height: px(24);
+
+  span {
+    color: $color-primary;
+  }
+}
+.navbar-collapse {
+  flex-basis: 100%;
+  flex-grow: 1;
+
+  @include media(">=desktop") {
+    flex-basis: auto;
+  }
+}
+.navbar-nav {
+  @include flex(center, center, wrap, row);
+  list-style: none;
+  margin-bottom: 0;
+  margin-top: 0;
+  flex: 1;
+  transition: 0.4s all ease;
+
+  @include media("<desktop") {
+    padding-left: 0;
+    text-align: left;
+    justify-content: flex-start;
+    flex: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+.navbar__toggler {
+  border: unset;
+  background-color: transparent;
+  padding: 0.4rem 0.8rem;
+  line-height: 1;
+  border-radius: 2px;
+  outline: none;
+  cursor: pointer;
+  color: $color-primary;
+  font-size: px(20);
+
+  @include media(">=desktop") {
+    display: none;
+  }
+}
+.nav__link {
+  padding: px(8) px(20);
+  display: block;
+  font-family: $font-secondary;
+  font-weight: $font-bold;
+  line-height: px(24);
+  font-size: px(14);
+
+  @include media("<desktop") {
+    padding-left: px(10);
+    padding-right: px(10);
+  }
+}
