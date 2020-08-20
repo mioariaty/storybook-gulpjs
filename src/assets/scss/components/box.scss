@@ -1,0 +1,132 @@
+/*
+  BOX DEFAULT
+======================================================================== */
+.box {
+  position: relative;
+  // z-index: 1;
+  transition: 1s all ease;
+
+  &:hover {
+    .overlay {
+      opacity: 1;
+      visibility: visible;
+    }
+    .box__details {
+      opacity: 1;
+      top: 100%;
+      left: 0;
+    }
+  }
+  a {
+    text-decoration: none;
+  }
+}
+
+// set style box default
+.box__details {
+  opacity: 0;
+  position: absolute;
+  z-index: 1;
+
+  width: 100%;
+  text-align: center;
+  padding: 1em;
+
+  border-bottom: 1px solid #eeeeee;
+
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+.box__title,
+.box__desc {
+  font-size: px(14);
+  margin: 0;
+  text-align: center;
+  color: $color-dark;
+}
+.box__title {
+  font-family: $font-secondary;
+  font-weight: $font-bold;
+  letter-spacing: 0.25rem;
+}
+.box__desc {
+  font-family: $font-primary;
+  font-weight: $font-regular;
+}
+
+.box__link {
+  font-size: px(40);
+  color: $color-primary;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 0;
+  transform: translate(-20%, -20%);
+}
+.box__image {
+  overflow: hidden;
+  position: relative;
+}
+
+/*
+  BOX OVERLAY
+======================================================================== */
+.box--overlay {
+  overflow: hidden;
+
+  &:hover {
+    .box__details {
+      left: 0;
+      top: 0;
+    }
+  }
+
+  .box__details {
+    left: -50%;
+    top: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-bottom: unset;
+  }
+
+  .box__image {
+    padding-top: getSizeImage(343, 343);
+
+    img {
+      @extend %absolute-center;
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+
+  .box__desc {
+    color: $color-light;
+    text-align: left;
+  }
+  .box__title {
+    color: $color-light;
+    text-align: left;
+    letter-spacing: normal;
+  }
+}
+
+.overlay {
+  @extend %absolute-center;
+  background: rgba(0, 0, 0, 0.7);
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  z-index: 1;
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+.box__divider {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: px(65);
+}
