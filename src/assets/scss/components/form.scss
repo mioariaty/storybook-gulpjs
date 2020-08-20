@@ -6,6 +6,8 @@
   color: $color-dark;
   font-size: px(14);
   max-width: px(600);
+  min-width: px(180);
+  position: relative;
 }
 .form-item {
   box-sizing: border-box;
@@ -14,6 +16,7 @@
   font-size: px(14);
   margin: 0 0 px(24);
   vertical-align: top;
+  position: relative;
 }
 .form-item__label {
   display: inline-block;

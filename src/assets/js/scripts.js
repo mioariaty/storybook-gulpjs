@@ -1,14 +1,10 @@
 (function () {
   'use-strict';
+  // const togglebar = document.querySelector('.navbar__toggler');
 
-  function init() {
-    const buttonElement = document.querySelector('#button');
-    if (buttonElement) {
-      buttonElement.addEventListener('click', () => {
-        console.log('Javascript test');
-      });
-    }
-  }
+  // const handleToggleBar = () => {
+  //   console.log('alo');
+  // };
 
-  window.addEventListener('load', init);
+  // togglebar.addEventListener('click', handleToggleBar);
 })();
