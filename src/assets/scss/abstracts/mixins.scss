@@ -43,3 +43,8 @@
   margin-bottom: $bottom;
   margin-left: $left;
 }
+
+@mixin aspect-ratio($height, $width) {
+  padding-top: getSizeImage($height, $width);
+  position: relative;
+}

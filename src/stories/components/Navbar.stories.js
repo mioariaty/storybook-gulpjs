@@ -4,6 +4,8 @@ export default {
 
 export const Default = () => {
   return /* html */ `
+    <h2>Refresh the page to get scripts</h2>
+    <hr/>
     <nav class="navbar">
       <a href="#" class="navbar__brand"><span>B</span>M.</a>
       <button class="navbar__toggler">
