@@ -10,18 +10,13 @@ export const Primary = () => {
   `;
 };
 
-export const Secondary = () => {
-  return /*html*/ `
-    <button class="btn btn--secondary">
-      Button Secondary
-    </button>
-  `;
-};
-
-export const Tertiary = () => {
-  return /*html*/ `
-    <button class="btn btn--tertiary">
-      Button Tertiary
+export const ScrollToTop = () => {
+  return /* html */ `
+    <button class="btn">
+      <i class="pe-7s-upload"></i>
+      <span>
+        scroll to top
+      </span>
     </button>
   `;
 };

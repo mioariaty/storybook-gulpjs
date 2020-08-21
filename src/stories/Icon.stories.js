@@ -1,4 +1,5 @@
-import { solidIcon, regularIcon, brandIcon } from './fontawesome';
+import { solidIcon, regularIcon, brandIcon } from './helpers/fontawesome';
+
 export default {
   title: 'Components/FontAwesome',
 };

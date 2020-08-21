@@ -13,7 +13,7 @@
 
   &.active {
     .breadcrumb__link {
-      color: #6c757d;
+      color: $color-primary !important;
     }
   }
 }

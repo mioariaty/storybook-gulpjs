@@ -1,0 +1,54 @@
+.background {
+  min-height: px(300);
+  padding: px(20) px(60);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.background__title {
+  font-size: px(36);
+  font-family: $font-secondary;
+  font-weight: $font-bold;
+  letter-spacing: 0.25rem;
+  color: $color-light;
+  margin: 0 0 1rem 0;
+  display: inline-block;
+  text-transform: uppercase;
+
+  span {
+    color: $color-primary;
+  }
+}
+// background image
+.background--image {
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.background--center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  .navbar-nav {
+    flex: none;
+    color: $color-light;
+
+    a {
+      color: $color-light;
+      text-decoration: none;
+    }
+  }
+
+  .background__title {
+    font-size: px(72);
+    letter-spacing: 0.1rem;
+    margin: 0 0 3rem 0;
+  }
+}
+
+// background color

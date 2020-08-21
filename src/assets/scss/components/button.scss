@@ -23,8 +23,9 @@
 .btn--search {
   border-radius: 100%;
   padding: 0;
-  width: px(40) !important;
-  height: px(40);
+  width: px(37) !important;
+  height: px(37);
   background-color: $color-dark;
   transition: 0.4s;
+  font-size: px(18);
 }
