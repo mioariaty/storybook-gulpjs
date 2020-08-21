@@ -1,5 +1,7 @@
 .post {
   position: relative;
+  @include flex(space-between, stretch, wrap, row);
+  text-decoration: none;
 
   .icon {
     position: absolute;
@@ -31,4 +33,8 @@
   font-weight: $font-bold;
   letter-spacing: 0.25rem;
   margin: 0;
+}
+.post-content {
+  position: relative;
+  flex: 1;
 }
