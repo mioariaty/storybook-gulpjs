@@ -7,11 +7,11 @@ export const Horizontal = () => {
     <form class="form form--horizontal">
       <div class="form-item row">
         <label class="form-item__label col-desk-3">Email</label>
-        <input type="email" class="form-item__input col-desk-9" >
+        <input type="email" class="input-control col-desk-9" >
       </div>
       <div class="form-item row">
         <label class="form-item__label col-desk-3">Password</label>
-        <input type="password" class="form-item__input col-desk-9" >
+        <input type="password" class="input-control col-desk-9" >
       </div>
       <button class="btn btn--rounded mx-auto">
         Submit
@@ -25,11 +25,11 @@ export const Vertical = () => {
     <form class="form form--vertical">
       <div class="form-item row">
         <label class="form-item__label ">Email</label>
-        <input type="email" class="form-item__input" >
+        <input type="email" class="input-control" >
       </div>
       <div class="form-item row">
         <label class="form-item__label">Password</label>
-        <input type="password" class="form-item__input" >
+        <input type="password" class="input-control" >
       </div>
       <button class="btn btn--rounded mx-auto">
         Submit

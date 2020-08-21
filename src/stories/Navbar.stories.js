@@ -37,7 +37,7 @@ export const Default = () => {
           <div class="form-item row m-0">
             <input type="search" placeholder="Search" class="form-item__input input--rounded input--search" >
             <button class="btn btn--search">
-              <i class="fal fa-search"></i>
+              <i class="pe-7s-search"></i>
             </button>
           </div>
         </form>

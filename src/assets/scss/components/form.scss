@@ -26,32 +26,7 @@
   text-align: right;
   vertical-align: middle;
 }
-.form-item__input {
-  list-style: none;
-  box-sizing: border-box;
-  margin: 0;
-  font-variant: tabular-nums;
-  position: relative;
-  display: inline-block;
-  width: 100%;
-  min-width: 0;
-  padding: px(4) px(11);
-  color: $color-dark;
-  font-size: px(14);
-  border: 1px solid #d9d9d9;
-  border-radius: 2px;
-  transition: 0.3s all ease;
-  outline: none;
 
-  &:hover {
-    border-color: #40a9ff;
-  }
-  &:focus {
-    border-color: #40a9ff;
-    box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.2);
-    outline: none;
-  }
-}
 .form--vertical {
   .form-item__label {
     padding: px(4) 0;

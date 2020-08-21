@@ -7,6 +7,32 @@ export default {
   title: 'Components/Box',
 };
 
+export const BoxDefault = () => {
+  return /* html */ `
+    <div class="grid">
+      <div class="col-desk-12">
+        <h2>Hover to show content</h2>
+      </div>
+      <div class="col-desk-4">
+        <div class="box">
+          <a href="">
+            <div class="box__image">
+              <img src="${boxDefault1}" alt=""/>
+              <p class="box__link">
+                <span class="pe-7s-play"></span>
+              </p>
+            </div>
+            <div class="box__details">
+              <h3 class="box__title">DENOUNCING PLEASURE</h3>
+              <p class="box__desc">Drink & Food</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  `;
+};
+
 export const BoxOverlay = () => {
   return /* html */ `
     <div class="grid">
@@ -52,32 +78,6 @@ export const BoxOverlay = () => {
               <p class="box__link">
                 <span class="pe-7s-play"></span>
               </p>
-            </div>
-          </a>
-        </div>
-      </div>
-    </div>
-  `;
-};
-
-export const BoxDefault = () => {
-  return /* html */ `
-    <div class="grid">
-      <div class="col-desk-12">
-        <h2>Hover to show content</h2>
-      </div>
-      <div class="col-desk-4">
-        <div class="box">
-          <a href="">
-            <div class="box__image">
-              <img src="${boxDefault1}" alt=""/>
-              <p class="box__link">
-                <span class="pe-7s-play"></span>
-              </p>
-            </div>
-            <div class="box__details">
-              <h3 class="box__title">DENOUNCING PLEASURE</h3>
-              <p class="box__desc">Drink & Food</p>
             </div>
           </a>
         </div>

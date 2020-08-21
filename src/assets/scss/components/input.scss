@@ -1,5 +1,5 @@
 .input--rounded {
-  border-radius: px(19.5);
+  border-radius: px(20) !important;
   font-family: $font-primary;
   font-weight: $font-light;
 
@@ -8,13 +8,13 @@
   }
 }
 .input--search {
-  height: 42px;
+  height: 40px;
   padding-left: px(15) !important;
   padding-right: px(15) !important;
   padding-top: 0px;
   padding-bottom: 0px;
   background-color: $color-dark;
-  color: $color-light;
+  color: $color-light !important;
   flex: 1;
   border: unset;
 
@@ -22,6 +22,32 @@
 
   @include media("<desktop") {
     width: 100% !important;
-    height: 42px !important;
+    height: 40px !important;
+  }
+}
+.input-control {
+  list-style: none;
+  box-sizing: border-box;
+  margin: 0;
+  font-variant: tabular-nums;
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  min-width: 0;
+  padding: px(4) px(11);
+  color: $color-dark;
+  font-size: px(14);
+  border: 1px solid #d9d9d9;
+  border-radius: 2px;
+  transition: 0.3s all ease;
+  outline: none;
+
+  &:hover {
+    border-color: #40a9ff;
+  }
+  &:focus {
+    border-color: #40a9ff;
+    box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.2);
+    outline: none;
   }
 }
