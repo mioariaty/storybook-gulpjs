@@ -1,0 +1,10 @@
+.aspect-image {
+  position: relative;
+  padding-top: getSizeImage(1, 1);
+  overflow: hidden;
+
+  img {
+    @extend %absolute-center;
+    width: 100%;
+  }
+}

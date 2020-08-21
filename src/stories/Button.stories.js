@@ -12,11 +12,15 @@ export const Primary = () => {
 
 export const ScrollToTop = () => {
   return /* html */ `
-    <button class="btn">
-      <i class="pe-7s-upload"></i>
-      <span>
-        scroll to top
-      </span>
-    </button>
+    <div class="grid-fluid">
+      <div class="col-desk-12 mt-5">
+        <button class="btn btn--scroll">
+          <span>
+            scroll to top
+          </span>
+          <i class="pe-7s-upload"></i>
+        </button>
+      </div>
+    </div>
   `;
 };
