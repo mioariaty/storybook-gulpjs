@@ -1,4 +1,4 @@
-import avatarImage from '../assets/images/avatar.png';
+import avatarImage from '../../assets/images/avatar.png';
 
 export default {
   title: 'Components/Avatar',

@@ -1,4 +1,4 @@
-import './helpers/menu';
+import '../helpers/menu';
 
 export default {
   title: 'Components/Dropdowns',

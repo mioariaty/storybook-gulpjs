@@ -1,7 +1,7 @@
-import boxImage1 from '../assets/images/box1.png';
-import boxImage2 from '../assets/images/box2.png';
-import boxDefault1 from '../assets/images/box-default1.png';
-import dividerBox from '../assets/images/divider-small.png';
+import boxImage1 from '../../assets/images/box1.png';
+import boxImage2 from '../../assets/images/box2.png';
+import boxDefault1 from '../../assets/images/box-default1.png';
+import dividerBox from '../../assets/images/divider-small.png';
 
 export default {
   title: 'Components/Box',

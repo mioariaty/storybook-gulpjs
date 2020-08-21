@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const btnClose = document.querySelector('.btn--close');
 
   const handleResize = () => {
-    if (window.outerWidth < 1024) {
+    if (window.innerWidth < 1024) {
       navCollapes.classList.add('hidden');
     } else {
       navCollapes.classList.remove('hidden');

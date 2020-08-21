@@ -1,6 +1,6 @@
-import bannerImage1 from '../assets/images/banner1.png';
-import bannerImage2 from '../assets/images/banner2.png';
-import dividerImage from '../assets/images/divider.png';
+import bannerImage1 from '../../assets/images/banner1.png';
+import bannerImage2 from '../../assets/images/banner2.png';
+import dividerImage from '../../assets/images/divider.png';
 
 export default {
   title: 'Components/Background',
