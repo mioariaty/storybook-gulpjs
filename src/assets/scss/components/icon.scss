@@ -1,0 +1,17 @@
+.icon {
+  width: px(60);
+  height: px(60);
+  background-color: $color-primary;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  i {
+    font-size: px(30);
+    color: $color-light;
+  }
+}
+.icon--rounded {
+  border-radius: 50%;
+}

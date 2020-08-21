@@ -6,6 +6,8 @@ export default {
 
 export const Dropdown = () => {
   return /* html */ `
+    <h2>Refresh the page to get scripts</h2>
+    <hr/>
     <div class="grid-fluid">
       <div class="col-desk-6">
         <h2>Horizontal</h2>
