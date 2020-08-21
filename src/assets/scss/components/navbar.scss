@@ -64,11 +64,32 @@
 .navbar-collapse {
   flex-basis: 100%;
   flex-grow: 1;
+  transform: translateX(0);
 
   @include media(">=desktop") {
     flex-basis: auto;
   }
+
+  @include media("<desktop") {
+    transition: 0.2s all ease;
+    position: fixed;
+    top: 0;
+    right: 0;
+
+    align-items: stretch;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    width: 100%;
+    height: 100vh;
+    padding: px(14);
+    background-color: $color-primary;
+  }
 }
+.navbar-collapse.hidden {
+  transform: translateX(100%);
+}
+
 .navbar-nav {
   @include flex(center, center, wrap, row);
   list-style: none;
@@ -81,7 +102,7 @@
     padding-left: 0;
     text-align: left;
     justify-content: flex-start;
-    flex: 100%;
+    flex: initial;
     flex-direction: column;
     align-items: flex-start;
   }

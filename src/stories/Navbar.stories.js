@@ -7,10 +7,13 @@ export const Default = () => {
     <nav class="navbar">
       <a href="#" class="navbar__brand"><span>B</span>M.</a>
       <button class="navbar__toggler">
-        <i class="far fa-bars"></i>
+        <i class="fas fa-bars"></i>
       </button>
 
       <div class="navbar-collapse">
+        <button class="btn--close">
+          <i class="fas fa-times"></i>
+        </button>
         <ul class="navbar-nav">
           <li class="nav__item">
             <a href="#" class="nav__link">Home</a>
