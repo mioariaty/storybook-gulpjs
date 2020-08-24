@@ -9,7 +9,7 @@
   min-width: px(180);
   position: relative;
 }
-.form-item {
+.form__item {
   box-sizing: border-box;
   padding: 0;
   color: $color-dark;
@@ -18,12 +18,11 @@
   vertical-align: top;
   position: relative;
 }
-.form-item__label {
+.form__label {
   display: inline-block;
   flex-grow: 0;
   overflow: hidden;
   white-space: nowrap;
-  text-align: right;
   vertical-align: middle;
 }
 
@@ -32,7 +31,7 @@
     padding: px(4) 0;
   }
 
-  .form-item {
+  .form__item {
     margin-bottom: 1rem;
   }
 }
