@@ -2,16 +2,16 @@
   border: 0;
   background-color: $color-primary;
   color: $color-light;
-  padding: px(4) px(15);
+  padding: px(16) px(50);
   font-size: px(14);
-  height: px(32);
   cursor: pointer;
   outline: none;
   display: block;
 }
 
 .btn--secondary {
-  background-color: $color-secondary;
+  background-color: $color-dark;
+  letter-spacing: 0.25rem;
 }
 
 .btn--tertiary {

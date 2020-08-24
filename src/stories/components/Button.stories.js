@@ -10,17 +10,10 @@ export const Primary = () => {
   `;
 };
 
-export const ScrollToTop = () => {
+export const Secondary = () => {
   return /* html */ `
-    <div class="grid-fluid">
-      <div class="col-desk-12 mt-5">
-        <button class="btn btn--scroll">
-          <span>
-            scroll to top
-          </span>
-          <i class="pe-7s-upload"></i>
-        </button>
-      </div>
-    </div>
+    <button class="btn btn--secondary uppercase">
+      Submit
+    </button>
   `;
 };
