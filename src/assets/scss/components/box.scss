@@ -3,8 +3,9 @@
 ======================================================================== */
 .box {
   position: relative;
-  // z-index: 1;
   transition: 1s all ease;
+  // z-index: 1;
+  margin-bottom: px(30);
 
   &:hover {
     .overlay {

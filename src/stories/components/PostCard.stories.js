@@ -16,11 +16,11 @@ export const Card = () => {
               <h3 class="m-0">NOV</h3>
             </div>
           </div>
-          <div class="post-content">
+          <div class="post__content">
             <div class="aspect-img">
               <img src="${postBg1}" alt=""/>
             </div>
-            <div class="post-detail text-center">
+            <div class="post__detail text-center">
               <h3 class="category">LIFESTYLE</h3>
               <p class="post__title">THIS MISTAKEN IDEA</p>
             </div>
@@ -38,11 +38,11 @@ export const Card = () => {
               <h3 class="m-0">NOV</h3>
             </div>
           </div>
-          <div class="post-content">
+          <div class="post__content">
             <div class="aspect-img">
               <img src="${postBg2}" alt=""/>
             </div>
-            <div class="post-detail text-center">
+            <div class="post__detail text-center">
               <h3 class="category">LIFESTYLE</h3>
               <p class="post__title">THIS MISTAKEN IDEA</p>
             </div>
@@ -60,11 +60,11 @@ export const Card = () => {
               <h3 class="m-0">NOV</h3>
             </div>
           </div>
-          <div class="post-content">
+          <div class="post__content">
             <div class="aspect-img">
               <img src="${postBg2}" alt=""/>
             </div>
-            <div class="post-detail text-center">
+            <div class="post__detail text-center">
               <h3 class="category">LIFESTYLE</h3>
               <p class="post__title">THIS MISTAKEN IDEA</p>
             </div>
