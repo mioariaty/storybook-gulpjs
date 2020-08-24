@@ -1,7 +1,7 @@
 import { solidIcon, regularIcon, brandIcon } from '../helpers/fontawesome';
 
 export default {
-  title: 'Components/FontAwesome',
+  title: 'Components/Font Awesome',
 };
 
 export const Solid = () => {
