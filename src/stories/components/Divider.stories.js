@@ -19,3 +19,11 @@ export const Vertical = () => {
     </div>
   `;
 };
+
+export const Diagonally = () => {
+  return /* html */ `
+    <div class="divider divider--diagonally">
+      <img src="${dividerImage}">
+    </div>
+  `;
+};
