@@ -1,5 +1,5 @@
 // font
-$font-primary: "Quicksand", sans-serif;
+$font-primary: "Quicksand", sans-serif !default;
 $font-secondary: "Montserrat", sans-serif;
 
 $font-light: 300;
@@ -9,12 +9,16 @@ $font-semibold: 600;
 $font-bold: 700;
 
 // color
-$color-primary: #6ed3cf;
+$color-primary: #6ed3cf !default;
 $color-secondary: #fbb034;
 $color-tertiary: #a3a3a3;
 $color-quaternary: #34bf49;
 $color-light: #fff;
 $color-dark: #000;
+
+// color helper
+$gray1: #cccccc;
+$gray2: #555555;
 
 // GRID SYSTEM
 // desktop grid

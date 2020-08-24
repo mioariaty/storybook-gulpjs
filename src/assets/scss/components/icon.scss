@@ -6,6 +6,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  text-decoration: none;
 
   i {
     font-size: px(30);
@@ -14,4 +15,20 @@
 }
 .icon--rounded {
   border-radius: 50%;
+}
+.icon--shadow {
+  box-shadow: 0px 3px 10px rgba($color: #6ed3cf, $alpha: 0.5);
+}
+.icon-absolute--bot {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translate(80%, 50%);
+  z-index: 3;
+}
+.icon--reverse {
+  transform: rotate(180deg);
+}
+.icon-bg--primary {
+  background-color: $color-primary;
 }

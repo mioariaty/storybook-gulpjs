@@ -1,7 +1,6 @@
 .background {
-  min-height: px(300);
   padding: px(20) px(60);
-
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -11,6 +10,7 @@
   font-family: $font-secondary;
   font-weight: $font-bold;
   letter-spacing: 0.25rem;
+  line-height: 2.6rem;
   color: $color-light;
   margin: 0 0 1rem 0;
   display: inline-block;
@@ -26,6 +26,8 @@
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+  width: 100%;
+  min-height: px(300);
 }
 
 .background--center {
@@ -36,6 +38,7 @@
 
   .navbar-nav {
     flex: none;
+    flex-direction: row;
     color: $color-light;
 
     a {
@@ -51,4 +54,16 @@
   }
 }
 
-// background color
+.background__desc {
+  margin-top: 0;
+  margin-bottom: px(45);
+  padding-right: px(30);
+}
+
+// background modify height
+.background-height--large {
+  min-height: px(600);
+}
+.background-height--medium {
+  min-height: px(500);
+}
