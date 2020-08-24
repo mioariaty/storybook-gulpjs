@@ -1,6 +1,8 @@
 import boxImage1 from '../../assets/images/box1.png';
 import boxImage2 from '../../assets/images/box2.png';
 import boxDefault1 from '../../assets/images/box-default1.png';
+import boxDefault2 from '../../assets/images/box-default2.png';
+
 import dividerBox from '../../assets/images/divider-small.png';
 
 export default {
@@ -18,6 +20,21 @@ export const BoxDefault = () => {
           <a href="">
             <div class="box__image">
               <img src="${boxDefault1}" alt=""/>
+              <p class="box__link">
+                <span class="pe-7s-play"></span>
+              </p>
+            </div>
+            <div class="box__details">
+              <h3 class="box__title">DENOUNCING PLEASURE</h3>
+              <p class="box__desc">Drink & Food</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="box">
+          <a href="">
+            <div class="box__image">
+              <img src="${boxDefault2}" alt=""/>
               <p class="box__link">
                 <span class="pe-7s-play"></span>
               </p>
