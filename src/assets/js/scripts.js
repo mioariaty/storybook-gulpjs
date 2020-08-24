@@ -1,5 +1,8 @@
 document.addEventListener('DOMContentLoaded', function () {
   'use strict';
+  /*
+    toggle menu bar
+  ***********************************/
 
   const btnToggle = document.querySelector('.navbar__toggler');
   const navCollapes = document.querySelector('.navbar-collapse');
@@ -29,8 +32,10 @@ document.addEventListener('DOMContentLoaded', function () {
     window.addEventListener('resize', handleResize);
   }
 
-  // carousel
-  // if (document.querySelector('.swiper.container')) {
+  /*
+    carousel
+  ***********************************/
+
   const demoVertical = new Swiper('.demo1', {
     pagination: {
       el: '.swiper-pagination',
@@ -48,5 +53,24 @@ document.addEventListener('DOMContentLoaded', function () {
       prevEl: '.swiper-button-prev',
     },
   });
-  // }
+
+  /*
+    hover focus input
+  ***********************************/
+  const searchBtn = document.querySelector('.btn--search');
+  const searchInput = document.querySelector('#searchInput');
+
+  const handleHover = () => {
+    if (window.innerWidth > 1023) {
+      if (searchInput.classList.contains('hidden')) {
+        searchInput.classList.remove('hidden');
+      } else {
+        searchInput.classList.add('hidden');
+      }
+      searchInput.focus();
+    }
+  };
+
+  searchBtn.addEventListener('mouseenter', handleHover);
+  searchInput.addEventListener('mouseover', () => searchInput.focus());
 });

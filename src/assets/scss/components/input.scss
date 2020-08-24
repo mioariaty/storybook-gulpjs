@@ -8,11 +8,10 @@
   }
 }
 .input--search {
-  height: 40px;
   padding-left: px(15) !important;
   padding-right: px(15) !important;
-  padding-top: 0px;
-  padding-bottom: 0px;
+  padding-top: 12px;
+  padding-bottom: 12px;
   background-color: $color-dark;
   color: $color-light !important;
   flex: 1;
@@ -22,7 +21,11 @@
 
   @include media("<desktop") {
     width: 100% !important;
-    height: 40px !important;
+  }
+
+  &:focus,
+  &:active {
+    outline: none;
   }
 }
 .input-control {
