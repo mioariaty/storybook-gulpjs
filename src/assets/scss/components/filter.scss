@@ -1,0 +1,67 @@
+.red {
+  background-color: red;
+}
+.orange {
+  background-color: orange;
+}
+.yellow {
+  background-color: yellow;
+}
+.blue {
+  background-color: blue;
+}
+.green {
+  background-color: green;
+}
+.red,
+.blue,
+.green,
+.orange {
+  color: $color-dark;
+}
+
+.filter-node {
+  width: 150px;
+  height: 150px;
+  background-color: #333;
+  float: left;
+  margin: 5px;
+  position: relative;
+  text-align: center;
+  transition: 0.3s all ease;
+}
+.node-box {
+  padding-top: 50px;
+}
+.filter-node.filter-me {
+  opacity: 0 !important;
+  visibility: hidden;
+  position: absolute;
+  top: 2000px;
+}
+
+.node-box {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  color: $color-light;
+}
+
+.filter__group--button {
+  padding: 25px;
+}
+
+.filter-button {
+  padding: px(8) px(16);
+  cursor: pointer;
+  color: $gray2;
+  transition: 0.3s all ease;
+  border-top: 2px solid transparent;
+
+  &.is-active {
+    border-top: 5px solid $color-primary;
+    font-weight: $font-bold;
+  }
+}

@@ -2,6 +2,7 @@ import '!style-loader!css-loader!sass-loader!import-glob-loader!../src/assets/sc
 import '../src/assets/js/scripts.js';
 import '../src/assets/js/menu';
 import '../src/assets/js/tab';
+import '../src/assets/js/filter';
 
 export const parameters = {
   actions: { argTypesRegex: '^on[A-Z].*' },

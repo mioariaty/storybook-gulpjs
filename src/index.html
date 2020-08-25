@@ -22,17 +22,89 @@
   </header>
 
   <main class="main">
+    <div class="grid-fluid">
+      <div class="col-desk-12">
+        <div>
+          <h2>Click on a button below to test the jQuery Data filter</h2>
+        </div>
+        <div class="filter__group--button row">
+          <div class="filter-button is-active" data-filter="*">All</div>
+          <div class="filter-button" data-filter="red">Red</div>
+          <div class="filter-button" data-filter="orange">Orange</div>
+          <div class="filter-button" data-filter="yellow">Yellow</div>
+          <div class="filter-button" data-filter="blue">Blue</div>
+          <div class="filter-button" data-filter="green">Green</div>
+        </div>
 
+        <div class="gallery-group">
+          <div class="filter-node" data-filter='["red"]'>
+            <div class="node-box">Red</div>
+          </div>
+          <div class="filter-node" data-filter='["orange"]'>
+            <div class="node-box">Orange</div>
+          </div>
+          <div class="filter-node" data-filter='["yellow"]'>
+            <div class="node-box">Yellow</div>
+          </div>
+          <div class="filter-node" data-filter='["blue"]'>
+            <div class="node-box">Blue</div>
+          </div>
+          <div class="filter-node" data-filter='["red"]'>
+            <div class="node-box">Red</div>
+          </div>
+          <div class="filter-node" data-filter='["blue"]'>
+            <div class="node-box">Blue</div>
+          </div>
+          <div class="filter-node" data-filter='["green"]'>
+            <div class="node-box">Green</div>
+          </div>
+          <div class="filter-node" data-filter='["green"]'>
+            <div class="node-box">Green</div>
+          </div>
+          <div class="filter-node" data-filter='["red"]'>
+            <div class="node-box">Red</div>
+          </div>
+          <div class="filter-node" data-filter='["red"]'>
+            <div class="node-box">Red</div>
+          </div>
+          <div class="filter-node" data-filter='["orange"]'>
+            <div class="node-box">Orange</div>
+          </div>
+          <div class="filter-node" data-filter='["yellow"]'>
+            <div class="node-box">Yellow</div>
+          </div>
+          <div class="filter-node" data-filter='["blue"]'>
+            <div class="node-box">Blue</div>
+          </div>
+          <div class="filter-node" data-filter='["red"]'>
+            <div class="node-box">Red</div>
+          </div>
+          <div class="filter-node" data-filter='["blue"]'>
+            <div class="node-box">Blue</div>
+          </div>
+          <div class="filter-node" data-filter='["green"]'>
+            <div class="node-box ">Green</div>
+          </div>
+          <div class="filter-node" data-filter='["green"]'>
+            <div class="node-box ">Green</div>
+          </div>
+          <div class="filter-node" data-filter='["red"]'>
+            <div class="node-box">Red</div>
+          </div>
+        </div>
+      </div>
+    </div>
   </main>
 
   <footer class="footer">
 
   </footer>
 
-  <script src="assets/js/scripts.js"></script>
+  <!-- <script src="assets/js/scripts.js"></script>
   <script src="./assets/js/menu.js"></script>
-  <script src="assets/js/tab.js"></script>
-  <script>
+  <script src="assets/js/tab.js"></script> -->
+  <script src="./assets/js/filter.js"></script>
+  <!-- <script>
     const horizonTab = Tab({
       el: '#tab-horizon',
       tabLinks: '.tab__link',
@@ -45,7 +117,7 @@
       tabPanes: '.tab__pane',
     }).render();
 
-  </script>
+  </script> -->
 </body>
 
 </html>
