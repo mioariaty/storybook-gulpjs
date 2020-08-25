@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', function () {
     },
   });
 
-  const demohorizontal = new Swiper('.demo2', {
+  const demoFraction = new Swiper('.demo2', {
     pagination: {
       el: '.swiper-pagination',
       type: 'fraction',
@@ -54,23 +54,53 @@ document.addEventListener('DOMContentLoaded', function () {
     },
   });
 
+  const demoHorizontal = new Swiper('.demo3', {
+    slidesPerView: 2,
+    slidesPerGroup: 1,
+    spaceBetween: 120,
+    loop: true,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    breakpoints: {
+      // when window width is >= 320px
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 20,
+      },
+      // when window width is >= 480px
+      480: {
+        slidesPerView: 1,
+        spaceBetween: 30,
+      },
+      // when window width is >= 640px
+      640: {
+        slidesPerView: 2,
+        spaceBetween: 120,
+      },
+    },
+  });
+
   /*
     hover focus input
   ***********************************/
   const searchBtn = document.querySelector('.btn--search');
   const searchInput = document.querySelector('#searchInput');
 
-  const handleHover = () => {
-    if (window.innerWidth > 1023) {
-      if (searchInput.classList.contains('hidden')) {
-        searchInput.classList.remove('hidden');
-      } else {
-        searchInput.classList.add('hidden');
+  if (searchInput) {
+    const handleHover = () => {
+      if (window.innerWidth > 1023) {
+        if (searchInput.classList.contains('hidden')) {
+          searchInput.classList.remove('hidden');
+        } else {
+          searchInput.classList.add('hidden');
+        }
+        searchInput.focus();
       }
-      searchInput.focus();
-    }
-  };
+    };
 
-  searchBtn.addEventListener('mouseenter', handleHover);
-  searchInput.addEventListener('mouseover', () => searchInput.focus());
+    searchBtn.addEventListener('mouseenter', handleHover);
+    searchInput.addEventListener('mouseover', () => searchInput.focus());
+  }
 });

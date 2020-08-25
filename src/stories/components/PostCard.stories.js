@@ -10,10 +10,10 @@ export const Card = () => {
     <div class="grid">
       <div class="col-desk-6">
         <a href="" class="post">
-          <div class="date">
-            <div class="date-content text-center">
-              <h2 class="m-0">01</h2>
-              <h3 class="m-0">NOV</h3>
+          <div class="calendar">
+            <div class="calendar__content text-center">
+              <h2 class="m-0 calendar__day">01</h2>
+              <h3 class="m-0 calendar__month">NOV</h3>
             </div>
           </div>
           <div class="post__content">
@@ -32,10 +32,10 @@ export const Card = () => {
       </div>
       <div class="col-desk-6">
         <a href="" class="post">
-          <div class="date">
-            <div class="date-content text-center">
-              <h2 class="m-0">01</h2>
-              <h3 class="m-0">NOV</h3>
+          <div class="calendar">
+            <div class="calendar__content text-center">
+              <h2 class="m-0 calendar__day">01</h2>
+              <h3 class="m-0 calendar__month">NOV</h3>
             </div>
           </div>
           <div class="post__content">
@@ -54,10 +54,10 @@ export const Card = () => {
       </div>
       <div class="col-desk-12 mt-5">
         <a href="" class="post">
-          <div class="date">
-            <div class="date-content text-center">
-              <h2 class="m-0">01</h2>
-              <h3 class="m-0">NOV</h3>
+          <div class="calendar">
+            <div class="calendar__content text-center">
+              <h2 class="m-0 calendar__day">01</h2>
+              <h3 class="m-0 calendar__month">NOV</h3>
             </div>
           </div>
           <div class="post__content">

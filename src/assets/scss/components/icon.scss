@@ -32,3 +32,9 @@
 .icon-bg--primary {
   background-color: $color-primary;
 }
+
+.icon--transparent {
+  width: auto;
+  height: auto;
+  background-color: transparent;
+}
