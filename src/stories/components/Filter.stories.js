@@ -40,11 +40,11 @@ export const Vertical = () => {
                   <a href="">
                     <div class="img-wrapper">
                       <img src="${imgBox1}" class="img-cover" alt="" />
+                    </div>
+                    <div class="box__details">
                       <p class="box__link">
                         <span class="pe-7s-play"></span>
                       </p>
-                    </div>
-                    <div class="box__details">
                       <h3 class="box__title">DENOUNCING PLEASURE</h3>
                       <p class="box__desc">Drink & Food</p>
                     </div>
@@ -59,11 +59,11 @@ export const Vertical = () => {
                   <a href="">
                     <div class="img-wrapper">
                       <img src="${imgBox2}" class="img-cover" alt="" />
+                    </div>
+                    <div class="box__details">
                       <p class="box__link">
                         <span class="pe-7s-play"></span>
                       </p>
-                    </div>
-                    <div class="box__details">
                       <h3 class="box__title">DENOUNCING PLEASURE</h3>
                       <p class="box__desc">Drink & Food</p>
                     </div>
@@ -78,11 +78,11 @@ export const Vertical = () => {
                   <a href="">
                     <div class="img-wrapper">
                       <img src="${imgBox3}" class="img-cover" alt="" />
+                    </div>
+                    <div class="box__details">
                       <p class="box__link">
                         <span class="pe-7s-play"></span>
                       </p>
-                    </div>
-                    <div class="box__details">
                       <h3 class="box__title">DENOUNCING PLEASURE</h3>
                       <p class="box__desc">Drink & Food</p>
                     </div>
@@ -101,11 +101,11 @@ export const Vertical = () => {
                   <a href="">
                     <div class="img-wrapper">
                       <img src="${imgBox4}" class="img-cover" alt="" />
+                    </div>
+                    <div class="box__details">
                       <p class="box__link">
                         <span class="pe-7s-play"></span>
                       </p>
-                    </div>
-                    <div class="box__details">
                       <h3 class="box__title">DENOUNCING PLEASURE</h3>
                       <p class="box__desc">Drink & Food</p>
                     </div>
@@ -120,11 +120,11 @@ export const Vertical = () => {
                   <a href="">
                     <div class="img-wrapper">
                       <img src="${imgBox5}" class="img-cover" alt="" />
+                    </div>
+                    <div class="box__details">
                       <p class="box__link">
                         <span class="pe-7s-play"></span>
                       </p>
-                    </div>
-                    <div class="box__details">
                       <h3 class="box__title">DENOUNCING PLEASURE</h3>
                       <p class="box__desc">Drink & Food</p>
                     </div>
@@ -139,11 +139,11 @@ export const Vertical = () => {
                   <a href="">
                     <div class="img-wrapper">
                       <img src="${imgBox6}" class="img-cover" alt="" />
+                    </div>
+                    <div class="box__details">
                       <p class="box__link">
                         <span class="pe-7s-play"></span>
                       </p>
-                    </div>
-                    <div class="box__details">
                       <h3 class="box__title">DENOUNCING PLEASURE</h3>
                       <p class="box__desc">Drink & Food</p>
                     </div>
@@ -161,11 +161,11 @@ export const Vertical = () => {
                   <a href="">
                     <div class="img-wrapper">
                       <img src="${imgBox7}" class="img-cover" alt="" />
+                    </div>
+                    <div class="box__details">
                       <p class="box__link">
                         <span class="pe-7s-play"></span>
                       </p>
-                    </div>
-                    <div class="box__details">
                       <h3 class="box__title">DENOUNCING PLEASURE</h3>
                       <p class="box__desc">Drink & Food</p>
                     </div>
@@ -180,11 +180,11 @@ export const Vertical = () => {
                   <a href="">
                     <div class="img-wrapper">
                       <img src="${imgBox8}" class="img-cover" alt="" />
+                    </div>
+                    <div class="box__details">
                       <p class="box__link">
                         <span class="pe-7s-play"></span>
                       </p>
-                    </div>
-                    <div class="box__details">
                       <h3 class="box__title">DENOUNCING PLEASURE</h3>
                       <p class="box__desc">Drink & Food</p>
                     </div>
@@ -199,11 +199,11 @@ export const Vertical = () => {
                   <a href="">
                     <div class="img-wrapper">
                       <img src="${imgBox9}" class="img-cover" alt="" />
+                    </div>
+                    <div class="box__details">
                       <p class="box__link">
                         <span class="pe-7s-play"></span>
                       </p>
-                    </div>
-                    <div class="box__details">
                       <h3 class="box__title">DENOUNCING PLEASURE</h3>
                       <p class="box__desc">Drink & Food</p>
                     </div>
@@ -236,7 +236,7 @@ export const Horizontal = () => {
     <div class="gallery">
       <div class="grid-fluid ">
 
-        <div class="col-mob-12 col-desk-3">
+        <div class="col-mob-12 col-desk-2">
           <div class="gallery-nav row row-column">
             <div class="gallery-nav__link is-active" data-filter="all">All</div>
             <div class="gallery-nav__link" data-filter="nature">Nature</div>
@@ -248,7 +248,7 @@ export const Horizontal = () => {
 
 
       <!-- gallery items -->
-        <div class="col-mob-12 col-desk-9">
+        <div class="col-mob-12 col-desk-10">
 
           <div class="masonry">
 
@@ -259,11 +259,11 @@ export const Horizontal = () => {
                   <a href="">
                     <div class="img-wrapper">
                       <img src="${imgBox1}" class="img-cover" alt="" />
+                    </div>
+                    <div class="box__details">
                       <p class="box__link">
                         <span class="pe-7s-play"></span>
                       </p>
-                    </div>
-                    <div class="box__details">
                       <h3 class="box__title">DENOUNCING PLEASURE</h3>
                       <p class="box__desc">Drink & Food</p>
                     </div>
@@ -278,11 +278,11 @@ export const Horizontal = () => {
                   <a href="">
                     <div class="img-wrapper">
                       <img src="${imgBox2}" class="img-cover" alt="" />
+                    </div>
+                    <div class="box__details">
                       <p class="box__link">
                         <span class="pe-7s-play"></span>
                       </p>
-                    </div>
-                    <div class="box__details">
                       <h3 class="box__title">DENOUNCING PLEASURE</h3>
                       <p class="box__desc">Drink & Food</p>
                     </div>
@@ -297,11 +297,11 @@ export const Horizontal = () => {
                   <a href="">
                     <div class="img-wrapper">
                       <img src="${imgBox3}" class="img-cover" alt="" />
+                    </div>
+                    <div class="box__details">
                       <p class="box__link">
                         <span class="pe-7s-play"></span>
                       </p>
-                    </div>
-                    <div class="box__details">
                       <h3 class="box__title">DENOUNCING PLEASURE</h3>
                       <p class="box__desc">Drink & Food</p>
                     </div>
@@ -316,11 +316,11 @@ export const Horizontal = () => {
                   <a href="">
                     <div class="img-wrapper">
                       <img src="${imgBox4}" class="img-cover" alt="" />
+                    </div>
+                    <div class="box__details">
                       <p class="box__link">
                         <span class="pe-7s-play"></span>
                       </p>
-                    </div>
-                    <div class="box__details">
                       <h3 class="box__title">DENOUNCING PLEASURE</h3>
                       <p class="box__desc">Drink & Food</p>
                     </div>
@@ -335,11 +335,11 @@ export const Horizontal = () => {
                   <a href="">
                     <div class="img-wrapper">
                       <img src="${imgBox5}" class="img-cover" alt="" />
+                    </div>
+                    <div class="box__details">
                       <p class="box__link">
                         <span class="pe-7s-play"></span>
                       </p>
-                    </div>
-                    <div class="box__details">
                       <h3 class="box__title">DENOUNCING PLEASURE</h3>
                       <p class="box__desc">Drink & Food</p>
                     </div>
@@ -354,11 +354,11 @@ export const Horizontal = () => {
                   <a href="">
                     <div class="img-wrapper">
                       <img src="${imgBox6}" class="img-cover" alt="" />
+                    </div>
+                    <div class="box__details">
                       <p class="box__link">
                         <span class="pe-7s-play"></span>
                       </p>
-                    </div>
-                    <div class="box__details">
                       <h3 class="box__title">DENOUNCING PLEASURE</h3>
                       <p class="box__desc">Drink & Food</p>
                     </div>
@@ -373,11 +373,11 @@ export const Horizontal = () => {
                   <a href="">
                     <div class="img-wrapper">
                       <img src="${imgBox7}" class="img-cover" alt="" />
+                    </div>
+                    <div class="box__details">
                       <p class="box__link">
                         <span class="pe-7s-play"></span>
                       </p>
-                    </div>
-                    <div class="box__details">
                       <h3 class="box__title">DENOUNCING PLEASURE</h3>
                       <p class="box__desc">Drink & Food</p>
                     </div>
@@ -392,11 +392,11 @@ export const Horizontal = () => {
                   <a href="">
                     <div class="img-wrapper">
                       <img src="${imgBox8}" class="img-cover" alt="" />
+                    </div>
+                    <div class="box__details">
                       <p class="box__link">
                         <span class="pe-7s-play"></span>
                       </p>
-                    </div>
-                    <div class="box__details">
                       <h3 class="box__title">DENOUNCING PLEASURE</h3>
                       <p class="box__desc">Drink & Food</p>
                     </div>
@@ -411,11 +411,11 @@ export const Horizontal = () => {
                   <a href="">
                     <div class="img-wrapper">
                       <img src="${imgBox9}" class="img-cover" alt="" />
+                    </div>
+                    <div class="box__details">
                       <p class="box__link">
                         <span class="pe-7s-play"></span>
                       </p>
-                    </div>
-                    <div class="box__details">
                       <h3 class="box__title">DENOUNCING PLEASURE</h3>
                       <p class="box__desc">Drink & Food</p>
                     </div>
