@@ -1,0 +1,33 @@
+.text {
+  font-family: $font-secondary;
+  font-weight: $font-bold;
+  letter-spacing: 0.15rem;
+
+  position: relative;
+  display: inline;
+}
+.text--underline {
+  font-size: px(20);
+  padding: px(10) 0;
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 40%;
+    height: 4px;
+    background-color: $color-dark;
+  }
+}
+
+.text--image {
+  font-size: px(100);
+
+  background-repeat: repeat;
+  background-size: cover;
+  background-position: center center;
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-font-smoothing: antialiased;
+}

@@ -35,52 +35,55 @@ document.addEventListener('DOMContentLoaded', function () {
   /*
     carousel
   ***********************************/
+  const swiperContainer = document.querySelector('.swiper-container');
 
-  const demoVertical = new Swiper('.demo1', {
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-    },
-  });
+  if (swiperContainer) {
+    const demoVertical = new Swiper('.demo1', {
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    });
 
-  const demoFraction = new Swiper('.demo2', {
-    pagination: {
-      el: '.swiper-pagination',
-      type: 'fraction',
-    },
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-  });
+    const demoFraction = new Swiper('.demo2', {
+      pagination: {
+        el: '.swiper-pagination',
+        type: 'fraction',
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
 
-  const demoHorizontal = new Swiper('.demo3', {
-    slidesPerView: 2,
-    slidesPerGroup: 1,
-    spaceBetween: 120,
-    loop: true,
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-    breakpoints: {
-      // when window width is >= 320px
-      320: {
-        slidesPerView: 1,
-        spaceBetween: 20,
+    const demoHorizontal = new Swiper('.demo3', {
+      slidesPerView: 2,
+      slidesPerGroup: 1,
+      spaceBetween: 120,
+      loop: true,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
       },
-      // when window width is >= 480px
-      480: {
-        slidesPerView: 1,
-        spaceBetween: 30,
+      breakpoints: {
+        // when window width is >= 320px
+        320: {
+          slidesPerView: 1,
+          spaceBetween: 20,
+        },
+        // when window width is >= 480px
+        480: {
+          slidesPerView: 1,
+          spaceBetween: 30,
+        },
+        // when window width is >= 640px
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 120,
+        },
       },
-      // when window width is >= 640px
-      640: {
-        slidesPerView: 2,
-        spaceBetween: 120,
-      },
-    },
-  });
+    });
+  }
 
   /*
     hover focus input

@@ -79,7 +79,7 @@ export const OnHover = () => {
 export const OnClick = () => {
   return /* html */ `
     <div class="grid">
-      <div class="col-desk-3">
+      <div class="col-desk-2">
         <code>Select option</code>
         <div class="dropdown">
           <form class="form">
