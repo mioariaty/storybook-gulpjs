@@ -45,6 +45,10 @@
   transition: 0.3s all ease;
   outline: none;
 
+  @include media("<tablet") {
+    padding: px(14) px(11) !important;
+  }
+
   &:hover {
     border-color: #40a9ff;
   }

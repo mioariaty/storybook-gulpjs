@@ -3,9 +3,9 @@
 const DataFilter = function (options) {
   // define variables & dom selector
   this.filterWrapper = document.querySelector(options.filterWrapper);
+  this.filterNavItems = Array.from(this.filterWrapper.querySelectorAll(options.filterNavItems));
   this.filterListItems = Array.from(this.filterWrapper.querySelectorAll(options.filterListItems));
   this.transitionSpeed = options.transitionSpeed;
-  this.filterNavItems = Array.from(this.filterWrapper.querySelectorAll(options.filterNavItems));
 
   this.activeIndex = 0;
   this.isInit = false;
@@ -16,17 +16,15 @@ DataFilter.prototype = {
     if (!this.isInit) {
       this.isInit = true;
       this.filterListItems.forEach((node) => (node.style.transition = this.transitionSpeed));
-      this.filterNavItems.forEach((filterButton, index) => this.handleClicked(filterButton, index));
+      this.filterNavItems.forEach((navItem, index) => this.handleClicked(navItem, index));
     }
   },
-  handleClicked: function (link, index) {
-    link.addEventListener('click', (event) => {
+  handleClicked: function (navItem, index) {
+    navItem.addEventListener('click', (event) => {
       event.preventDefault();
-      const curNodeVal = event.currentTarget.attributes[1].nodeValue;
-      console.log(event);
-      console.log(curNodeVal);
+      const curAttrValue = event.target.getAttribute('data-filter');
       this.handleToggleActive(index);
-      this.getCurrentGallery(curNodeVal);
+      this.getCurrentGallery(curAttrValue);
     });
   },
   handleToggleActive: function (index) {
@@ -36,30 +34,32 @@ DataFilter.prototype = {
       this.activeIndex = index;
     }
   },
-  getCurrentGallery: function (curNodeVal) {
+  getCurrentGallery: function (curAttrValue) {
     return this.filterListItems.map((item) => {
-      if (curNodeVal === 'all') {
-        item.classList.remove('filter-me');
-      } else if (item.getAttribute('data-filter').includes(curNodeVal) === false) {
-        item.classList.add('filter-me');
+      if (curAttrValue === 'all') {
+        item.classList.remove('filter-hidden');
+      } else if (item.getAttribute('data-filter').includes(curAttrValue) === false) {
+        item.classList.add('filter-hidden');
       } else {
-        item.classList.remove('filter-me');
+        item.classList.remove('filter-hidden');
       }
     });
   },
 };
 
+// window.DataFilter = DataFilter;
+
 // module.exports = DataFilter;
 const example = new DataFilter({
   filterWrapper: '#filter-wrapper1',
-  filterListItems: '.gallery__item',
   filterNavItems: '.gallery-nav__link',
+  filterListItems: '.gallery__item',
   transitionSpeed: 'all 0.5s ease',
 }).render();
 
 const example2 = new DataFilter({
   filterWrapper: '#filter-wrapper2',
-  filterListItems: '.gallery__item',
   filterNavItems: '.gallery-nav__link',
+  filterListItems: '.gallery__item',
   transitionSpeed: 'all 0.5s ease',
 }).render();

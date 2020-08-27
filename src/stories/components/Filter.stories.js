@@ -1,4 +1,3 @@
-import '../helpers/filter';
 import imgBox1 from '../../assets/images/box-default1.png';
 import imgBox2 from '../../assets/images/box-default2.png';
 import imgBox3 from '../../assets/images/box-default3.png';
@@ -21,7 +20,7 @@ export const Vertical = () => {
         <h2>Click on a button below to test the Data filter</h2>
 
         <!-- gallery -->
-        <div class="gallery">
+        <div id="filter-wrapper1" class="gallery">
 
           <div class="gallery-nav row">
             <div class="gallery-nav__link is-active" data-filter="all">All</div>

@@ -8,6 +8,10 @@
   max-width: px(600);
   min-width: px(180);
   position: relative;
+
+  textarea {
+    resize: none;
+  }
 }
 .form__item {
   box-sizing: border-box;
@@ -24,6 +28,8 @@
   overflow: hidden;
   white-space: nowrap;
   vertical-align: middle;
+  font-size: px(14);
+  font-family: $font-secondary;
 }
 
 .form--vertical {
