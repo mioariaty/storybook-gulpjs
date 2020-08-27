@@ -49,3 +49,9 @@
   -ms-flex-flow: row wrap;
   flex-flow: row wrap;
 }
+
+.row-column {
+  @include media(">tablet") {
+    flex-direction: column;
+  }
+}
