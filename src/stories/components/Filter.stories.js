@@ -1,35 +1,27 @@
-<!DOCTYPE html>
-<html lang="en">
+import '../helpers/filter';
+import imgBox1 from '../../assets/images/box-default1.png';
+import imgBox2 from '../../assets/images/box-default2.png';
+import imgBox3 from '../../assets/images/box-default3.png';
+import imgBox4 from '../../assets/images/box4.png';
+import imgBox5 from '../../assets/images/box5.png';
+import imgBox6 from '../../assets/images/box6.png';
+import imgBox7 from '../../assets/images/box7.png';
+import imgBox8 from '../../assets/images/box8.png';
+import imgBox9 from '../../assets/images/box9.png';
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home</title>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
-    rel="stylesheet">
-  <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="assets/vendors/fontawesome/all.min.css">
-  <link rel="stylesheet" href="assets/css/styles.css">
-</head>
+export default {
+  title: 'Components/Data Filter',
+};
 
-<body>
-
-  <header class="header">
-
-  </header>
-
-  <main class="main">
+export const Vertical = () => {
+  return /* html */ `
     <div class="grid-fluid">
       <div class="col-desk-12">
 
         <h2>Click on a button below to test the Data filter</h2>
-        <h2>Vertical</h2>
 
         <!-- gallery -->
-        <div id="filter-wrapper1" class="gallery">
+        <div class="gallery">
 
           <div class="gallery-nav row">
             <div class="gallery-nav__link is-active" data-filter="all">All</div>
@@ -48,8 +40,7 @@
                 <div class="box">
                   <a href="">
                     <div class="img-wrapper">
-                      <img src="assets/images/box-default1.png"
-                        class="img-cover" alt="" />
+                      <img src="${imgBox1}" class="img-cover" alt="" />
                       <p class="box__link">
                         <span class="pe-7s-play"></span>
                       </p>
@@ -68,8 +59,7 @@
                 <div class="box">
                   <a href="">
                     <div class="img-wrapper">
-                      <img src="assets/images/box-default2.png"
-                        class="img-cover" alt="" />
+                      <img src="${imgBox2}" class="img-cover" alt="" />
                       <p class="box__link">
                         <span class="pe-7s-play"></span>
                       </p>
@@ -88,8 +78,7 @@
                 <div class="box">
                   <a href="">
                     <div class="img-wrapper">
-                      <img src="assets/images/box-default3.png"
-                        class="img-cover" alt="" />
+                      <img src="${imgBox3}" class="img-cover" alt="" />
                       <p class="box__link">
                         <span class="pe-7s-play"></span>
                       </p>
@@ -112,8 +101,7 @@
                 <div class="box">
                   <a href="">
                     <div class="img-wrapper">
-                      <img src="assets/images/box4.png" class="img-cover"
-                        alt="" />
+                      <img src="${imgBox4}" class="img-cover" alt="" />
                       <p class="box__link">
                         <span class="pe-7s-play"></span>
                       </p>
@@ -132,8 +120,7 @@
                 <div class="box">
                   <a href="">
                     <div class="img-wrapper">
-                      <img src="assets/images/box5.png" class="img-cover"
-                        alt="" />
+                      <img src="${imgBox5}" class="img-cover" alt="" />
                       <p class="box__link">
                         <span class="pe-7s-play"></span>
                       </p>
@@ -152,8 +139,7 @@
                 <div class="box">
                   <a href="">
                     <div class="img-wrapper">
-                      <img src="assets/images/box6.png" class="img-cover"
-                        alt="" />
+                      <img src="${imgBox6}" class="img-cover" alt="" />
                       <p class="box__link">
                         <span class="pe-7s-play"></span>
                       </p>
@@ -171,12 +157,11 @@
 
             <!-- col 3 -->
             <div class="masonry__item">
-              <div class="gallery__item" data-filter='["animator"]'>
+              <div class="gallery__item" data-filter='["orange"]'>
                 <div class="box">
                   <a href="">
                     <div class="img-wrapper">
-                      <img src="assets/images/box7.png" class="img-cover"
-                        alt="" />
+                      <img src="${imgBox7}" class="img-cover" alt="" />
                       <p class="box__link">
                         <span class="pe-7s-play"></span>
                       </p>
@@ -195,8 +180,7 @@
                 <div class="box">
                   <a href="">
                     <div class="img-wrapper">
-                      <img src="assets/images/box8.png" class="img-cover"
-                        alt="" />
+                      <img src="${imgBox8}" class="img-cover" alt="" />
                       <p class="box__link">
                         <span class="pe-7s-play"></span>
                       </p>
@@ -215,8 +199,7 @@
                 <div class="box">
                   <a href="">
                     <div class="img-wrapper">
-                      <img src="assets/images/box9.png" class="img-cover"
-                        alt="" />
+                      <img src="${imgBox9}" class="img-cover" alt="" />
                       <p class="box__link">
                         <span class="pe-7s-play"></span>
                       </p>
@@ -239,31 +222,35 @@
       </div>
 
     </div>
+  `;
+};
 
-    <hr>
-    <div class="grid-fluid">
+export const Horizontal = () => {
+  return /* html */ `
+    <div class="grid">
       <div class="col-desk-12">
-        <h2>Horizontal</h2>
+        <h2>Click on a button below to test the Data filter</h2>
       </div>
     </div>
 
-    <div id="filter-wrapper2" class="gallery">
-      <div class="grid-fluid">
-        <!-- nav -->
+      <!-- gallery -->
+    <div class="gallery">
+      <div class="grid-fluid ">
+
         <div class="col-mob-12 col-desk-3">
           <div class="gallery-nav row row-column">
             <div class="gallery-nav__link is-active" data-filter="all">All</div>
             <div class="gallery-nav__link" data-filter="nature">Nature</div>
-            <div class="gallery-nav__link" data-filter="drinknfood">Drink & food
-            </div>
+            <div class="gallery-nav__link" data-filter="drinknfood">Drink & food</div>
             <div class="gallery-nav__link" data-filter="garden">Garden</div>
             <div class="gallery-nav__link" data-filter="animator">Animator</div>
           </div>
         </div>
-        <!-- nav -->
 
-        <!-- items -->
+
+      <!-- gallery items -->
         <div class="col-mob-12 col-desk-9">
+
           <div class="masonry">
 
             <div class="masonry__item">
@@ -272,8 +259,7 @@
                 <div class="box">
                   <a href="">
                     <div class="img-wrapper">
-                      <img src="assets/images/box-default1.png"
-                        class="img-cover" alt="" />
+                      <img src="${imgBox1}" class="img-cover" alt="" />
                       <p class="box__link">
                         <span class="pe-7s-play"></span>
                       </p>
@@ -292,8 +278,7 @@
                 <div class="box">
                   <a href="">
                     <div class="img-wrapper">
-                      <img src="assets/images/box-default2.png"
-                        class="img-cover" alt="" />
+                      <img src="${imgBox2}" class="img-cover" alt="" />
                       <p class="box__link">
                         <span class="pe-7s-play"></span>
                       </p>
@@ -312,8 +297,7 @@
                 <div class="box">
                   <a href="">
                     <div class="img-wrapper">
-                      <img src="assets/images/box-default3.png"
-                        class="img-cover" alt="" />
+                      <img src="${imgBox3}" class="img-cover" alt="" />
                       <p class="box__link">
                         <span class="pe-7s-play"></span>
                       </p>
@@ -332,8 +316,7 @@
                 <div class="box">
                   <a href="">
                     <div class="img-wrapper">
-                      <img src="assets/images/box4.png" class="img-cover"
-                        alt="" />
+                      <img src="${imgBox4}" class="img-cover" alt="" />
                       <p class="box__link">
                         <span class="pe-7s-play"></span>
                       </p>
@@ -352,8 +335,7 @@
                 <div class="box">
                   <a href="">
                     <div class="img-wrapper">
-                      <img src="assets/images/box5.png" class="img-cover"
-                        alt="" />
+                      <img src="${imgBox5}" class="img-cover" alt="" />
                       <p class="box__link">
                         <span class="pe-7s-play"></span>
                       </p>
@@ -372,8 +354,7 @@
                 <div class="box">
                   <a href="">
                     <div class="img-wrapper">
-                      <img src="assets/images/box6.png" class="img-cover"
-                        alt="" />
+                      <img src="${imgBox6}" class="img-cover" alt="" />
                       <p class="box__link">
                         <span class="pe-7s-play"></span>
                       </p>
@@ -388,12 +369,11 @@
             </div>
 
             <div class="masonry__item">
-              <div class="gallery__item" data-filter='["animator"]'>
+              <div class="gallery__item" data-filter='["orange"]'>
                 <div class="box">
                   <a href="">
                     <div class="img-wrapper">
-                      <img src="assets/images/box7.png" class="img-cover"
-                        alt="" />
+                      <img src="${imgBox7}" class="img-cover" alt="" />
                       <p class="box__link">
                         <span class="pe-7s-play"></span>
                       </p>
@@ -412,8 +392,7 @@
                 <div class="box">
                   <a href="">
                     <div class="img-wrapper">
-                      <img src="assets/images/box8.png" class="img-cover"
-                        alt="" />
+                      <img src="${imgBox8}" class="img-cover" alt="" />
                       <p class="box__link">
                         <span class="pe-7s-play"></span>
                       </p>
@@ -432,8 +411,7 @@
                 <div class="box">
                   <a href="">
                     <div class="img-wrapper">
-                      <img src="assets/images/box9.png" class="img-cover"
-                        alt="" />
+                      <img src="${imgBox9}" class="img-cover" alt="" />
                       <p class="box__link">
                         <span class="pe-7s-play"></span>
                       </p>
@@ -448,18 +426,13 @@
             </div>
 
           </div>
+          <!-- !gallery items -->
         </div>
-        <!-- items -->
+
       </div>
+
     </div>
-  </main>
+      <!-- !gallery -->
 
-  <footer class="footer">
-
-  </footer>
-
-
-  <script src="./assets/js/filter.js"></script>
-</body>
-
-</html>
+  `;
+};

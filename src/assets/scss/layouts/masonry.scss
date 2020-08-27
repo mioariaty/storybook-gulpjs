@@ -1,0 +1,19 @@
+.masonry {
+  margin: px(30) auto;
+  padding: 1rem;
+  column-gap: px(30);
+  max-width: 1200px;
+
+  @include media(">=tablet") {
+    column-count: 3;
+  }
+  @include media("<tablet") {
+    column-count: 1;
+  }
+}
+
+/* The Masonry Brick */
+.masonry__item {
+  margin: 0;
+  break-inside: avoid;
+}

@@ -19,7 +19,7 @@ export const BoxDefault = () => {
         <div class="box">
           <a href="">
             <div class="box__image">
-              <img src="${boxDefault1}" alt=""/>
+              <img src="${boxDefault1}" class="img-cover" alt=""/>
               <p class="box__link">
                 <span class="pe-7s-play"></span>
               </p>

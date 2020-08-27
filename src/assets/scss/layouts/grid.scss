@@ -9,7 +9,6 @@
     padding: 0.4rem;
   }
 }
-
 .grid {
   @include grid-base($desk-grid-width);
 
@@ -48,4 +47,10 @@
   -webkit-box-direction: normal;
   -ms-flex-flow: row wrap;
   flex-flow: row wrap;
+}
+
+.row-column {
+  @include media(">tablet") {
+    flex-direction: column;
+  }
 }
