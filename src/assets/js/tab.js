@@ -38,15 +38,3 @@ Tab.prototype = {
 
 // export global namespace
 window.Tab = Tab;
-
-const horizonTab = new Tab({
-  tabWrapper: '#tab-horizon',
-  tabLinks: '.tab__link',
-  tabPanes: '.tab__pane',
-}).render();
-
-const verticalTab = new Tab({
-  tabWrapper: '#tab2',
-  tabLinks: '.tab__link',
-  tabPanes: '.tab__pane',
-}).render();
