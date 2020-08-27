@@ -7,7 +7,7 @@
   transition: 0.5s all ease;
 }
 
-.gallery__item.filter-me {
+.gallery__item.filter-hidden {
   opacity: 0 !important;
   visibility: hidden;
   position: absolute;
@@ -15,7 +15,12 @@
 }
 
 .gallery-nav {
-  padding: 25px;
+  padding: px(25);
+
+  @include media("<tablet") {
+    justify-content: center;
+    padding: px(10) px(4);
+  }
 }
 
 .gallery-nav__link {
@@ -25,6 +30,10 @@
   transition: 0.3s all ease;
   position: relative;
   width: fit-content;
+
+  @include media("<tablet") {
+    padding: px(4) px(8);
+  }
 
   &.is-active {
     &:after {
@@ -36,6 +45,27 @@
       width: 70%;
       height: 4px;
       background-color: $color-primary;
+
+      @include media("<tablet") {
+        width: 90%;
+      }
+    }
+  }
+}
+
+// horizontal nav
+.gallery-nav--horizontal {
+  .gallery-nav__link {
+    padding-left: px(40);
+    &.is-active {
+      &:after {
+        top: 50%;
+        left: 0;
+        transform: translate(0%, -50%);
+        width: px(30);
+        height: 2px;
+        background-color: $color-dark !important;
+      }
     }
   }
 }

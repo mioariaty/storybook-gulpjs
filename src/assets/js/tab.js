@@ -1,55 +1,52 @@
 'use strict';
 const Tab = function (options) {
   // select tab element
-  const el = document.querySelector(options.el);
-  const tabLinks = el.querySelectorAll(options.tabLinks);
-  const tabPanes = el.querySelectorAll(options.tabPanes);
+  this.tabWrapper = document.querySelector(options.tabWrapper);
+  this.tabLinks = this.tabWrapper.querySelectorAll(options.tabLinks);
+  this.tabPanes = this.tabWrapper.querySelectorAll(options.tabPanes);
 
-  let activeIndex = 0;
-  let isTabRender = false;
+  this.activeIndex = 0;
+  this.isTabRender = false;
+};
 
-  // init
-  const render = () => {
-    if (!isTabRender) {
-      isTabRender = true;
-      el.classList.remove('no-js');
-      tabLinks.forEach((link, index) => _handleClick(link, index));
+Tab.prototype = {
+  render: function () {
+    if (!this.isTabRender) {
+      this.isTabRender = true;
+      this.tabWrapper.classList.remove('no-js');
+      this.tabLinks.forEach((link, index) => this.handleClick(link, index));
     }
-  };
-
-  // handle tab link click
-  const _handleClick = (link, index) => {
+  },
+  handleClick: function (link, index) {
     link.addEventListener('click', (e) => {
       e.preventDefault();
-      goToTab(index);
+      this.goToTab(index);
     });
-  };
+  },
+  goToTab: function (index) {
+    if (index !== this.activeIndex && index >= 0 && index <= this.tabLinks.length) {
+      this.tabLinks[this.activeIndex].classList.remove('is-active');
+      this.tabLinks[index].classList.add('is-active');
 
-  // go to current tab pane
-  const goToTab = (index) => {
-    if (index !== activeIndex && index >= 0 && index <= tabLinks.length) {
-      tabLinks[activeIndex].classList.remove('is-active');
-      tabLinks[index].classList.add('is-active');
+      this.tabPanes[this.activeIndex].classList.remove('is-active');
+      this.tabPanes[index].classList.add('is-active');
 
-      tabPanes[activeIndex].classList.remove('is-active');
-      tabPanes[index].classList.add('is-active');
-
-      activeIndex = index;
+      this.activeIndex = index;
     }
-  };
-
-  return {
-    render: render,
-    goToTab: goToTab,
-  };
+  },
 };
 
 // export global namespace
 window.Tab = Tab;
 
-// const testTab = Tab({
-//   el: '.tab-wrapper',
-//   tabLinks: '.tab__link',
-//   tabPanes: '.tab__pane',
-// }).render;
-// testTab.render();
+const horizonTab = new Tab({
+  tabWrapper: '#tab-horizon',
+  tabLinks: '.tab__link',
+  tabPanes: '.tab__pane',
+}).render();
+
+const verticalTab = new Tab({
+  tabWrapper: '#tab2',
+  tabLinks: '.tab__link',
+  tabPanes: '.tab__pane',
+}).render();

@@ -1,0 +1,300 @@
+/*
+Naming convention:
+Block
+element
+-modifier
+*/
+
+.menu {
+  display: none;
+  position: relative;
+}
+/* Three basic menu layouts */
+/* This also enforces that menu is a ul, and that
+  * layout modifier is specified
+*/
+ul.menu.-horizontal,
+ul.menu.-vertical {
+  display: inline-block;
+}
+ul.menu.-floating {
+  display: block;
+  position: absolute;
+}
+
+/* Menu and menu-item layout */
+.menu,
+.menu li,
+.menu li > ul {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+.menu li {
+  display: block;
+  position: relative;
+  white-space: nowrap;
+  word-break: keep-all;
+}
+.Menu.-horizontal > li {
+  display: inline-block;
+}
+.menu li > * {
+  display: block;
+  position: relative;
+}
+.menu li > ul {
+  position: absolute;
+  min-width: 100%;
+  top: 0px;
+  left: 100%;
+}
+.menu.-horizontal.-alignRight li > ul {
+  left: auto;
+  right: 100%;
+}
+.menu.-horizontal.-alignRight > li > ul {
+  right: 0px;
+}
+.menu.-horizontal > li > ul {
+  top: auto;
+  left: auto;
+}
+
+/* Menu behaviour */
+.menu li > ul,
+.menu.-floating {
+  display: none;
+}
+.menu li > ul.submenu,
+ul.menu.-floating.submenu {
+  display: block;
+}
+
+/* Menu animation */
+.menu li > ul,
+.menu.-horizontal.-alignRight li > ul,
+.menu.-floating {
+  opacity: 1;
+  transform: scale(1) translateY(0px);
+  transform-origin: left top;
+}
+.menu.-alignRight li > ul,
+.menu.-floating.-alignRight {
+  transform-origin: right top;
+}
+.menu li > ul.-animating,
+.menu.-floating.-animating {
+  opacity: 0 !important;
+  transform: scale(0.96) translateX(-16px);
+}
+.menu li > ul.-animating {
+  z-index: -1 !important;
+}
+.menu.-horizontal > li > ul.-animating {
+  transform: scale(0.96) translateY(-16px);
+}
+.menu.-alignRight li > ul.-animating,
+.menu.-floating.-alignRight.-animating {
+  transform: scale(0.96) translateX(16px);
+}
+.menu.-horizontal.-alignRight > li > ul.-animating {
+  transform: scale(0.96) translateY(-16px);
+}
+
+// /* Submenu chevrons */
+// .menu li.hasSubmenu > a:after {
+//   display: block;
+//   position: absolute;
+
+//   width: 8px;
+//   height: 8px;
+//   right: 8px;
+//   bottom: 0px;
+//   top: 0px;
+//   margin: auto 0px;
+
+//   transform: rotate(45deg);
+//   border-width: 1px;
+//   border-color: black;
+//   border-style: solid solid none none;
+
+//   content: "";
+// }
+// .menu.-horizontal > li.hasSubmenu > a:after {
+//   width: 4px;
+//   height: 4px;
+//   bottom: 4px;
+//   top: auto;
+//   left: 0px;
+//   right: 0px;
+//   margin: 0px auto;
+
+//   border-style: none solid solid none;
+// }
+// .menu li.hasSubmenu.-noChevron > a:after {
+//   display: none;
+// }
+
+/*
+** Configurable values
+*/
+/* Height of navbar, and menu items */
+/* All of these must be of equal value */
+.menu {
+  line-height: 40px;
+}
+.menu.-horizontal,
+.menu li,
+.menu li > :first-child {
+  height: 40px;
+}
+.menu *[data-icon]:before,
+.menu .Icon {
+  width: 40px;
+  height: 40px;
+}
+.menu *[data-icon] {
+  min-width: 40px;
+  min-height: 40px;
+  padding-left: 40px;
+}
+
+/* Default font settings for menu */
+.menu {
+  font-family: Arial, Helvetica, Sans;
+  font-size: 16px;
+}
+
+/* Icon font sizes */
+.menu *[data-icon]:before,
+.menu .Icon {
+  font-size: 24px;
+}
+/* For submenus */
+.menu > li ul .Icon,
+.menu.-floating .Icon,
+.menu > li ul *[data-icon]:before,
+.menu.-floating *[data-icon]:before {
+  font-size: 18px;
+}
+
+.submenu {
+  background-color: $color-dark !important;
+  .menu__item {
+    font-weight: $font-regular !important;
+    color: $color-light !important;
+    font-size: px(13);
+  }
+}
+
+/* Colouring of menus */
+/* Foreground */
+.menu,
+.menu li.hasSubmenu > a:after {
+  color: black;
+  border-color: black; /* chevron colour */
+}
+/* Background */
+
+.menu.-floating {
+  background: white;
+}
+
+/* Padding for each menu item */
+.menu li > * {
+  padding: 0px 12px;
+}
+/* Indent of chevron */
+.menu li li.hasSubmenu > a:after,
+.menu:not(.-horizontal) > li.hasSubmenu > a:after {
+  right: 12px;
+}
+.menu li li.hasSubmenu > a,
+.menu:not(.-horizontal) > li.hasSubmenu > a {
+  padding-right: 28px;
+}
+
+/* Minimum width of dropdown menus */
+.menu.-horizontal li > ul,
+.menu.-floating {
+  min-width: 200px;
+}
+
+/* Animation speed of dropdown menus */
+.menu li > ul,
+.menu.-floating {
+  transition: width 0.1s, height 0.1s, transform 0.1s, opacity 0.1s;
+}
+
+/* Styling of hyperlink text */
+.menu li > a {
+  text-decoration: none;
+  color: inherit;
+}
+.menu__item {
+  font-family: $font-secondary;
+  color: $color-primary;
+  font-weight: $font-bold;
+  background-color: unset;
+  transition: 0.3s all ease;
+}
+/* Animation speed of :hover shading */
+.menu li > a:first-child {
+  transition: background-color 0.2s;
+}
+
+/* Colour of :hover shading */
+.menu li:hover > .menu__item:first-child,
+.menu li.-active > .menu__item:first-child {
+  color: $color-primary !important;
+  // text-shadow: 0px 2px 3px rgba(110, 211, 207, 0.34);
+}
+
+/*
+** End configurable values
+*/
+
+// on click
+.dropdown {
+  position: relative;
+
+  select {
+    appearance: none;
+  }
+
+  .icon {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    i {
+      font-size: px(20);
+    }
+  }
+}
+
+.dropdown__content {
+  display: none;
+  position: absolute;
+  background-color: $gray1;
+  min-width: px(160);
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba($color: #000000, $alpha: 0.2);
+  z-index: 1;
+}
+.dropdown__content.is-active {
+  display: block;
+}
+
+.dropdown__content a {
+  color: $color-dark;
+  padding: px(12) px(16);
+  text-decoration: none;
+  display: block;
+
+  &:hover {
+    background-color: $gray1;
+  }
+}

@@ -20,13 +20,14 @@ export const BoxDefault = () => {
           <a href="">
             <div class="box__image">
               <img src="${boxDefault1}" class="img-cover" alt=""/>
+            </div>
+            <div class="box__details">
               <p class="box__link">
                 <span class="pe-7s-play"></span>
               </p>
-            </div>
-            <div class="box__details">
               <h3 class="box__title">DENOUNCING PLEASURE</h3>
               <p class="box__desc">Drink & Food</p>
+
             </div>
           </a>
         </div>
@@ -35,11 +36,11 @@ export const BoxDefault = () => {
           <a href="">
             <div class="box__image">
               <img src="${boxDefault2}" alt=""/>
+            </div>
+            <div class="box__details">
               <p class="box__link">
                 <span class="pe-7s-play"></span>
               </p>
-            </div>
-            <div class="box__details">
               <h3 class="box__title">DENOUNCING PLEASURE</h3>
               <p class="box__desc">Drink & Food</p>
             </div>

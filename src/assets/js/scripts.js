@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     };
 
-    const handleClicked = (e) => {
+    const handleToggleClicked = (e) => {
       e.preventDefault();
       if (navCollapes.classList.contains('hidden')) {
         navCollapes.classList.remove('hidden');
@@ -27,8 +27,8 @@ document.addEventListener('DOMContentLoaded', function () {
     };
 
     handleResize();
-    btnToggle.addEventListener('click', handleClicked);
-    btnClose.addEventListener('click', handleClicked);
+    btnToggle.addEventListener('click', handleToggleClicked);
+    btnClose.addEventListener('click', handleToggleClicked);
     window.addEventListener('resize', handleResize);
   }
 
@@ -102,5 +102,31 @@ document.addEventListener('DOMContentLoaded', function () {
 
     searchBtn.addEventListener('mouseenter', handleHover);
     searchInput.addEventListener('mouseover', () => searchInput.focus());
+  }
+
+  /*
+    click dropdown
+  ***********************************/
+  const dropdown = document.querySelector('.dropdown');
+  const dropdownBtn = document.querySelector('.btn--dropdown');
+  const dropdownContent = document.querySelector('.dropdown__content');
+
+  if (dropdown) {
+    const toggleDropdown = () => {
+      if (dropdownContent.classList.contains('is-active')) {
+        dropdownContent.classList.remove('is-active');
+      } else {
+        dropdownContent.classList.add('is-active');
+      }
+    };
+    dropdownBtn.addEventListener('click', function (e) {
+      e.preventDefault();
+      toggleDropdown();
+    });
+    window.addEventListener('click', function () {
+      if (!event.target.matches('.btn--dropdown')) {
+        toggleDropdown();
+      }
+    });
   }
 });
