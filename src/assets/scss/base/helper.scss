@@ -28,6 +28,8 @@
 .m-0 {
   margin-top: 0 !important;
   margin-bottom: 0 !important;
+  margin-right: 0 !important;
+  margin-left: 0 !important;
 }
 .mb-5 {
   margin-bottom: 5rem;
@@ -80,4 +82,17 @@
 .img-wrapper {
   position: relative;
   overflow: hidden;
+}
+
+//
+.no-outline {
+  &:focus,
+  &:focus-within,
+  &:active,
+  &:hover {
+    outline: none;
+  }
+}
+.no-border {
+  border: unset;
 }

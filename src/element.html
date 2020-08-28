@@ -129,21 +129,28 @@
       </div>
 
       <div class="col-desk-6 col-mob-12">
-        <form class="form form--horizontal">
+        <form action="" method="POST" id="form1" class="form form--horizontal">
           <div class="form__item row">
             <label class="form__label col-desk-2 col-mob-12">Your Name</label>
-            <input type="text" class="input-control col-desk-10 col-mob-12">
+            <input type="text" class="input-control col-desk-10 col-mob-12"
+              id="name" rules="required|min:4" name=name>
+            <span class="form-message"></span>
           </div>
           <div class="form__item row">
             <label class="form__label col-desk-2 col-mob-12">Your Email</label>
-            <input type="email" class="input-control col-desk-10 col-mob-12">
+            <input type="email" class="input-control col-desk-10 col-mob-12"
+              id="email" rules="required|email" name="email">
+            <span class="form-message"></span>
           </div>
           <div class="form__item row">
             <label class="form__label col-desk-2 col-mob-12">Message</label>
-            <textarea name="" id="" cols="30" rows="10"
-              class="input-control col-desk-10 col-mob-12"></textarea>
+            <textarea id="message" cols="30" rows="10"
+              class="input-control col-desk-10 col-mob-12" rules="required"
+              name="message"></textarea>
+            <span class="form-message"></span>
           </div>
-          <button class="btn btn--rounded btn--secondary mx-auto">
+
+          <button type="submit" class="btn btn--rounded btn--secondary mx-auto">
             Submit
           </button>
         </form>
@@ -667,6 +674,7 @@
   <script src="assets/js/menu.js"></script>
   <script src="assets/js/tab.js"></script>
   <script src="assets/js/filter.js"></script>
+  <script src="assets/js/validator.js"></script>
   <script>
     const horizonTab = new Tab({
       tabWrapper: '#tab-horizon',
