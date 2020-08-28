@@ -135,16 +135,19 @@
     align-items: center;
     justify-content: space-between;
   }
-  .icon > .pe-7s-keypad {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: $gray3;
 
-    @include media("<=tablet") {
-      opacity: 0;
-      visibility: hidden;
+  .icon {
+    .pe-7s-keypad {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: $gray3;
+
+      @include media("<=tablet") {
+        opacity: 0;
+        visibility: hidden;
+      }
     }
   }
 

@@ -237,7 +237,7 @@ export const Horizontal = () => {
       <div class="grid-fluid ">
 
         <div class="col-mob-12 col-desk-2">
-          <div class="gallery-nav row row-column">
+          <div class="gallery-nav gallery-nav--horizontal row row-column">
             <div class="gallery-nav__link is-active" data-filter="all">All</div>
             <div class="gallery-nav__link" data-filter="nature">Nature</div>
             <div class="gallery-nav__link" data-filter="drinknfood">Drink & food</div>
