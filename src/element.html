@@ -133,19 +133,19 @@
           <div class="form__item row">
             <label class="form__label col-desk-2 col-mob-12">Your Name</label>
             <input type="text" class="input-control col-desk-10 col-mob-12"
-              id="name" rules="required|min:4" name=name>
+              id="name" name=name>
             <span class="form-message"></span>
           </div>
           <div class="form__item row">
             <label class="form__label col-desk-2 col-mob-12">Your Email</label>
             <input type="email" class="input-control col-desk-10 col-mob-12"
-              id="email" rules="required|email" name="email">
+              id="email" name="email">
             <span class="form-message"></span>
           </div>
           <div class="form__item row">
             <label class="form__label col-desk-2 col-mob-12">Message</label>
             <textarea id="message" cols="30" rows="10"
-              class="input-control col-desk-10 col-mob-12" rules="required"
+              class="input-control col-desk-10 col-mob-12"
               name="message"></textarea>
             <span class="form-message"></span>
           </div>
@@ -675,14 +675,52 @@
         Modal
       </div>
 
-      <button id="trigger" class="btn btn--rounded trigger-button"
-        type="button">Launch
-        Modal</button>
+      <div class="col-desk-3">
+        <button id="trigger" class="btn btn--rounded trigger-button"
+          type="button">Modal 1</button>
+      </div>
+
+      <div class="col-desk-3">
+        <button id="btnModal2"
+          class="btn btn--rounded trigger-button btn--secondary"
+          type="button">Modal 2</button>
+      </div>
+
     </div>
   </main>
 
+  <!-- modal -->
   <div id="test-modal" class="modal">
-    <h1>It's Duonggggggggggg!</h1>
+    <form action="" method="POST" id="form3" class="form form--horizontal">
+      <div class="form__item row">
+        <label class="form__label col-desk-2 col-mob-12">Your Name</label>
+        <input type="text" class="input-control col-desk-10 col-mob-12"
+          id="name" name=name>
+        <span class="form-message"></span>
+      </div>
+      <div class="form__item row">
+        <label class="form__label col-desk-2 col-mob-12">Your Email</label>
+        <input type="email" class="input-control col-desk-10 col-mob-12"
+          id="email" name="email">
+        <span class="form-message"></span>
+      </div>
+      <div class="form__item row">
+        <label class="form__label col-desk-2 col-mob-12">Message</label>
+        <textarea id="message" cols="30" rows="10"
+          class="input-control col-desk-10 col-mob-12"
+          name="message"></textarea>
+        <span class="form-message"></span>
+      </div>
+
+      <button type="submit" class="btn btn--rounded btn--secondary mx-auto">
+        Submit
+      </button>
+    </form>
+  </div>
+
+
+  <div id="test-modal2" class="modal">
+    <h1>Modal thứ 22222222222222</h1>
     <p>Eyyyyyyyyyyyyyyyyyyyy</p>
   </div>
 
@@ -691,6 +729,7 @@
   <script src="assets/js/menu.js"></script>
   <script src="assets/js/tab.js"></script>
   <script src="assets/js/filter.js"></script>
+  <script src="assets/js/validator.js"></script>
   <script src="assets/js/modal.js"></script>
   <script>
     const horizonTab = new Tab({

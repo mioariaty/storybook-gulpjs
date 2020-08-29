@@ -10,7 +10,7 @@ const DataFilter = function (options) {
   this.activeIndex = 0;
   this.isInit = false;
 };
-
+// public methods
 DataFilter.prototype = {
   render: function () {
     if (!this.isInit) {

@@ -12,7 +12,6 @@
 .navbar {
   padding: px(8) px(16);
   transition: 0.4s all ease;
-  overflow: hidden;
 
   @include media("<desktop") {
     justify-content: space-between;

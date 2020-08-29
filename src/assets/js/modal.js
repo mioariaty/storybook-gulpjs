@@ -12,7 +12,6 @@ const Modal = function () {
     autoOpen: false,
     className: 'fade-and-drop',
     closeButton: true,
-    content: '',
     maxWidth: 760,
     minWidth: 280,
     overlay: true,
@@ -29,14 +28,13 @@ const Modal = function () {
 // Public Methods
 Modal.prototype = {
   close: function () {
-    const that = this;
     this.modal.className = this.modal.className.replace(' scotch-open', '');
     this.overlay.className = this.overlay.className.replace(' scotch-open', '');
-    this.modal.addEventListener(this.transitionEnd, function () {
-      that.modal.parentNode.removeChild(that.modal);
-    });
-    this.overlay.addEventListener(this.transitionEnd, function () {
-      if (that.overlay.parentNode) that.overlay.parentNode.removeChild(that.overlay);
+    this.modal.addEventListener(this.transitionEnd, () =>
+      this.modal.parentNode.removeChild(this.modal),
+    );
+    this.overlay.addEventListener(this.transitionEnd, () => {
+      if (this.overlay.parentNode) this.overlay.parentNode.removeChild(this.overlay);
     });
   },
   open: function () {
@@ -49,12 +47,11 @@ Modal.prototype = {
       (this.modal.offsetHeight > window.innerHeight
         ? ' scotch-open scotch-anchored'
         : ' scotch-open');
-    this.overlay.className = this.overlay.className + ' scotch-open';
+    this.overlay.className = `${this.overlay.className} scotch-open`;
   },
 };
 
 // Private Methods
-
 function buildOut() {
   let modalWrapper, contentHolder, docFrag;
 
@@ -89,7 +86,7 @@ function buildOut() {
   // If overlay is true, add one
   if (this.options.overlay === true) {
     this.overlay = document.createElement('div');
-    this.overlay.className = 'scotch-overlay ' + this.options.className;
+    this.overlay.className = `scotch-overlay ${this.options.className}`;
     docFrag.appendChild(this.overlay);
   }
 
@@ -132,14 +129,17 @@ function transitionSelect() {
 }
 
 // test
-const myContent = document.getElementById('test-modal');
-
-const testModal = new Modal({
-  modalWrapper: myContent,
+const modal1 = new Modal({
+  modalWrapper: document.getElementById('test-modal'),
+  maxWidth: 700,
+  minWidth: 300,
+  closeButton: true,
 });
+const btnModal1 = document.getElementById('trigger');
+btnModal1.addEventListener('click', () => modal1.open());
 
-const triggerButton = document.getElementById('trigger');
-
-triggerButton.addEventListener('click', function () {
-  testModal.open();
+const modal2 = new Modal({
+  modalWrapper: document.querySelector('#test-modal2'),
 });
+const btnModal2 = document.querySelector('#btnModal2');
+btnModal2.addEventListener('click', () => modal2.open());

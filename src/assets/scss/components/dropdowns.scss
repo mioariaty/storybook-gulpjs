@@ -15,7 +15,7 @@ element
 */
 ul.menu.-horizontal,
 ul.menu.-vertical {
-  display: inline-block;
+  // display: inline-block;
 }
 ul.menu.-floating {
   display: block;
@@ -144,11 +144,7 @@ ul.menu.-floating.submenu {
 .menu {
   line-height: 40px;
 }
-.menu.-horizontal,
-.menu li,
-.menu li > :first-child {
-  height: 40px;
-}
+
 .menu *[data-icon]:before,
 .menu .Icon {
   width: 40px;
@@ -200,11 +196,6 @@ ul.menu.-floating.submenu {
 .menu.-floating {
   background: white;
 }
-
-/* Padding for each menu item */
-.menu li > * {
-  padding: 0px 12px;
-}
 /* Indent of chevron */
 .menu li li.hasSubmenu > a:after,
 .menu:not(.-horizontal) > li.hasSubmenu > a:after {
@@ -238,6 +229,7 @@ ul.menu.-floating.submenu {
   font-weight: $font-bold;
   background-color: unset;
   transition: 0.3s all ease;
+  padding: 0 px(12);
 }
 /* Animation speed of :hover shading */
 .menu li > a:first-child {
