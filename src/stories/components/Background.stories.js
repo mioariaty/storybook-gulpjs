@@ -67,12 +67,14 @@ export const BackgroundImage = () => {
   `;
 };
 
-// export const BackgroundColor = () => {
-//   return /*html*/ `
-//     <div class="grid-fluid">
-//       <div class="col-desk-12">
-
-//       </div>
-//     </div>
-//   `;
-// };
+export const BackgroundColor = () => {
+  return /* html */ `
+    <div class="grid-fluid">
+      <div class="col-desk-12">
+        <h2>Background full</h2>
+        <div class="background background--full"></div>
+        <hr/>
+      </div>
+    </div>
+  `;
+};

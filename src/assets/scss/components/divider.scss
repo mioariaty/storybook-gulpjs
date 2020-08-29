@@ -15,3 +15,23 @@
     transform: rotate(-45deg);
   }
 }
+
+.divider--outline {
+  width: 90vw;
+  height: 80vh;
+  background-color: transparent;
+  border: 1px solid $gray2;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+}
+
+.divider-outline--absolute {
+  position: absolute;
+  overflow: hidden;
+}
+.divider-outline--fixed {
+  position: fixed;
+}

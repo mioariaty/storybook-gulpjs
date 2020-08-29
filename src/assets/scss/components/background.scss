@@ -71,3 +71,26 @@
 .background-height--medium {
   min-height: px(500);
 }
+
+.background--full {
+  background-color: $gray1;
+  min-height: px(500);
+}
+
+.background--left {
+  position: absolute;
+  height: px(500);
+  width: 40%;
+  top: 0;
+  left: 0;
+  background-color: $gray1;
+}
+
+.background--right {
+  position: absolute;
+  height: px(500);
+  width: 40%;
+  top: 0;
+  right: 0;
+  background-color: $gray1;
+}
