@@ -1,0 +1,22 @@
+.pagination {
+  display: flex;
+  padding-left: 0;
+  list-style: none;
+  border-radius: 0.25rem;
+  align-items: center;
+}
+.pagination__link {
+  position: relative;
+  display: block;
+  padding: 0.5rem px(20);
+  margin-left: -1px;
+  line-height: 1.25;
+  font-size: px(24);
+  text-decoration: none;
+  color: $color-dark;
+}
+.pagination__item.active {
+  .pagination__link {
+    color: $color-primary;
+  }
+}

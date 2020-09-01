@@ -1,3 +1,4 @@
+'use strict';
 const Modal = function () {
   // Create global element references
   this.closeButton = null;

@@ -49,7 +49,7 @@
   color: $color-dark !important;
 }
 .primary {
-  color: $color-primary;
+  color: $color-primary !important;
 }
 .gray1 {
   color: $gray1;
@@ -95,4 +95,8 @@
 }
 .no-border {
   border: unset;
+}
+
+.justify-inherit {
+  justify-content: inherit !important;
 }

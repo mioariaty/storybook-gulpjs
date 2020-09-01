@@ -133,20 +133,20 @@
           <div class="form__item row">
             <label class="form__label col-desk-2 col-mob-12">Your Name</label>
             <input type="text" class="input-control col-desk-10 col-mob-12"
-              id="name" name=name>
+              id="name" name="name" require="required">
             <span class="form-message"></span>
           </div>
           <div class="form__item row">
             <label class="form__label col-desk-2 col-mob-12">Your Email</label>
             <input type="email" class="input-control col-desk-10 col-mob-12"
-              id="email" name="email">
+              id="email" name="email" require="required">
             <span class="form-message"></span>
           </div>
           <div class="form__item row">
             <label class="form__label col-desk-2 col-mob-12">Message</label>
             <textarea id="message" cols="30" rows="10"
-              class="input-control col-desk-10 col-mob-12"
-              name="message"></textarea>
+              class="input-control col-desk-10 col-mob-12" name="message"
+              require="required"></textarea>
             <span class="form-message"></span>
           </div>
 
@@ -248,7 +248,7 @@
 
           <div class="masonry">
 
-            <div class="masonry__item">
+            <div class="masonry-col">
 
               <div class="gallery__item" data-filter='["nature"]'>
                 <div class="box">
@@ -270,7 +270,7 @@
               </div>
             </div>
 
-            <div class="masonry__item">
+            <div class="masonry-col">
               <div class="gallery__item" data-filter='["drinknfood"]'>
                 <div class="box">
                   <a href="">
@@ -291,7 +291,7 @@
               </div>
             </div>
 
-            <div class="masonry__item">
+            <div class="masonry-col">
               <div class="gallery__item" data-filter='["garden"]'>
                 <div class="box">
                   <a href="">
@@ -316,7 +316,7 @@
 
             <!-- col 2 -->
 
-            <div class="masonry__item">
+            <div class="masonry-col">
               <div class="gallery__item" data-filter='["drinknfood"]'>
                 <div class="box">
                   <a href="">
@@ -337,7 +337,7 @@
               </div>
             </div>
 
-            <div class="masonry__item">
+            <div class="masonry-col">
               <div class="gallery__item" data-filter='["nature"]'>
                 <div class="box">
                   <a href="">
@@ -358,7 +358,7 @@
               </div>
             </div>
 
-            <div class="masonry__item">
+            <div class="masonry-col">
               <div class="gallery__item" data-filter='["animator"]'>
                 <div class="box">
                   <a href="">
@@ -382,7 +382,7 @@
             <!-- !col 2 -->
 
             <!-- col 3 -->
-            <div class="masonry__item">
+            <div class="masonry-col">
               <div class="gallery__item" data-filter='["animator"]'>
                 <div class="box">
                   <a href="">
@@ -402,7 +402,7 @@
               </div>
             </div>
 
-            <div class="masonry__item">
+            <div class="masonry-col">
               <div class="gallery__item" data-filter='["garden"]'>
                 <div class="box">
                   <a href="">
@@ -422,7 +422,7 @@
               </div>
             </div>
 
-            <div class="masonry__item">
+            <div class="masonry-col">
               <div class="gallery__item" data-filter='["nature"]'>
                 <div class="box">
                   <a href="">
@@ -462,7 +462,7 @@
     <div id="filter-wrapper2" class="gallery">
       <div class="grid-fluid">
         <!-- nav -->
-        <div class="col-mob-12 col-desk-3">
+        <div class="col-mob-12 col-desk-2">
           <div class="gallery-nav gallery-nav--horizontal row row-column">
             <div class="gallery-nav__link is-active" data-filter="all">All</div>
             <div class="gallery-nav__link" data-filter="nature">Nature</div>
@@ -475,31 +475,35 @@
         <!-- nav -->
 
         <!-- items -->
-        <div class="col-mob-12 col-desk-9">
+        <div class="col-mob-12 col-desk-10">
           <div class="masonry">
 
-            <div class="masonry__item">
+            <div class="masonry-col">
 
               <div class="gallery__item" data-filter='["nature"]'>
-                <div class="box">
+                <div class="box box--overlay">
                   <a href="">
-                    <div class="img-wrapper">
-                      <img src="assets/images/box-default1.png"
-                        class="img-cover" alt="" />
+                    <div class="overlay"></div>
+
+                    <div class="box__image">
+                      <img src="assets/images/box1.png" alt="" />
                     </div>
+
                     <div class="box__details">
+                      <h3 class="box__title">DENOUNCING PLEASURE</h3>
+                      <p class="box__desc">Drink & Food</p>
+                      <img src="assets/images/divider-small.png"
+                        class="box__divider" alt="" />
                       <p class="box__link">
                         <span class="pe-7s-play"></span>
                       </p>
-                      <h3 class="box__title">DENOUNCING PLEASURE</h3>
-                      <p class="box__desc">Drink & Food</p>
                     </div>
                   </a>
                 </div>
               </div>
             </div>
 
-            <div class="masonry__item">
+            <div class="masonry-col">
               <div class="gallery__item" data-filter='["drinknfood"]'>
                 <div class="box">
                   <a href="">
@@ -520,7 +524,7 @@
               </div>
             </div>
 
-            <div class="masonry__item">
+            <div class="masonry-col">
               <div class="gallery__item" data-filter='["garden"]'>
                 <div class="box">
                   <a href="">
@@ -540,7 +544,7 @@
               </div>
             </div>
 
-            <div class="masonry__item">
+            <div class="masonry-col">
               <div class="gallery__item" data-filter='["drinknfood"]'>
                 <div class="box">
                   <a href="">
@@ -561,7 +565,7 @@
               </div>
             </div>
 
-            <div class="masonry__item">
+            <div class="masonry-col">
               <div class="gallery__item" data-filter='["nature"]'>
                 <div class="box">
                   <a href="">
@@ -581,7 +585,7 @@
               </div>
             </div>
 
-            <div class="masonry__item">
+            <div class="masonry-col">
               <div class="gallery__item" data-filter='["animator"]'>
                 <div class="box">
                   <a href="">
@@ -602,7 +606,7 @@
               </div>
             </div>
 
-            <div class="masonry__item">
+            <div class="masonry-col">
               <div class="gallery__item" data-filter='["animator"]'>
                 <div class="box">
                   <a href="">
@@ -622,7 +626,7 @@
               </div>
             </div>
 
-            <div class="masonry__item">
+            <div class="masonry-col">
               <div class="gallery__item" data-filter='["garden"]'>
                 <div class="box">
                   <a href="">
@@ -642,7 +646,7 @@
               </div>
             </div>
 
-            <div class="masonry__item">
+            <div class="masonry-col">
               <div class="gallery__item" data-filter='["nature"]'>
                 <div class="box">
                   <a href="">
@@ -695,20 +699,20 @@
       <div class="form__item row">
         <label class="form__label col-desk-2 col-mob-12">Your Name</label>
         <input type="text" class="input-control col-desk-10 col-mob-12"
-          id="name" name=name>
+          id="name" name="name" required>
         <span class="form-message"></span>
       </div>
       <div class="form__item row">
         <label class="form__label col-desk-2 col-mob-12">Your Email</label>
         <input type="email" class="input-control col-desk-10 col-mob-12"
-          id="email" name="email">
+          id="email" name="email" required>
         <span class="form-message"></span>
       </div>
       <div class="form__item row">
         <label class="form__label col-desk-2 col-mob-12">Message</label>
         <textarea id="message" cols="30" rows="10"
-          class="input-control col-desk-10 col-mob-12"
-          name="message"></textarea>
+          class="input-control col-desk-10 col-mob-12" name="message"
+          required></textarea>
         <span class="form-message"></span>
       </div>
 
