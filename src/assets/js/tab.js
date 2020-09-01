@@ -13,7 +13,6 @@ Tab.prototype = {
   render: function () {
     if (!this.isTabRender) {
       this.isTabRender = true;
-      this.tabWrapper.classList.remove('no-js');
       this.tabLinks.forEach((link, index) => this.handleClick(link, index));
     }
   },

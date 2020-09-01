@@ -1,39 +1,27 @@
-const Validator = function (options) {
-  this.formElement = document.querySelector(options.formElement);
-  this.selectorRules = {};
-  this.errorMsg;
-
-  console.log(this.formElement);
+'use strict';
+const Validator = function (formId) {
+  this.formElement = document.querySelector(formId.formElement);
+  this.inputFields = Array.from(this.formElement.querySelectorAll(formId.inputFields));
+  this.ok = 1;
+  this.currentField;
 };
 // public methods
 Validator.prototype = {
-  getParent: function (element, selector) {
-    while (element.parentElement) {
-      if (element.parentElement.matches(selector)) {
-        return element.parentElement;
-      }
-      element = element.parentElement;
-    }
+  init: function () {
+    // find all the inputs have required attribute
+    this.inputFields.forEach((e) => {
+      const requiredFields = e.getAttribute('require');
+      this.getRequiredFiels(requiredFields);
+    });
   },
-  validate: function (inputElement, rule) {
-    const errorElement = this.getParent(inputElement, options.formGroupSelector).querySelector(
-      options.errorSelector,
-    );
+  getRequiredFiels: function (e) {
+    this.inputFields.forEach((field) => {});
   },
 };
-
+Validator.methods = {};
 // private methods
-function isRequired(selector, message) {
-  return {
-    selector,
-    test: function (value) {
-      return value ? undefined : message || 'Vui lòng nhập trường này';
-    },
-  };
-}
 
 const testform1 = new Validator({
-  formElement: '#form3',
-  formGroupSelector: '.form__item',
-  errorSelector: '.form-message',
-});
+  formElement: '#form1',
+  inputFields: '.input-control',
+}).init();
