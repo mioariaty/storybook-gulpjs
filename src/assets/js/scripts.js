@@ -45,6 +45,15 @@ document.addEventListener('DOMContentLoaded', function () {
       },
     });
 
+    const postSlider = new Swiper('.demo3', {
+      slidesPerView: 1,
+      slidesPerColumn: 1,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    });
+
     const demoFraction = new Swiper('.demo2', {
       pagination: {
         el: '.swiper-pagination',
@@ -53,34 +62,6 @@ document.addEventListener('DOMContentLoaded', function () {
       navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
-      },
-    });
-
-    const demoHorizontal = new Swiper('.demo3', {
-      slidesPerView: 2,
-      slidesPerGroup: 1,
-      spaceBetween: 120,
-      loop: true,
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-      breakpoints: {
-        // when window width is >= 320px
-        320: {
-          slidesPerView: 1,
-          spaceBetween: 20,
-        },
-        // when window width is >= 480px
-        480: {
-          slidesPerView: 1,
-          spaceBetween: 30,
-        },
-        // when window width is >= 640px
-        640: {
-          slidesPerView: 2,
-          spaceBetween: 120,
-        },
       },
     });
   }
@@ -132,4 +113,18 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     });
   }
+
+  const root = document.querySelector('#app');
+  const scrollToTop = document.querySelector('#scrollTop');
+  const outline = document.querySelector('#outline');
+  // const rootWidth = root.clientWidth;
+  // outline.style.width = `calc(${rootWidth}px + 1%)`;
+
+  scrollToTop.addEventListener('click', function () {
+    window.scrollTo(0, 0);
+  });
+  // window.addEventListener('resize', function () {
+  //   const rootWidth = root.clientWidth;
+  //   outline.style.width = `calc(${rootWidth}px + 43.24px)`;
+  // });
 });

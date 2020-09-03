@@ -5,29 +5,770 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home</title>
+
+  <link rel="shortcut icon" href="./assets/images/logo.png" type="image/x-icon">
   <link
     href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
     rel="stylesheet">
   <link
     href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
     rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
   <link rel="stylesheet" href="assets/vendors/fontawesome/all.min.css">
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
 <body>
 
-  <header class="header">
+  <div id="app">
+    <header class="header">
+      <nav class="navbar">
+        <a href="#" class="navbar__brand"><span>B</span>M.</a>
+        <button class="navbar__toggler">
+          <i class="fas fa-bars"></i>
+        </button>
 
-  </header>
+        <div class="navbar-collapse">
+          <button class="btn--close">
+            <i class="fas fa-times"></i>
+          </button>
 
-  <main class="main">
-  </main>
+          <ul class="navbar-nav menu -horizontal">
+            <li class="nav__item ">
+              <a href="#" class="nav__link light ">Home</a>
+            </li>
 
-  <footer class="footer">
+            <li class="nav__item hasSubmenu">
+              <a href="#" class="nav__link menu__item">About</a>
+              <!-- sub menu -->
+              <ul>
+                <li><a href="#" class="menu__item">Bacon</a></li>
+                <li class="hasSubmenu"> <a href="#"
+                    class="menu__item">Sub-menu</a>
+                  <ul>
+                    <li><a href="#" class="menu__item">Bacon</a></li>
+                    <li><a href="#" class="menu__item">Ipsum</a></li>
+                    <li><a href="#" class="menu__item">Dolor</a></li>
+                    <li><a href="#" class="menu__item">Amet</a></li>
+                  </ul>
+                </li>
+                <li><a href="#" class="menu__item">Dolor</a></li>
+                <li class="hasSubmenu"> <a href="#" class="menu__item">Another
+                    Sub-menu</a>
+                  <ul>
+                    <li><a href="#" class="menu__item">Bacon</a></li>
+                    <li><a href="#" class="menu__item">Ipsum</a></li>
+                    <li class="hasSubmenu"> <a href="#"
+                        class="menu__item">Sub-sub-menu!</a>
+                      <ul>
+                        <li><a href="#" class="menu__item">Bacon</a></li>
+                        <li><a href="#" class="menu__item">Ipsum</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <!-- !sub menu -->
+            </li>
 
-  </footer>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Portfolio</a>
+            </li>
 
+            <li class="nav__item">
+              <a href="#" class="nav__link">Blog</a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#" class="nav__link">Contact</a>
+            </li>
+          </ul>
+
+          <form class="form form--horizontal">
+            <input type="search" placeholder="Search"
+              class="form-item__input input--rounded input--search bg-gray2"
+              id="searchInput">
+            <button class="btn btn--search bg-gray2">
+              <i class="pe-7s-search"></i>
+            </button>
+          </form>
+
+        </div>
+      </nav>
+    </header>
+
+    <main class="main">
+      <!-- intro -->
+      <section class="section home-intro mx-auto">
+        <div class="grid-fluid">
+          <div class="col-desk-2 col-mob-12">
+            <div class="avatar avatar--large">
+              <img src="./assets/images/avatar.png" alt="">
+            </div>
+          </div>
+          <div class="col-desk-10 col-mob-12 align-self-center">
+            <h2 class="text uppercase lh-60">
+              HI, MY NAME IS <span class="primary">RALPH BOWMAN.</span>
+            </h2>
+            <p class="text--intro uppercase lh-60">I AM AN VIETNAMESE PRODUCT
+              DESIGNER
+              &
+              PHOTOGRAPHY</p>
+          </div>
+        </div>
+      </section>
+      <!-- !intro -->
+
+      <!-- banner -->
+      <section class="section home-banner">
+        <div class="col-desk-12">
+          <div class="carousel carousel--vertial">
+            <div class="demo1 swiper-container">
+              <!-- Slide wrapper -->
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div
+                    class="background background--image background-height--large pb-0"
+                    style="background-image: url('assets/images/slider1.png')">
+                    <div class="carousel__detail">
+                      <h3 class="background__title">my portfolio</h3>
+                      <p class="text-white background__desc">
+                        On the other hand, we denounce with righteous indination
+                        and dislike men.
+                      </p>
+                    </div>
+                    <p class="category uppercase category-absolute--center">
+                      photography
+                    </p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div
+                    class="background background--image background-height--large pb-0"
+                    style="background-image: url('assets/images/slider1.png')">
+                    <div class="carousel__detail">
+                      <h3 class="background__title">my portfolio</h3>
+                      <p class="text-white background__desc">
+                        On the other hand, we denounce with righteous indination
+                        and dislike men.
+                      </p>
+                    </div>
+                    <p class="category uppercase category-absolute--center">
+                      photography
+                    </p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div
+                    class="background background--image background-height--large pb-0"
+                    style="background-image: url('assets/images/slider1.png')">
+                    <div class="carousel__detail">
+                      <h3 class="background__title">my portfolio</h3>
+                      <p class="text-white background__desc">
+                        On the other hand, we denounce with righteous indination
+                        and dislike men.
+                      </p>
+                    </div>
+                    <p class="category uppercase category-absolute--center">
+                      photography
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- End slide wrapper -->
+
+              <!-- Add Pagination -->
+              <div class="swiper-pagination"></div>
+            </div>
+            <a href=""
+              class="icon icon--rounded icon--shadow icon-absolute--bot">
+              <i class="pe-7s-play"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- !banner -->
+
+      <!-- divider -->
+      <div class="divider">
+        <img src="./assets/images/divider.png" alt="">
+      </div>
+      <!-- !divider -->
+
+      <!-- work shop  -->
+      <section class="section home-workshop">
+        <div class="grid">
+          <div class="col-deks-6 col-mob-12">
+            <div class="text-box">
+              <h2 class="text">Latest Work</h2>
+              <p>On the other hand, we denounce with righteous.</p>
+            </div>
+
+          </div>
+        </div>
+
+        <div id="filter-wrapper2" class="gallery">
+          <div class="grid-fluid">
+            <!-- nav -->
+            <div class="col-mob-12 col-desk-2">
+              <div class="gallery-nav gallery-nav--horizontal row row-column">
+                <div class="gallery-nav__link is-active" data-filter="all">All
+                </div>
+                <div class="gallery-nav__link" data-filter="nature">Nature</div>
+                <div class="gallery-nav__link" data-filter="drinknfood">Drink &
+                  food
+                </div>
+                <div class="gallery-nav__link" data-filter="garden">Garden</div>
+                <div class="gallery-nav__link" data-filter="animator">Animator
+                </div>
+              </div>
+            </div>
+            <!-- nav -->
+
+            <!-- items -->
+            <div class="col-mob-12 col-desk-10">
+              <div class="masonry">
+
+                <div class="masonry-col">
+
+                  <div class="gallery__item" data-filter='["nature"]'>
+                    <div class="box box--overlay">
+                      <a href="">
+                        <div class="overlay"></div>
+
+                        <div class="box__image">
+                          <img src="assets/images/box/box-ov1.png" alt="" />
+                        </div>
+
+                        <div class="box__details">
+                          <h3 class="box__title">DENOUNCING PLEASURE</h3>
+                          <p class="box__desc">Drink & Food</p>
+                          <img src="assets/images/divider-small.png"
+                            class="box__divider" alt="" />
+                          <p class="box__link">
+                            <span class="pe-7s-play"></span>
+                          </p>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="masonry-col">
+                  <div class="gallery__item" data-filter='["drinknfood"]'>
+                    <div class="box box--overlay">
+                      <a href="">
+                        <div class="overlay"></div>
+
+                        <div class="box__image">
+                          <img src="assets/images/box/box-ov2.png" alt="" />
+                        </div>
+
+                        <div class="box__details">
+                          <h3 class="box__title">DENOUNCING PLEASURE</h3>
+                          <p class="box__desc">Drink & Food</p>
+                          <img src="assets/images/divider-small.png"
+                            class="box__divider" alt="" />
+                          <p class="box__link">
+                            <span class="pe-7s-play"></span>
+                          </p>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="masonry-col">
+                  <div class="gallery__item" data-filter='["garden"]'>
+                    <div class="box box--overlay">
+                      <a href="">
+                        <div class="overlay"></div>
+
+                        <div class="box__image">
+                          <img src="assets/images/box/box-ov3.png" alt="" />
+                        </div>
+
+                        <div class="box__details">
+                          <h3 class="box__title">DENOUNCING PLEASURE</h3>
+                          <p class="box__desc">Drink & Food</p>
+                          <img src="assets/images/divider-small.png"
+                            class="box__divider" alt="" />
+                          <p class="box__link">
+                            <span class="pe-7s-play"></span>
+                          </p>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="masonry-col">
+                  <div class="gallery__item" data-filter='["drinknfood"]'>
+                    <div class="box box--overlay">
+                      <a href="">
+                        <div class="overlay"></div>
+
+                        <div class="box__image">
+                          <img src="assets/images/box/box-ov4.png" alt="" />
+                        </div>
+
+                        <div class="box__details">
+                          <h3 class="box__title">DENOUNCING PLEASURE</h3>
+                          <p class="box__desc">Drink & Food</p>
+                          <img src="assets/images/divider-small.png"
+                            class="box__divider" alt="" />
+                          <p class="box__link">
+                            <span class="pe-7s-play"></span>
+                          </p>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="masonry-col">
+                  <div class="gallery__item" data-filter='["drinknfood"]'>
+                    <div class="box box--overlay">
+                      <a href="">
+                        <div class="overlay"></div>
+
+                        <div class="box__image">
+                          <img src="assets/images/box/box-ov5.png" alt="" />
+                        </div>
+
+                        <div class="box__details">
+                          <h3 class="box__title">DENOUNCING PLEASURE</h3>
+                          <p class="box__desc">Drink & Food</p>
+                          <img src="assets/images/divider-small.png"
+                            class="box__divider" alt="" />
+                          <p class="box__link">
+                            <span class="pe-7s-play"></span>
+                          </p>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="masonry-col">
+                  <div class="gallery__item" data-filter='["animator"]'>
+                    <div class="box box--overlay">
+                      <a href="">
+                        <div class="overlay"></div>
+
+                        <div class="box__image">
+                          <img src="assets/images/box/box-ov6.png" alt="" />
+                        </div>
+
+                        <div class="box__details">
+                          <h3 class="box__title">DENOUNCING PLEASURE</h3>
+                          <p class="box__desc">Drink & Food</p>
+                          <img src="assets/images/divider-small.png"
+                            class="box__divider" alt="" />
+                          <p class="box__link">
+                            <span class="pe-7s-play"></span>
+                          </p>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="masonry-col">
+                  <div class="gallery__item" data-filter='["animator"]'>
+                    <div class="box box--overlay">
+                      <a href="">
+                        <div class="overlay"></div>
+
+                        <div class="box__image">
+                          <img src="assets/images/box/box-ov7.png" alt="" />
+                        </div>
+
+                        <div class="box__details">
+                          <h3 class="box__title">DENOUNCING PLEASURE</h3>
+                          <p class="box__desc">Drink & Food</p>
+                          <img src="assets/images/divider-small.png"
+                            class="box__divider" alt="" />
+                          <p class="box__link">
+                            <span class="pe-7s-play"></span>
+                          </p>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="masonry-col">
+                  <div class="gallery__item" data-filter='["garden"]'>
+                    <div class="box box--overlay">
+                      <a href="">
+                        <div class="overlay"></div>
+
+                        <div class="box__image">
+                          <img src="assets/images/box/box-ov8.png" alt="" />
+                        </div>
+
+                        <div class="box__details">
+                          <h3 class="box__title">DENOUNCING PLEASURE</h3>
+                          <p class="box__desc">Drink & Food</p>
+                          <img src="assets/images/divider-small.png"
+                            class="box__divider" alt="" />
+                          <p class="box__link">
+                            <span class="pe-7s-play"></span>
+                          </p>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="masonry-col">
+                  <div class="gallery__item" data-filter='["nature"]'>
+                    <div class="box box--overlay">
+                      <a href="">
+                        <div class="box__image">
+                          <img src="assets/images/box/box-ov9.png" alt="" />
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <!-- items -->
+          </div>
+        </div>
+      </section>
+      <!-- !work shop  -->
+
+      <!-- divider -->
+      <div class="divider">
+        <img src="./assets/images/divider.png" alt="">
+      </div>
+      <!-- !divider -->
+
+      <!-- counting -->
+      <section class="section home-counting">
+        <div class="grid">
+          <div class="col-desk-4 col-mob-6">
+            <div class="text--underline text-center">
+              <h3 class="text--count">1052</h3>
+              <p class="m-0">HAPPY CLIENTS</p>
+            </div>
+          </div>
+          <div class="col-desk-4 col-mob-6">
+            <div class="text--underline text-center">
+              <h3 class="text--count">2102</h3>
+              <p class="m-0">PROJECTS FINISHED</p>
+            </div>
+          </div>
+          <div class="col-desk-4 col-mob-12">
+            <div class="text--underline text-center">
+              <h3 class="text--count">1421</h3>
+              <p class="m-0">CUPS OF COFFEE</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- !counting -->
+
+      <!-- gallery -->
+      <section class="section home-gallery">
+        <div class="grid">
+          <div class="col-desk-10 col-mob-12 mx-auto">
+            <div class="carousel carousel--fraction carousel--multilayer">
+
+              <div class="demo2 swiper-container">
+                <!-- Slide wrapper -->
+                <div class="swiper-wrapper">
+
+                  <div class="swiper-slide">
+                    <div
+                      class="background background--image background-height--medium pb-0"
+                      style="background-image: url('./assets/images/slide3.png')">
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <div
+                      class="background background--image background-height--medium pb-0"
+                      style="background-image: url('./assets/images/slide3.png')">
+                    </div>
+                  </div>
+
+
+                </div> <!-- End slide wrapper -->
+
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next">
+                  <span class="icon icon--transparent">
+                    <i class="pe-7s-play"></i>
+                  </span>
+                </div>
+                <div class="swiper-button-prev">
+                  <span class="icon icon--reverse icon--transparent">
+                    <i class="pe-7s-play"></i>
+                  </span>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="home-gallery__title text-center">
+              <p>
+                Rainbow House Flower season is upcoming again Photography
+                by © @albertdrosphotography
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- !gallery -->
+
+      <!-- divider -->
+      <div class="divider mb-8 mt-8">
+        <img src="./assets/images/divider.png" alt="">
+      </div>
+      <!-- !divider -->
+
+      <!-- blog post -->
+      <section class="section home-post">
+        <div class="grid mb-8">
+          <div class="col-desk-12 text-center">
+            <h2 class="text text--image uppercase"
+              style="background-image: url('./assets/images/bg-food.jpg')">
+              Journal</h2>
+          </div>
+        </div>
+        <div class="grid-fluid">
+          <div class="carousel carousel--vertial">
+            <div class="demo3 swiper-container">
+              <div class="swiper-wrapper ">
+                <div class="swiper-slide">
+                  <div class="grid">
+                    <div class="col-desk-6 col-mob-12">
+                      <a href="" class="post">
+                        <div class="calendar">
+                          <div class="calendar__content text-center">
+                            <h2 class="m-0 calendar__day">01</h2>
+                            <h3 class="m-0 calendar__month">NOV</h3>
+                          </div>
+                        </div>
+                        <div class="post__content">
+                          <div class="aspect-img">
+                            <img src="./assets/images/post1.png" alt="" />
+                          </div>
+                          <div class="post__detail text-center">
+                            <h3 class="category">LIFESTYLE</h3>
+                            <p class="post__title">THIS MISTAKEN IDEA</p>
+                          </div>
+                          <span class="icon icon--rounded">
+                            <i class="pe-7s-play"></i>
+                          </span>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="col-desk-6 col-mob-12">
+                      <a href="" class="post">
+                        <div class="calendar">
+                          <div class="calendar__content text-center">
+                            <h2 class="m-0 calendar__day">02</h2>
+                            <h3 class="m-0 calendar__month">NOV</h3>
+                          </div>
+                        </div>
+                        <div class="post__content">
+                          <div class="aspect-img">
+                            <img src="./assets/images/post2.png" alt="" />
+                          </div>
+                          <div class="post__detail text-center">
+                            <h3 class="category">LIFESTYLE</h3>
+                            <p class="post__title">THIS MISTAKEN IDEA</p>
+                          </div>
+                          <span class="icon icon--rounded">
+                            <i class="pe-7s-play"></i>
+                          </span>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+
+                </div>
+                <div class="swiper-slide ">
+                  <div class="grid">
+                    <div class="col-desk-6 col-mob-12">
+                      <a href="" class="post">
+                        <div class="calendar">
+                          <div class="calendar__content text-center">
+                            <h2 class="m-0 calendar__day">01</h2>
+                            <h3 class="m-0 calendar__month">NOV</h3>
+                          </div>
+                        </div>
+                        <div class="post__content">
+                          <div class="aspect-img">
+                            <img src="./assets/images/post1.png" alt="" />
+                          </div>
+                          <div class="post__detail text-center">
+                            <h3 class="category">LIFESTYLE</h3>
+                            <p class="post__title">THIS MISTAKEN IDEA</p>
+                          </div>
+                          <span class="icon icon--rounded">
+                            <i class="pe-7s-play"></i>
+                          </span>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="col-desk-6 col-mob-12">
+                      <a href="" class="post">
+                        <div class="calendar">
+                          <div class="calendar__content text-center">
+                            <h2 class="m-0 calendar__day">02</h2>
+                            <h3 class="m-0 calendar__month">NOV</h3>
+                          </div>
+                        </div>
+                        <div class="post__content">
+                          <div class="aspect-img">
+                            <img src="./assets/images/post2.png" alt="" />
+                          </div>
+                          <div class="post__detail text-center">
+                            <h3 class="category">LIFESTYLE</h3>
+                            <p class="post__title">THIS MISTAKEN IDEA</p>
+                          </div>
+                          <span class="icon icon--rounded">
+                            <i class="pe-7s-play"></i>
+                          </span>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <!-- Add Pagination -->
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- !blog post -->
+
+      <!-- divider -->
+      <div class="divider divider--vertical mb-8 mt-8">
+        <img src="./assets/images/divider.png" alt="">
+      </div>
+      <!-- !divider -->
+
+      <!-- about -->
+      <section class="section home-about">
+        <div class="grid-fluid">
+          <div class="col-desk-6 col-mob-12 pb-0">
+            <img src="./assets/images/user.png" alt="">
+          </div>
+          <div class="col-desk-6 col-mob-12 align-self-center">
+            <div class="home-about__info">
+              <h3 class="text">I’m <span class="primary">Ralph Bowman.</span>
+              </h3>
+              <p>
+                "At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                blanditiis
+                praesentium voluptatum deleniti atque corrupti quos dolores et
+                quas
+                molestias excepturi sint occaecati cupiditate non provident,
+                similique sunt
+                in culpa qui officia deserunt mollitia animi”
+              </p>
+
+              <form action="" class="form">
+                <div class="form__item ">
+                  <input type="email" class="input-control input--rounded"
+                    placeholder="Email...">
+                  <button class="btn btn--subscribe primary">SUBSCRIBE</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- !about -->
+    </main>
+
+    <footer class="footer">
+      <div class="grid-fluid">
+        <div class="col-desk-12 pt-0">
+          <div class="background background--image background--center"
+            style="background-image: url('./assets/images/banner1.png')">
+            <h3 class="background__title"><span>B</span>M.</h3>
+            <ul class="navbar-nav">
+              <li class="nav__item">
+                <a href="#" class="nav__link">Home</a>
+              </li>
+
+              <li class="nav__item">
+                <a href="#" class="nav__link">About</a>
+              </li>
+
+              <li class="nav__item">
+                <a href="#" class="nav__link">Portfolio</a>
+              </li>
+
+              <li class="nav__item">
+                <a href="#" class="nav__link">Blog</a>
+              </li>
+
+              <li class="nav__item">
+                <a href="#" class="nav__link">Contact</a>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="grid">
+        <div class="col-desk-12 text-center">
+          <p class="copy-right">COPYRIGHT 2014 BY <span>WILOKE</span></p>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <div id="outline" class="divider--outline divider-outline--absolute"></div>
+
+  <!-- scroll to top -->
+  <button class="btn btn--scroll" id="scrollTop">
+    <span>
+      scroll to top
+    </span>
+    <i class="pe-7s-upload"></i>
+  </button>
+  <!-- !scroll to top -->
+
+  <!-- group social icons -->
+  <div class="group-icon">
+    <a href="" class="dark mbt-3">
+      <i class="fab fa-facebook-f"></i>
+    </a>
+    <a href="" class="dark mbt-3">
+      <i class="fab fa-twitter"></i>
+    </a>
+    <a href="" class="dark mbt-3">
+      <i class="fab fa-pinterest"></i>
+    </a>
+    <a href="" class="dark mbt-3">
+      <i class="fab fa-instagram"></i>
+    </a>
+  </div>
+  <!-- !group social icons -->
+
+  <!-- script -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/js/menu.js"></script>
+  <script src="assets/js/scripts.js"></script>
+  <script src="assets/js/menu.js"></script>
+  <script src="assets/js/filter.js"></script>
 </body>
 
 </html>

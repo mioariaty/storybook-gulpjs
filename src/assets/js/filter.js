@@ -49,12 +49,6 @@ DataFilter.prototype = {
 // window.DataFilter = DataFilter;
 
 // module.exports = DataFilter;
-const example = new DataFilter({
-  filterWrapper: '#filter-wrapper1',
-  filterNavItems: '.gallery-nav__link',
-  filterListItems: '.gallery__item',
-  transitionSpeed: 'all 0.5s ease',
-}).render();
 
 const example2 = new DataFilter({
   filterWrapper: '#filter-wrapper2',
@@ -62,3 +56,10 @@ const example2 = new DataFilter({
   filterListItems: '.gallery__item',
   transitionSpeed: 'all 0.5s ease',
 }).render();
+
+// const example = new DataFilter({
+//   filterWrapper: '#filter-wrapper1',
+//   filterNavItems: '.gallery-nav__link',
+//   filterListItems: '.gallery__item',
+//   transitionSpeed: 'all 0.5s ease',
+// }).render();

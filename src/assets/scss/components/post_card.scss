@@ -2,6 +2,7 @@
   position: relative;
   @include flex(space-between, stretch, wrap, row);
   text-decoration: none;
+  margin-bottom: px(30);
 
   .icon {
     position: absolute;

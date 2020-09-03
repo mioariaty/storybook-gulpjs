@@ -1,0 +1,8 @@
+.header {
+  margin-bottom: px(160);
+
+  @include media("<=tablet") {
+    margin-bottom: px(30);
+    padding-top: px(20);
+  }
+}

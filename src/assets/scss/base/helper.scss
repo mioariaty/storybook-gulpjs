@@ -16,6 +16,9 @@
 .pb-0 {
   padding-bottom: 0 !important;
 }
+.pt-0 {
+  padding-top: 0 !important;
+}
 .p-0 {
   padding: 0 !important;
 }
@@ -31,11 +34,27 @@
   margin-right: 0 !important;
   margin-left: 0 !important;
 }
+.mbt-3 {
+  margin-top: px(7);
+  margin-bottom: px(7);
+}
 .mb-5 {
   margin-bottom: 5rem;
 }
 .mt-5 {
   margin-top: 5rem;
+}
+.mb-8 {
+  margin-bottom: 8rem !important;
+  @include media("<=tablet") {
+    margin-bottom: 3rem !important;
+  }
+}
+.mt-8 {
+  margin-top: 8rem !important;
+  @include media("<=tablet") {
+    margin-bottom: 3rem !important;
+  }
 }
 
 // color
@@ -99,4 +118,15 @@
 
 .justify-inherit {
   justify-content: inherit !important;
+}
+.align-self-center {
+  align-self: center;
+}
+
+// line height
+.lh-60 {
+  line-height: px(40);
+  @include media(">=desktop") {
+    line-height: px(60);
+  }
 }
