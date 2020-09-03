@@ -22,7 +22,11 @@
 .p-0 {
   padding: 0 !important;
 }
-
+.pd-sm-0 {
+  @include media("<=tablet") {
+    padding: 0 !important;
+  }
+}
 // margin
 .mx-auto {
   margin-left: auto;
@@ -40,6 +44,9 @@
 }
 .mb-5 {
   margin-bottom: 5rem;
+  @include media("<=tablet") {
+    margin-bottom: px(20);
+  }
 }
 .mt-5 {
   margin-top: 5rem;
@@ -48,6 +55,18 @@
   margin-bottom: 8rem !important;
   @include media("<=tablet") {
     margin-bottom: 3rem !important;
+  }
+}
+.mb-16 {
+  margin-bottom: px(160);
+  @include media("<=tablet") {
+    margin-bottom: px(30);
+  }
+}
+.mt-16 {
+  margin-top: px(160);
+  @include media("<=tablet") {
+    margin-top: px(30);
   }
 }
 .mt-8 {
@@ -69,6 +88,9 @@
 }
 .primary {
   color: $color-primary !important;
+}
+.secondary {
+  color: $color-secondary !important;
 }
 .gray1 {
   color: $gray1;
@@ -122,7 +144,9 @@
 .align-self-center {
   align-self: center;
 }
-
+.align-self-end {
+  align-self: flex-end;
+}
 // line height
 .lh-60 {
   line-height: px(40);

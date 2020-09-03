@@ -1,9 +1,9 @@
 'use strict';
 const DataFilter = function (options) {
   // define variables & dom selector
-  this.filterWrapper = document.querySelector(options.filterWrapper);
-  this.filterNavItems = Array.from(this.filterWrapper.querySelectorAll(options.filterNavItems));
-  this.filterListItems = Array.from(this.filterWrapper.querySelectorAll(options.filterListItems));
+  this.wrapper = document.querySelector(options.wrapper);
+  this.navItems = Array.from(this.wrapper.querySelectorAll(options.navItems));
+  this.listItems = Array.from(this.wrapper.querySelectorAll(options.listItems));
   this.transitionSpeed = options.transitionSpeed;
 
   this.activeIndex = 0;
@@ -14,8 +14,8 @@ DataFilter.prototype = {
   render: function () {
     if (!this.isInit) {
       this.isInit = true;
-      this.filterListItems.forEach((node) => (node.style.transition = this.transitionSpeed));
-      this.filterNavItems.forEach((navItem, index) => this.handleClicked(navItem, index));
+      this.listItems.forEach((node) => (node.style.transition = this.transitionSpeed));
+      this.navItems.forEach((navItem, index) => this.handleClicked(navItem, index));
     }
   },
   handleClicked: function (navItem, index) {
@@ -27,14 +27,14 @@ DataFilter.prototype = {
     });
   },
   handleToggleActive: function (index) {
-    if (index !== this.activeIndex && index >= 0 && index <= this.filterNavItems.length) {
-      this.filterNavItems[this.activeIndex].classList.remove('is-active');
-      this.filterNavItems[index].classList.add('is-active');
+    if (index !== this.activeIndex && index >= 0 && index <= this.navItems.length) {
+      this.navItems[this.activeIndex].classList.remove('is-active');
+      this.navItems[index].classList.add('is-active');
       this.activeIndex = index;
     }
   },
   getCurrentGallery: function (curAttrValue) {
-    return this.filterListItems.map((item) => {
+    return this.listItems.map((item) => {
       if (curAttrValue === 'all') {
         item.classList.remove('filter-hidden');
       } else if (item.getAttribute('data-filter').includes(curAttrValue) === false) {
@@ -51,15 +51,15 @@ DataFilter.prototype = {
 // module.exports = DataFilter;
 
 const example2 = new DataFilter({
-  filterWrapper: '#filter-wrapper2',
-  filterNavItems: '.gallery-nav__link',
-  filterListItems: '.gallery__item',
+  wrapper: '#filter-wrapper2',
+  navItems: '.gallery-nav__link',
+  listItems: '.gallery__item',
   transitionSpeed: 'all 0.5s ease',
 }).render();
 
 // const example = new DataFilter({
-//   filterWrapper: '#filter-wrapper1',
-//   filterNavItems: '.gallery-nav__link',
-//   filterListItems: '.gallery__item',
+//   wrapper: '#filter-wrapper1',
+//   navItems: '.gallery-nav__link',
+//   listItems: '.gallery__item',
 //   transitionSpeed: 'all 0.5s ease',
 // }).render();

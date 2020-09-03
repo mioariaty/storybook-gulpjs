@@ -2,7 +2,6 @@
   margin: px(0) auto;
   padding: 1rem;
   column-gap: px(30);
-  max-width: 1200px;
 
   @include media(">=tablet") {
     column-count: 3;
