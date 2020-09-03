@@ -1,5 +1,10 @@
 .divider {
-  @include set-space(px(30), 0, px(30), 0);
+  @include set-space(px(60), 0, px(60), 0);
+
+  @include media("<tablet") {
+    margin-top: px(30) !important;
+    margin-bottom: px(30) !important;
+  }
 
   img {
     margin: 0 auto;
@@ -17,15 +22,22 @@
 }
 
 .divider--outline {
-  width: 90vw;
-  height: 80vh;
+  width: 95%;
+  height: 100%;
   background-color: transparent;
-  border: 1px solid $gray2;
+  border: 1px solid rgba($color: $gray2, $alpha: 0.16);
+  border-top: unset;
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
   margin: auto;
+  z-index: -1;
+  transform: translateY(-2%);
+
+  @include media("<tablet") {
+    display: none;
+  }
 }
 
 .divider-outline--absolute {

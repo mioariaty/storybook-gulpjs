@@ -1,0 +1,95 @@
+#app {
+  max-width: 1440px;
+  margin: 0 auto;
+  position: relative;
+  padding-top: px(100);
+
+  @include media("<=tablet") {
+    padding: 0;
+  }
+}
+.section {
+  position: relative;
+  margin-bottom: px(60);
+
+  @include media("<=tablet") {
+    padding: px(16);
+    margin-bottom: px(30) !important;
+  }
+}
+
+.home-intro {
+  margin-bottom: px(240);
+  max-width: 920px;
+
+  .text {
+    font-size: px(36);
+  }
+}
+
+.home-workshop {
+  .text {
+    font-size: px(48);
+  }
+}
+
+.home-counting {
+  padding-top: px(40);
+  margin-bottom: px(120);
+}
+
+// home gallery
+.home-gallery {
+  @include media("<=tablet") {
+    overflow: hidden;
+  }
+}
+.home-gallery__title {
+  max-width: px(470);
+  margin: px(30) auto;
+}
+
+// post
+.home-post {
+  @include media("<tablet") {
+    padding: 0;
+  }
+  .carousel--vertial .swiper-pagination-bullet {
+    background-color: $color-dark;
+  }
+  .carousel--vertial .swiper-pagination-bullet-active {
+    background-color: $color-primary;
+  }
+  .carousel--vertial .swiper-pagination {
+    right: 0;
+    top: 50%;
+    transform: translate(-100%, -50%);
+  }
+}
+
+// about
+.home-about {
+  margin-bottom: 0 !important;
+  .btn--subscribe {
+    height: 100%;
+    display: block;
+  }
+  .input-control {
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+}
+.home-about__info {
+  max-width: 550px;
+  .text {
+    font-size: px(36);
+    margin-bottom: px(50);
+    display: block;
+  }
+  p {
+    color: $color-secondary;
+    margin-bottom: px(50);
+  }
+}

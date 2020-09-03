@@ -34,4 +34,8 @@
 .calendar__day {
   font-size: px(44);
   line-height: 4.4rem;
+
+  @include media("<=tablet") {
+    font-size: px(36);
+  }
 }

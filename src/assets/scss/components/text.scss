@@ -7,21 +7,29 @@
   display: inline;
 }
 .text--underline {
-  font-size: px(20);
+  font-size: px(12);
   padding: px(10) 0;
+  position: relative;
+  font-family: $font-secondary;
+  font-weight: $font-bold;
+
   &:after {
     content: "";
     position: absolute;
     bottom: 0;
-    left: 0;
-    width: 40%;
-    height: 4px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: px(30);
+    height: 1px;
     background-color: $color-dark;
   }
 }
 
 .text--image {
   font-size: px(100);
+  @include media("<=tablet") {
+    font-size: px(60);
+  }
 
   background-repeat: repeat;
   background-size: cover;
@@ -30,4 +38,54 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-font-smoothing: antialiased;
+}
+.text--intro {
+  font-family: $font-primary;
+  font-weight: $font-light;
+  color: $color-dark;
+  letter-spacing: 0.1rem;
+  font-size: px(18);
+  margin: 0;
+}
+
+.text-box {
+  position: relative;
+  margin-bottom: px(90);
+  margin-top: px(20);
+
+  &:after {
+    content: "";
+    position: absolute;
+    width: px(120);
+    height: px(120);
+    top: 50%;
+    left: 0;
+    transform: translate(-31%, -50%);
+    border: 2px solid $color-primary;
+  }
+
+  @include media("<tablet") {
+    margin-bottom: px(30);
+  }
+}
+
+.text--count {
+  font-family: $font-primary;
+  font-weight: $font-light;
+  font-size: px(48);
+  margin: 0;
+  letter-spacing: 0.05rem;
+  margin-bottom: px(20);
+}
+
+.copy-right {
+  font-family: $font-secondary;
+  font-size: px(10);
+  font-weight: $font-regular;
+  letter-spacing: 0.15rem;
+  color: $color-secondary;
+
+  span {
+    color: $color-dark;
+  }
 }

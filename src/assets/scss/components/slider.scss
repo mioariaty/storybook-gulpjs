@@ -12,6 +12,10 @@
   position: relative;
 }
 
+.swiper-button-next,
+.swiper-button-prev {
+  outline: none !important;
+}
 // Vertical slider
 .carousel--vertial {
   .swiper-pagination-bullet {
@@ -67,7 +71,8 @@
 
 // Fraction slider
 .carousel--fraction {
-  min-height: px(530);
+  // min-height: px(530);
+  height: auto;
 
   .swiper-pagination-fraction {
     display: flex;
@@ -117,3 +122,33 @@
 }
 
 // Horizontal slider
+.carousel--multilayer {
+  position: relative;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 116%;
+    height: 100%;
+    z-index: -1;
+    transform: translate(-7%, 20%);
+    background-color: $gray4;
+  }
+  &:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 131%;
+    height: 100%;
+    z-index: -2;
+    transform: translate(-12%, 30%);
+    background-color: $gray5;
+  }
+}

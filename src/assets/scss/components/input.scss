@@ -50,11 +50,11 @@
   }
 
   &:hover {
-    border-color: #40a9ff;
+    border-color: $color-primary;
   }
   &:focus {
-    border-color: #40a9ff;
-    box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.2);
+    border-color: $color-primary;
+    box-shadow: 0 0 0 2px rgba($color: $color-primary, $alpha: 0.3);
     outline: none;
   }
 }

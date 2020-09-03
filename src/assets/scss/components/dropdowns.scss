@@ -231,16 +231,11 @@ ul.menu.-floating.submenu {
   transition: 0.3s all ease;
   padding: 0 px(12);
 }
-/* Animation speed of :hover shading */
-.menu li > a:first-child {
-  transition: background-color 0.2s;
-}
 
 /* Colour of :hover shading */
 .menu li:hover > .menu__item:first-child,
 .menu li.-active > .menu__item:first-child {
   color: $color-primary !important;
-  // text-shadow: 0px 2px 3px rgba(110, 211, 207, 0.34);
 }
 
 /*

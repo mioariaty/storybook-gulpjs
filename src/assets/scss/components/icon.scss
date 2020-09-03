@@ -38,3 +38,18 @@
   height: auto;
   background-color: transparent;
 }
+
+.group-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+
+  position: fixed;
+  top: 50%;
+  left: 0;
+  background-color: transparent;
+  padding: 0;
+  transform: translate(50%, -50%);
+  z-index: 5;
+}
