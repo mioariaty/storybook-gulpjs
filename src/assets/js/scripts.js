@@ -95,24 +95,24 @@ document.addEventListener('DOMContentLoaded', function () {
   const dropdownBtn = document.querySelector('.btn--dropdown');
   const dropdownContent = document.querySelector('.dropdown__content');
 
-  if (dropdown) {
-    const toggleDropdown = () => {
-      if (dropdownContent.classList.contains('is-active')) {
-        dropdownContent.classList.remove('is-active');
-      } else {
-        dropdownContent.classList.add('is-active');
-      }
-    };
-    dropdownBtn.addEventListener('click', function (e) {
-      e.preventDefault();
-      toggleDropdown();
-    });
-    window.addEventListener('click', function () {
-      if (!event.target.matches('.btn--dropdown')) {
-        toggleDropdown();
-      }
-    });
-  }
+  // if (dropdown) {
+  //   const toggleDropdown = () => {
+  //     if (dropdownContent.classList.contains('is-active')) {
+  //       dropdownContent.classList.remove('is-active');
+  //     } else {
+  //       dropdownContent.classList.add('is-active');
+  //     }
+  //   };
+  //   dropdownBtn.addEventListener('click', function (e) {
+  //     e.preventDefault();
+  //     toggleDropdown();
+  //   });
+  //   window.addEventListener('click', function () {
+  //     if (!event.target.matches('.btn--dropdown')) {
+  //       toggleDropdown();
+  //     }
+  //   });
+  // }
 
   const root = document.querySelector('#app');
   const scrollToTop = document.querySelector('#scrollTop');

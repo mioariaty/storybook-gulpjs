@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home</title>
+  <title>Portfolio1</title>
 
   <link rel="shortcut icon" href="./assets/images/logo.png" type="image/x-icon">
   <link
@@ -21,7 +21,7 @@
 <body>
 
   <div id="app">
-    <header class="header mb-16">
+    <header class="header mb-5">
       <nav class="navbar">
         <a href="#" class="navbar__brand"><span>B</span>M.</a>
         <button class="navbar__toggler">
@@ -98,96 +98,26 @@
     </header>
 
     <main class="main">
-      <!-- intro -->
-      <section class="section home-intro mx-auto">
+      <section class="section pd-sm-0">
         <div class="grid-fluid">
-          <div class="col-desk-2 col-mob-12">
-            <div class="avatar avatar--large">
-              <img src="./assets/images/avatar.png" alt="">
+          <div class="col-desk-12">
+            <div class="background background--image"
+              style="background-image: url('assets/images/portfolio/banner.png')">
+              <h3 class="background__title">my portfilio</h3>
+              <nav aria-label="breadcrumb">
+                <ol class="breadcrumb pl-0">
+                  <li class="breadcrumb__item">
+                    <a href="#" class="breadcrumb__link text-white">Home</a>
+                  </li>
+                  <li class="breadcrumb__item">
+                    <a href="#" class="breadcrumb__link text-white">Portflio</a>
+                  </li>
+                </ol>
+              </nav>
             </div>
-          </div>
-          <div class="col-desk-10 col-mob-12 align-self-center">
-            <h2 class="text uppercase lh-60">
-              HI, MY NAME IS <span class="primary">RALPH BOWMAN.</span>
-            </h2>
-            <p class="text--intro uppercase lh-60">I AM AN VIETNAMESE PRODUCT
-              DESIGNER
-              &
-              PHOTOGRAPHY</p>
           </div>
         </div>
       </section>
-      <!-- !intro -->
-
-      <!-- banner -->
-      <section class="section home-banner">
-        <div class="col-desk-12">
-          <div class="carousel carousel--vertial">
-            <div class="demo1 swiper-container">
-              <!-- Slide wrapper -->
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <div
-                    class="background background--image background-height--large pb-0"
-                    style="background-image: url('assets/images/slider1.png')">
-                    <div class="carousel__detail">
-                      <h3 class="background__title">my portfolio</h3>
-                      <p class="text-white background__desc">
-                        On the other hand, we denounce with righteous indination
-                        and dislike men.
-                      </p>
-                    </div>
-                    <p class="category uppercase category-absolute--center">
-                      photography
-                    </p>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div
-                    class="background background--image background-height--large pb-0"
-                    style="background-image: url('assets/images/slider1.png')">
-                    <div class="carousel__detail">
-                      <h3 class="background__title">my portfolio</h3>
-                      <p class="text-white background__desc">
-                        On the other hand, we denounce with righteous indination
-                        and dislike men.
-                      </p>
-                    </div>
-                    <p class="category uppercase category-absolute--center">
-                      photography
-                    </p>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div
-                    class="background background--image background-height--large pb-0"
-                    style="background-image: url('assets/images/slider1.png')">
-                    <div class="carousel__detail">
-                      <h3 class="background__title">my portfolio</h3>
-                      <p class="text-white background__desc">
-                        On the other hand, we denounce with righteous indination
-                        and dislike men.
-                      </p>
-                    </div>
-                    <p class="category uppercase category-absolute--center">
-                      photography
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <!-- End slide wrapper -->
-
-              <!-- Add Pagination -->
-              <div class="swiper-pagination"></div>
-            </div>
-            <a href=""
-              class="icon icon--rounded icon--shadow icon-absolute--bot">
-              <i class="pe-7s-play"></i>
-            </a>
-          </div>
-        </div>
-      </section>
-      <!-- !banner -->
 
       <!-- divider -->
       <div class="divider">
@@ -197,20 +127,22 @@
 
       <!-- work shop  -->
       <section class="section workshop">
-        <div class="grid">
-          <div class="col-deks-6 col-mob-12">
-            <div class="text-box">
-              <h2 class="text">Latest Work</h2>
-              <p>On the other hand, we denounce with righteous.</p>
-            </div>
-
-          </div>
-        </div>
 
         <div id="filter-wrapper2" class="gallery">
           <div class="grid-fluid">
             <!-- nav -->
             <div class="col-mob-12 col-desk-2">
+              <div class="dropdown">
+                <form class="form">
+                  <select name="" id="" class="input-control input--rounded ">
+                    <option value="">Grid Creative</option>
+                    <option value="">Masonry</option>
+                  </select>
+                  <span class="icon icon--transparent dark">
+                    <i class="pe-7s-keypad dark"></i>
+                  </span>
+                </form>
+              </div>
               <div class="gallery-nav gallery-nav--horizontal row row-column">
                 <div class="gallery-nav__link is-active" data-filter="all">All
                 </div>
@@ -443,256 +375,10 @@
       <!-- !work shop  -->
 
       <!-- divider -->
-      <div class="divider">
+      <div class="divider divider--vertical">
         <img src="./assets/images/divider.png" alt="">
       </div>
       <!-- !divider -->
-
-      <!-- counting -->
-      <section class="section home-counting">
-        <div class="grid">
-          <div class="col-desk-4 col-mob-6">
-            <div class="text--underline text-center">
-              <h3 class="text--count">1052</h3>
-              <p class="m-0">HAPPY CLIENTS</p>
-            </div>
-          </div>
-          <div class="col-desk-4 col-mob-6">
-            <div class="text--underline text-center">
-              <h3 class="text--count">2102</h3>
-              <p class="m-0">PROJECTS FINISHED</p>
-            </div>
-          </div>
-          <div class="col-desk-4 col-mob-12">
-            <div class="text--underline text-center">
-              <h3 class="text--count">1421</h3>
-              <p class="m-0">CUPS OF COFFEE</p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- !counting -->
-
-      <!-- gallery -->
-      <section class="section home-gallery">
-        <div class="grid">
-          <div class="col-desk-10 col-mob-12 mx-auto">
-            <div class="carousel carousel--fraction carousel--multilayer">
-
-              <div class="demo2 swiper-container">
-                <!-- Slide wrapper -->
-                <div class="swiper-wrapper">
-
-                  <div class="swiper-slide">
-                    <div
-                      class="background background--image background-height--medium pb-0"
-                      style="background-image: url('./assets/images/slide3.png')">
-                    </div>
-                  </div>
-
-                  <div class="swiper-slide">
-                    <div
-                      class="background background--image background-height--medium pb-0"
-                      style="background-image: url('./assets/images/slide3.png')">
-                    </div>
-                  </div>
-
-
-                </div> <!-- End slide wrapper -->
-
-                <!-- Add Pagination -->
-                <div class="swiper-pagination"></div>
-                <!-- Add Arrows -->
-                <div class="swiper-button-next">
-                  <span class="icon icon--transparent">
-                    <i class="pe-7s-play"></i>
-                  </span>
-                </div>
-                <div class="swiper-button-prev">
-                  <span class="icon icon--reverse icon--transparent">
-                    <i class="pe-7s-play"></i>
-                  </span>
-                </div>
-
-              </div>
-            </div>
-
-            <div class="home-gallery__title text-center">
-              <p>
-                Rainbow House Flower season is upcoming again Photography
-                by © @albertdrosphotography
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- !gallery -->
-
-      <!-- divider -->
-      <div class="divider mb-8 mt-8">
-        <img src="./assets/images/divider.png" alt="">
-      </div>
-      <!-- !divider -->
-
-      <!-- blog post -->
-      <section class="section home-post">
-        <div class="grid mb-8">
-          <div class="col-desk-12 text-center">
-            <h2 class="text text--image uppercase"
-              style="background-image: url('./assets/images/bg-food.jpg')">
-              Journal</h2>
-          </div>
-        </div>
-        <div class="grid-fluid">
-          <div class="carousel carousel--vertial">
-            <div class="demo3 swiper-container">
-              <div class="swiper-wrapper ">
-                <div class="swiper-slide">
-                  <div class="grid">
-                    <div class="col-desk-6 col-mob-12">
-                      <a href="" class="post">
-                        <div class="calendar">
-                          <div class="calendar__content text-center">
-                            <h2 class="m-0 calendar__day">01</h2>
-                            <h3 class="m-0 calendar__month">NOV</h3>
-                          </div>
-                        </div>
-                        <div class="post__content">
-                          <div class="aspect-img">
-                            <img src="./assets/images/post1.png" alt="" />
-                          </div>
-                          <div class="post__detail text-center">
-                            <h3 class="category">LIFESTYLE</h3>
-                            <p class="post__title">THIS MISTAKEN IDEA</p>
-                          </div>
-                          <span class="icon icon--rounded">
-                            <i class="pe-7s-play"></i>
-                          </span>
-                        </div>
-                      </a>
-                    </div>
-                    <div class="col-desk-6 col-mob-12">
-                      <a href="" class="post">
-                        <div class="calendar">
-                          <div class="calendar__content text-center">
-                            <h2 class="m-0 calendar__day">02</h2>
-                            <h3 class="m-0 calendar__month">NOV</h3>
-                          </div>
-                        </div>
-                        <div class="post__content">
-                          <div class="aspect-img">
-                            <img src="./assets/images/post2.png" alt="" />
-                          </div>
-                          <div class="post__detail text-center">
-                            <h3 class="category">LIFESTYLE</h3>
-                            <p class="post__title">THIS MISTAKEN IDEA</p>
-                          </div>
-                          <span class="icon icon--rounded">
-                            <i class="pe-7s-play"></i>
-                          </span>
-                        </div>
-                      </a>
-                    </div>
-                  </div>
-
-                </div>
-                <div class="swiper-slide ">
-                  <div class="grid">
-                    <div class="col-desk-6 col-mob-12">
-                      <a href="" class="post">
-                        <div class="calendar">
-                          <div class="calendar__content text-center">
-                            <h2 class="m-0 calendar__day">01</h2>
-                            <h3 class="m-0 calendar__month">NOV</h3>
-                          </div>
-                        </div>
-                        <div class="post__content">
-                          <div class="aspect-img">
-                            <img src="./assets/images/post1.png" alt="" />
-                          </div>
-                          <div class="post__detail text-center">
-                            <h3 class="category">LIFESTYLE</h3>
-                            <p class="post__title">THIS MISTAKEN IDEA</p>
-                          </div>
-                          <span class="icon icon--rounded">
-                            <i class="pe-7s-play"></i>
-                          </span>
-                        </div>
-                      </a>
-                    </div>
-                    <div class="col-desk-6 col-mob-12">
-                      <a href="" class="post">
-                        <div class="calendar">
-                          <div class="calendar__content text-center">
-                            <h2 class="m-0 calendar__day">02</h2>
-                            <h3 class="m-0 calendar__month">NOV</h3>
-                          </div>
-                        </div>
-                        <div class="post__content">
-                          <div class="aspect-img">
-                            <img src="./assets/images/post2.png" alt="" />
-                          </div>
-                          <div class="post__detail text-center">
-                            <h3 class="category">LIFESTYLE</h3>
-                            <p class="post__title">THIS MISTAKEN IDEA</p>
-                          </div>
-                          <span class="icon icon--rounded">
-                            <i class="pe-7s-play"></i>
-                          </span>
-                        </div>
-                      </a>
-                    </div>
-                  </div>
-
-                </div>
-              </div>
-
-              <!-- Add Pagination -->
-              <div class="swiper-pagination"></div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- !blog post -->
-
-      <!-- divider -->
-      <div class="divider divider--vertical mb-8 mt-8">
-        <img src="./assets/images/divider.png" alt="">
-      </div>
-      <!-- !divider -->
-
-      <!-- about -->
-      <section class="section home-about">
-        <div class="grid-fluid">
-          <div class="col-desk-6 col-mob-12 pb-0">
-            <img src="./assets/images/user.png" alt="">
-          </div>
-          <div class="col-desk-6 col-mob-12 align-self-center">
-            <div class="home-about__info">
-              <h3 class="text">I’m <span class="primary">Ralph Bowman.</span>
-              </h3>
-              <p>
-                "At vero eos et accusamus et iusto odio dignissimos ducimus qui
-                blanditiis
-                praesentium voluptatum deleniti atque corrupti quos dolores et
-                quas
-                molestias excepturi sint occaecati cupiditate non provident,
-                similique sunt
-                in culpa qui officia deserunt mollitia animi”
-              </p>
-
-              <form action="" class="form">
-                <div class="form__item ">
-                  <input type="email" class="input-control input--rounded"
-                    placeholder="Email...">
-                  <button class="btn btn--subscribe primary">SUBSCRIBE</button>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- !about -->
     </main>
 
     <footer class="footer">

@@ -248,6 +248,10 @@ ul.menu.-floating.submenu {
 
   select {
     appearance: none;
+    font-family: $font-secondary;
+    font-size: px(14);
+    padding-top: px(12);
+    padding-bottom: px(12);
   }
 
   .icon {
