@@ -8,7 +8,7 @@
   display: inline;
 }
 .text--underline {
-  font-size: px(12);
+  font-size: px(13);
   padding: px(10) 0;
   position: relative;
   font-family: $font-secondary;
@@ -23,6 +23,13 @@
     width: px(30);
     height: 1px;
     background-color: $color-dark;
+  }
+}
+
+.text-underline--left {
+  &:after {
+    left: 0 !important;
+    transform: translateX(0) !important;
   }
 }
 
@@ -103,4 +110,27 @@
     letter-spacing: 0.15rem;
     color: $color-secondary;
   }
+}
+
+.text-border--left {
+  border-left: 1px solid $gray3;
+  color: $color-tertiary;
+  font-size: px(12);
+  padding-left: px(10);
+
+  span {
+    font-family: $font-secondary;
+    font-weight: $font-bold;
+    letter-spacing: 0.2rem;
+    color: $color-dark;
+  }
+
+  @include media("<=tablet") {
+    padding: px(0.4) !important;
+    border-bottom: 1px solid $gray3;
+    border-left: unset;
+  }
+}
+
+.text-icon--left {
 }

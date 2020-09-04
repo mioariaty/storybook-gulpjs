@@ -4,6 +4,10 @@
   list-style: none;
   border-radius: 0.25rem;
   align-items: center;
+  position: relative;
+
+  padding-top: px(20);
+  padding-bottom: px(20);
 }
 .pagination__link {
   position: relative;
@@ -18,5 +22,34 @@
 .pagination__item.active {
   .pagination__link {
     color: $color-primary;
+  }
+}
+
+.pagination {
+  p {
+    @include limit-line-text(1);
+    font-size: px(12);
+    font-family: $font-secondary;
+    letter-spacing: 0.2rem;
+  }
+}
+
+.pagination__menu {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  i {
+    font-size: px(40);
+  }
+  @include media("<desktop") {
+    display: none;
+  }
+}
+
+.pagination__item {
+  @include media("<desktop") {
+    padding: 0 0.8rem;
   }
 }

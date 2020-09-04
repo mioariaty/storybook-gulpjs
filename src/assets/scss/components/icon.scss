@@ -13,6 +13,10 @@
     color: $color-light;
   }
 }
+.icon--medium {
+  width: px(40);
+  height: px(40);
+}
 .icon--rounded {
   border-radius: 50%;
 }
@@ -44,7 +48,8 @@
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-
+}
+.group-icon--fixed {
   position: fixed;
   top: 50%;
   left: 0;

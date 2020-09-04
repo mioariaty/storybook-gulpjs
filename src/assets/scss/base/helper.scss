@@ -42,6 +42,18 @@
   margin-top: px(7);
   margin-bottom: px(7);
 }
+.mb-3 {
+  margin-bottom: px(30);
+  @include media("<=tablet") {
+    margin-bottom: px(15);
+  }
+}
+.mt-3 {
+  margin-top: px(30);
+  @include media("<=tablet") {
+    margin-top: px(15);
+  }
+}
 .mb-5 {
   margin-bottom: 5rem;
   @include media("<=tablet") {
@@ -75,7 +87,20 @@
     margin-bottom: 3rem !important;
   }
 }
+.mt-0 {
+  margin-top: 0 !important;
+}
+.mb-0 {
+  margin-bottom: 0 !important;
+}
+.mlr-2 {
+  margin-left: px(20);
+  margin-right: px(20);
 
+  @include media("<tablet") {
+    margin: 0;
+  }
+}
 // color
 .text-white {
   color: $color-light !important;
@@ -153,4 +178,8 @@
   @include media(">=desktop") {
     line-height: px(60);
   }
+}
+
+.d-inline-block {
+  display: inline-block;
 }
