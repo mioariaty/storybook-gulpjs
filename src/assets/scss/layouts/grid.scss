@@ -19,7 +19,7 @@
 
   // mobile
   @media screen and (max-width: $grid-mobile-breakpoint) {
-    width: $mob-grid-width;
+    width: 100%;
   }
 
   &-fluid {

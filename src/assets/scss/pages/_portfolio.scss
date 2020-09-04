@@ -1,0 +1,68 @@
+.portfolio-intro {
+  @include media("<tablet") {
+    padding: px(0.4);
+  }
+
+  h3 {
+    font-size: px(22);
+  }
+
+  .text-border--left {
+    padding-left: px(100);
+
+    p {
+      line-height: px(34);
+      margin: 0;
+    }
+  }
+}
+
+.portfolio-content {
+  .text-border--left {
+    border-left: 2px solid $color-primary;
+    padding-bottom: px(20);
+
+    @include media("<=tablet") {
+      border-bottom: 2px solid $color-primary;
+      border-left: unset;
+    }
+  }
+  p {
+    font-size: px(16);
+    color: $color-dark;
+  }
+  .icon .primary {
+    font-size: px(60);
+
+    @include media("<tablet") {
+      font-size: px(40);
+    }
+  }
+
+  .dark {
+    font-family: $font-secondary;
+    font-size: px(12);
+    font-weight: $font-bold;
+    letter-spacing: 0.2rem;
+  }
+
+  .group-icon {
+    justify-content: center;
+
+    .icon {
+      background-color: $gray4;
+      transition: 0.3s all ease;
+      margin: 0 px(8);
+      &:hover {
+        background-color: $color-blue;
+        i {
+          color: $color-light;
+        }
+      }
+    }
+    i {
+      font-size: px(16);
+      color: $color-dark;
+    }
+  }
+}
