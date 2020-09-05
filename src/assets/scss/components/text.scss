@@ -74,6 +74,10 @@
 
   @include media("<tablet") {
     margin-bottom: px(30);
+
+    &:after {
+      transform: translate(-10%, -50%);
+    }
   }
 }
 
@@ -118,13 +122,6 @@
   font-size: px(12);
   padding-left: px(10);
 
-  span {
-    font-family: $font-secondary;
-    font-weight: $font-bold;
-    letter-spacing: 0.2rem;
-    color: $color-dark;
-  }
-
   @include media("<=tablet") {
     padding: px(0.4) !important;
     border-bottom: 1px solid $gray3;
@@ -132,5 +129,15 @@
   }
 }
 
-.text-icon--left {
+.text--small {
+  font-family: $font-secondary;
+  font-size: px(12);
+  letter-spacing: 0.2rem;
+}
+
+.text-small--regular {
+  font-weight: $font-regular;
+}
+.text-small--bold {
+  font-weight: $font-bold;
 }

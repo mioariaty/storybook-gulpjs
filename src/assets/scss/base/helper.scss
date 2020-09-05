@@ -101,6 +101,10 @@
     margin: 0;
   }
 }
+.mlr-3 {
+  margin-left: px(8);
+  margin-right: px(8);
+}
 // color
 .text-white {
   color: $color-light !important;
@@ -185,4 +189,10 @@
 
 .d-inline-block {
   display: inline-block;
+}
+.d-block {
+  display: block !important;
+}
+.no-decoration {
+  text-decoration: none;
 }
