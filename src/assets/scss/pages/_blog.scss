@@ -1,0 +1,16 @@
+.blog-content {
+  @include media(">=desktop") {
+    .calendar__content {
+      max-width: 90%;
+    }
+  }
+  h3 {
+    letter-spacing: 0.2rem;
+    font-family: $font-secondary;
+    font-weight: $font-bold;
+  }
+
+  .icon .pe-7s-ribbon {
+    font-size: px(60);
+  }
+}

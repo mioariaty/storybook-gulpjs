@@ -5,6 +5,7 @@
 .gallery__item {
   position: relative;
   transition: 0.5s all ease;
+  will-change: transform;
 }
 
 .gallery__item.filter-hidden {
