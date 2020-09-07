@@ -135,6 +135,12 @@
   letter-spacing: 0.2rem;
 }
 
+.text--medium {
+  font-family: $font-secondary;
+  font-size: px(20);
+  letter-spacing: 0.2rem;
+}
+
 .text-small--regular {
   font-weight: $font-regular;
 }

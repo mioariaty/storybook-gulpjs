@@ -58,3 +58,12 @@
     outline: none;
   }
 }
+
+.input-border--bottom {
+  border: unset;
+  outline: none;
+  border-bottom: 1px solid $gray4;
+}
+.input--large {
+  font-size: px(60);
+}

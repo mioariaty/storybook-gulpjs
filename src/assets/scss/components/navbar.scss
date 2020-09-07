@@ -134,4 +134,8 @@
     color: $color-primary !important;
     text-shadow: 0px 2px 3px rgba(110, 211, 207, 0.34);
   }
+
+  &.is-active {
+    color: $color-dark;
+  }
 }

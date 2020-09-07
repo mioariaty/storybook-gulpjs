@@ -27,6 +27,12 @@
     padding: 0 !important;
   }
 }
+.pd-6 {
+  padding: px(60) !important;
+  @include media("<tablet") {
+    padding: px(12) !important;
+  }
+}
 // margin
 .mx-auto {
   margin-left: auto;
@@ -134,10 +140,14 @@
   background-color: $color-light;
 }
 .bg-gray {
-  background-color: $gray1;
+  background-color: $gray1 !important;
 }
 .bg-gray2 {
   background-color: $gray2 !important;
+}
+
+.bg-gray3 {
+  background-color: $gray4 !important;
 }
 // text
 .uppercase {
@@ -192,6 +202,9 @@
 }
 .d-block {
   display: block !important;
+}
+.d-flex {
+  display: flex;
 }
 .no-decoration {
   text-decoration: none;
