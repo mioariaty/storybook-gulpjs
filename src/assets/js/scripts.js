@@ -91,9 +91,9 @@ document.addEventListener('DOMContentLoaded', function () {
   /*
     click dropdown
   ***********************************/
-  const dropdown = document.querySelector('.dropdown');
-  const dropdownBtn = document.querySelector('.btn--dropdown');
-  const dropdownContent = document.querySelector('.dropdown__content');
+  // const dropdown = document.querySelector('.dropdown');
+  // const dropdownBtn = document.querySelector('.btn--dropdown');
+  // const dropdownContent = document.querySelector('.dropdown__content');
 
   // if (dropdown) {
   //   const toggleDropdown = () => {
@@ -114,17 +114,42 @@ document.addEventListener('DOMContentLoaded', function () {
   //   });
   // }
 
-  const root = document.querySelector('#app');
   const scrollToTop = document.querySelector('#scrollTop');
-  const outline = document.querySelector('#outline');
-  // const rootWidth = root.clientWidth;
-  // outline.style.width = `calc(${rootWidth}px + 1%)`;
-
   scrollToTop.addEventListener('click', function () {
     window.scrollTo(0, 0);
   });
-  // window.addEventListener('resize', function () {
-  //   const rootWidth = root.clientWidth;
-  //   outline.style.width = `calc(${rootWidth}px + 43.24px)`;
-  // });
+
+  // label form effect
+  const form = document.querySelector('#tab-form form');
+  if (form) {
+    const inputsEle = Array.from(form.querySelectorAll('.input-control'));
+    const labelsEle = Array.from(form.querySelectorAll('label'));
+
+    const onFocus = () => inputsEle.forEach((input) => input.focus());
+
+    const handleClick = () => {
+      labelsEle.forEach((label) => {
+        if (label.classList.contains('active')) {
+          return;
+        } else {
+          label.classList.add('active');
+          onFocus();
+        }
+      });
+    };
+
+    inputsEle.forEach((input) => input.addEventListener('click', handleClick));
+    labelsEle.forEach((label) => label.addEventListener('click', handleClick));
+
+    window.addEventListener('click', function () {
+      if (
+        !event.target.matches('.input-border--bottom') &&
+        !event.target.matches('.form__item label')
+      ) {
+        labelsEle.forEach((label) => {
+          if (label.classList.contains('active')) label.classList.remove('active');
+        });
+      }
+    });
+  }
 });

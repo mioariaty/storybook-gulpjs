@@ -67,6 +67,10 @@
 // background modify height
 .background-height--large {
   min-height: px(600);
+
+  @include media("<tablet") {
+    min-height: px(500);
+  }
 }
 .background-height--medium {
   min-height: px(500);

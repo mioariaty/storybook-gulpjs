@@ -2,8 +2,8 @@
 const Tab = function (options) {
   // select tab element
   this.tabWrapper = document.querySelector(options.tabWrapper);
-  this.tabLinks = this.tabWrapper.querySelectorAll(options.tabLinks);
-  this.tabPanes = this.tabWrapper.querySelectorAll(options.tabPanes);
+  this.tabLinks = Array.from(this.tabWrapper.querySelectorAll(options.tabLinks));
+  this.tabPanes = Array.from(this.tabWrapper.querySelectorAll(options.tabPanes));
 
   this.activeIndex = 0;
   this.isTabRender = false;
@@ -17,21 +17,29 @@ Tab.prototype = {
     }
   },
   handleClick: function (link, index) {
-    link.addEventListener('click', (e) => {
-      e.preventDefault();
-      this.goToTab(index);
+    link.addEventListener('click', (event) => {
+      event.preventDefault();
+      const currentTab = event.target.getAttribute('data-tab');
+      this.getActiveNav(index);
+      this.getActiveTabPane(currentTab);
     });
   },
-  goToTab: function (index) {
+  getActiveNav: function (index) {
     if (index !== this.activeIndex && index >= 0 && index <= this.tabLinks.length) {
       this.tabLinks[this.activeIndex].classList.remove('is-active');
       this.tabLinks[index].classList.add('is-active');
-
-      this.tabPanes[this.activeIndex].classList.remove('is-active');
-      this.tabPanes[index].classList.add('is-active');
-
       this.activeIndex = index;
     }
+  },
+  getActiveTabPane: function (tab) {
+    return this.tabPanes.map((item) => {
+      const tabContent = item.getAttribute('data-tab');
+      if (tabContent.includes(tab) === true) {
+        item.classList.add('is-active');
+      } else {
+        item.classList.remove('is-active');
+      }
+    });
   },
 };
 

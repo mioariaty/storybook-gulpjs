@@ -14,7 +14,7 @@ DataFilter.prototype = {
   render: function () {
     if (!this.isInit) {
       this.isInit = true;
-      this.listItems.forEach((node) => (node.style.transition = this.transitionSpeed));
+      this.listItems.forEach((item) => (item.style.transition = this.transitionSpeed));
       this.navItems.forEach((navItem, index) => this.handleClicked(navItem, index));
     }
   },
@@ -45,7 +45,6 @@ DataFilter.prototype = {
     });
   },
 };
-
 // window.DataFilter = DataFilter;
 
 // module.exports = DataFilter;
