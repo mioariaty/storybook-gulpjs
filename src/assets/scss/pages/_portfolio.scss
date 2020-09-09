@@ -59,3 +59,29 @@
     }
   }
 }
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+
+  @include media("<tablet") {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.col-big {
+  grid-area: 1 / 1 / 3 / 3;
+
+  @include media("<tablet") {
+    grid-area: unset;
+  }
+}
+.col-big-2 {
+  grid-area: 4 / 2 / 6 / 4;
+
+  @include media("<tablet") {
+    grid-area: unset;
+  }
+}
