@@ -7,12 +7,9 @@
   <title>Contact</title>
 
   <link rel="shortcut icon" href="./assets/images/logo.png" type="image/x-icon">
-  <link
-    href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
     rel="stylesheet">
-  <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/vendors/fontawesome/all.min.css">
   <link rel="stylesheet" href="assets/css/styles.css">
 
@@ -33,7 +30,7 @@
             <i class="fas fa-times"></i>
           </button>
 
-          <ul class="navbar-nav menu -horizontal">
+          <ul class="navbar-nav menu -horizontal pl-6">
             <li class="nav__item ">
               <a href="index.html" class="nav__link light ">Home</a>
             </li>
@@ -43,8 +40,7 @@
               <!-- sub menu -->
               <ul>
                 <li><a href="#" class="menu__item">Bacon</a></li>
-                <li class="hasSubmenu"> <a href="#"
-                    class="menu__item">Sub-menu</a>
+                <li class="hasSubmenu"> <a href="#" class="menu__item">Sub-menu</a>
                   <ul>
                     <li><a href="#" class="menu__item">Bacon</a></li>
                     <li><a href="#" class="menu__item">Ipsum</a></li>
@@ -58,8 +54,7 @@
                   <ul>
                     <li><a href="#" class="menu__item">Bacon</a></li>
                     <li><a href="#" class="menu__item">Ipsum</a></li>
-                    <li class="hasSubmenu"> <a href="#"
-                        class="menu__item">Sub-sub-menu!</a>
+                    <li class="hasSubmenu"> <a href="#" class="menu__item">Sub-sub-menu!</a>
                       <ul>
                         <li><a href="#" class="menu__item">Bacon</a></li>
                         <li><a href="#" class="menu__item">Ipsum</a></li>
@@ -85,8 +80,7 @@
           </ul>
 
           <form class="form form--horizontal">
-            <input type="search" placeholder="Search"
-              class="form-item__input input--rounded input--search bg-gray2"
+            <input type="search" placeholder="Search" class="form-item__input input--rounded input--search bg-gray2"
               id="searchInput">
             <button class="btn btn--search bg-gray2">
               <i class="pe-7s-search"></i>
@@ -130,20 +124,17 @@
       <section id="tab-form" class="section mb-8">
         <div class="grid">
           <div class="col-desk-8 col-mob-12 mx-auto">
-            <ul class="group-label">
+            <ul class="group-label p-0">
               <li class="form__label">
-                <a href="" class="nav__link no-decoration gray1 is-active"
-                  data-tab="name">Your
+                <a href="" class="nav__link no-decoration gray1 is-active" data-tab="name">Your
                   Name*</a>
               </li>
               <li class="form__label">
-                <a href="" class="nav__link no-decoration gray1"
-                  data-tab="email">Your
+                <a href="" class="nav__link no-decoration gray1" data-tab="email">Your
                   Email*</a>
               </li>
               <li class="form__label">
-                <a href="" class="nav__link no-decoration gray1"
-                  data-tab="message">Message</a>
+                <a href="" class="nav__link no-decoration gray1" data-tab="message">Message</a>
               </li>
             </ul>
           </div>
@@ -151,8 +142,7 @@
           <div class="col-desk-9 col-mob-12 mx-auto">
             <form action="" class="form form--horizontal">
               <div class="form__item tab__pane is-active" data-tab="name">
-                <input type="text" name="name"
-                  class="input-control input-border--bottom  gray3" value="">
+                <input type="text" name="name" class="input-control input-border--bottom  gray3" value="">
                 <label class="">Your Name</label>
                 <a href="#" class="btn icon nav__link" data-tab="email">
                   <i class="pe-7s-right-arrow"></i>
@@ -160,16 +150,14 @@
 
               </div>
               <div class="form__item tab__pane" data-tab="email">
-                <input type="email" name="email"
-                  class="input-control input-border--bottom  gray3" value="">
+                <input type="email" name="email" class="input-control input-border--bottom  gray3" value="">
                 <label class="">Your Email</label>
                 <a href="#" class="btn icon nav__link" data-tab="message">
                   <i class="pe-7s-right-arrow"></i>
                 </a>
               </div>
               <div class="form__item tab__pane" data-tab="message">
-                <input type="text" name="text"
-                  class="input-control input-border--bottom  gray3" value="">
+                <input type="text" name="text" class="input-control input-border--bottom  gray3" value="">
                 <label class="">Message</label>
                 <button class="btn icon ">
                   <i class="pe-7s-right-arrow"></i>
@@ -184,27 +172,54 @@
       <!-- map -->
       <section class="section section-map">
         <div class="grid-fluid">
-          <div class="col-desk-6 col-mob-12">
-            <img src="./assets/images/contact/map.png" class="img-cover" alt="">
+          <div class="col-desk-6 col-tab-12 col-mob-12">
+            <img src="./assets/images/contact/map.png" class="img-cover h-100" alt="">
           </div>
 
-          <div class="col-desk-6 col-mob-12 pd-6">
+          <div class="col-desk-6 col-tab-12 col-mob-12 pl-6 align-self-center">
             <h3 class="text--medium uppercase">Contact info</h3>
-            <p class="secondary">
+            <p class="secondary mb-5">
               Id est laborum et dolorum fuga. Et harum quidem rerum facilis est
               et expedita distinctio.
             </p>
 
-            <div class="group-text d-flex">
-              <div class="icon icon--rounded bg-gray3">
-                <i class="pe-7s-map-marker dark"></i>
+            <div class="group-text d-flex mb-3">
+              <div class="col-desk-2 col-mob-3">
+                <span class="icon icon--rounded bg-gray3">
+                  <i class="pe-7s-map-marker dark"></i>
+                </span>
               </div>
-              <div class="align-self-center">
-                <p class="mt-0">ADDRESS</p>
-                <p class="m-0">121 King Street, Melbourne Victoria 3000
+              <div class="col-desk-10 col-mob-9 align-self-center">
+
+                <p class="m-0 text-small--bold text--md uppercase">address</p>
+                <p class="m-0 secondary">121 King Street, Melbourne Victoria 3000
                   Australia</p>
+
               </div>
             </div>
+            <div class="group-text d-flex mb-3">
+              <div class="col-desk-2 col-mob-3">
+                <span class="icon icon--rounded bg-gray3">
+                  <i class="pe-7s-mail dark"></i>
+                </span>
+              </div>
+              <div class="col-desk-10 col-mob-9 align-self-center">
+                <p class="m-0 text-small--bold text--md uppercase">email</p>
+                <p class="m-0 secondary">bowman@email.com</p>
+              </div>
+            </div>
+            <div class="group-text d-flex mb-3">
+              <div class="col-desk-2 col-mob-3">
+                <span class="icon icon--rounded bg-gray3">
+                  <i class="pe-7s-phone dark"></i>
+                </span>
+              </div>
+              <div class="col-desk-10 col-mob-9 align-self-center">
+                <p class="m-0 text-small--bold text--md uppercase">call me</p>
+                <p class="m-0 secondary">+98 76543210 or +123 4567890</p>
+              </div>
+            </div>
+
           </div>
       </section>
       <!-- !map -->
@@ -258,8 +273,7 @@
   </div>
 
   <!-- outline -->
-  <div id="outline"
-    class="divider--outline divider-outline--absolute divider-outline--2"></div>
+  <div id="outline" class="divider--outline divider-outline--absolute divider-outline--2"></div>
   <!-- !outline -->
 
   <!-- scroll to top -->

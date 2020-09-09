@@ -96,6 +96,7 @@
   font-weight: $font-regular;
   letter-spacing: 0.15rem;
   color: $color-secondary;
+  margin: 0;
 
   span {
     color: $color-dark;
@@ -134,7 +135,11 @@
   font-size: px(12);
   letter-spacing: 0.2rem;
 }
-
+.text--md {
+  font-size: px(14);
+  font-family: $font-secondary;
+  letter-spacing: 0.2rem;
+}
 .text--medium {
   font-family: $font-secondary;
   font-size: px(20);
