@@ -33,7 +33,7 @@ export const Vertical = () => {
 
           <div class="masonry">
 
-            <div class="masonry__item">
+            <div class="masonry-col">
 
               <div class="gallery__item" data-filter='["nature"]'>
                 <div class="box">
@@ -53,7 +53,7 @@ export const Vertical = () => {
               </div>
             </div>
 
-            <div class="masonry__item">
+            <div class="masonry-col">
               <div class="gallery__item" data-filter='["drinknfood"]'>
                 <div class="box">
                   <a href="">
@@ -72,7 +72,7 @@ export const Vertical = () => {
               </div>
             </div>
 
-            <div class="masonry__item">
+            <div class="masonry-col">
               <div class="gallery__item" data-filter='["garden"]'>
                 <div class="box">
                   <a href="">
@@ -95,7 +95,7 @@ export const Vertical = () => {
 
             <!-- col 2 -->
 
-            <div class="masonry__item">
+            <div class="masonry-col">
               <div class="gallery__item" data-filter='["drinknfood"]'>
                 <div class="box">
                   <a href="">
@@ -114,7 +114,7 @@ export const Vertical = () => {
               </div>
             </div>
 
-            <div class="masonry__item">
+            <div class="masonry-col">
               <div class="gallery__item" data-filter='["nature"]'>
                 <div class="box">
                   <a href="">
@@ -133,7 +133,7 @@ export const Vertical = () => {
               </div>
             </div>
 
-            <div class="masonry__item">
+            <div class="masonry-col">
               <div class="gallery__item" data-filter='["animator"]'>
                 <div class="box">
                   <a href="">
@@ -155,7 +155,7 @@ export const Vertical = () => {
             <!-- !col 2 -->
 
             <!-- col 3 -->
-            <div class="masonry__item">
+            <div class="masonry-col">
               <div class="gallery__item" data-filter='["orange"]'>
                 <div class="box">
                   <a href="">
@@ -174,7 +174,7 @@ export const Vertical = () => {
               </div>
             </div>
 
-            <div class="masonry__item">
+            <div class="masonry-col">
               <div class="gallery__item" data-filter='["garden"]'>
                 <div class="box">
                   <a href="">
@@ -193,7 +193,7 @@ export const Vertical = () => {
               </div>
             </div>
 
-            <div class="masonry__item">
+            <div class="masonry-col">
               <div class="gallery__item" data-filter='["nature"]'>
                 <div class="box">
                   <a href="">
@@ -253,7 +253,7 @@ export const Horizontal = () => {
 
           <div class="masonry">
 
-            <div class="masonry__item">
+            <div class="masonry-col">
 
               <div class="gallery__item" data-filter='["nature"]'>
                 <div class="box">
@@ -273,7 +273,7 @@ export const Horizontal = () => {
               </div>
             </div>
 
-            <div class="masonry__item">
+            <div class="masonry-col">
               <div class="gallery__item" data-filter='["drinknfood"]'>
                 <div class="box">
                   <a href="">
@@ -292,7 +292,7 @@ export const Horizontal = () => {
               </div>
             </div>
 
-            <div class="masonry__item">
+            <div class="masonry-col">
               <div class="gallery__item" data-filter='["garden"]'>
                 <div class="box">
                   <a href="">
@@ -311,7 +311,7 @@ export const Horizontal = () => {
               </div>
             </div>
 
-            <div class="masonry__item">
+            <div class="masonry-col">
               <div class="gallery__item" data-filter='["drinknfood"]'>
                 <div class="box">
                   <a href="">
@@ -330,7 +330,7 @@ export const Horizontal = () => {
               </div>
             </div>
 
-            <div class="masonry__item">
+            <div class="masonry-col">
               <div class="gallery__item" data-filter='["nature"]'>
                 <div class="box">
                   <a href="">
@@ -349,7 +349,7 @@ export const Horizontal = () => {
               </div>
             </div>
 
-            <div class="masonry__item">
+            <div class="masonry-col">
               <div class="gallery__item" data-filter='["animator"]'>
                 <div class="box">
                   <a href="">
@@ -368,7 +368,7 @@ export const Horizontal = () => {
               </div>
             </div>
 
-            <div class="masonry__item">
+            <div class="masonry-col">
               <div class="gallery__item" data-filter='["orange"]'>
                 <div class="box">
                   <a href="">
@@ -387,7 +387,7 @@ export const Horizontal = () => {
               </div>
             </div>
 
-            <div class="masonry__item">
+            <div class="masonry-col">
               <div class="gallery__item" data-filter='["garden"]'>
                 <div class="box">
                   <a href="">
@@ -406,7 +406,7 @@ export const Horizontal = () => {
               </div>
             </div>
 
-            <div class="masonry__item">
+            <div class="masonry-col">
               <div class="gallery__item" data-filter='["nature"]'>
                 <div class="box">
                   <a href="">

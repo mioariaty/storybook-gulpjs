@@ -49,16 +49,4 @@ DataFilter.prototype = {
 
 // module.exports = DataFilter;
 
-const example2 = new DataFilter({
-  wrapper: '#filter-wrapper2',
-  navItems: '.gallery-nav__link',
-  listItems: '.gallery__item',
-  transitionSpeed: 'all 0.5s ease',
-}).render();
 
-// const example = new DataFilter({
-//   wrapper: '#filter-wrapper1',
-//   navItems: '.gallery-nav__link',
-//   listItems: '.gallery__item',
-//   transitionSpeed: 'all 0.5s ease',
-// }).render();
