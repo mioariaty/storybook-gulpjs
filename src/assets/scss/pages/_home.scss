@@ -23,6 +23,28 @@
   @include media("<=tablet") {
     overflow: hidden;
   }
+
+  .category-absolute--center {
+    left: 8%;
+    top: 25%;
+    margin: 0;
+    color: $color-dark;
+
+    &:after {
+      content: "";
+      position: absolute;
+      width: 140%;
+      height: 1.5px;
+      background-color: currentColor;
+      left: 0;
+      top: 50%;
+      transform: translate(-130%, -50%);
+    }
+
+    @include media("<tablet") {
+      color: $color-light;
+    }
+  }
 }
 .home-gallery__title {
   max-width: px(470);
