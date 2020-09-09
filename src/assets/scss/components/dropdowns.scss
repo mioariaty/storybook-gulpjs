@@ -1,21 +1,6 @@
-/*
-Naming convention:
-Block
-element
--modifier
-*/
-
 .menu {
   display: none;
   position: relative;
-}
-/* Three basic menu layouts */
-/* This also enforces that menu is a ul, and that
-  * layout modifier is specified
-*/
-ul.menu.-horizontal,
-ul.menu.-vertical {
-  // display: inline-block;
 }
 ul.menu.-floating {
   display: block;
