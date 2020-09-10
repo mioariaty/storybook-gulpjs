@@ -61,6 +61,12 @@
     padding-left: px(12) !important;
   }
 }
+.pt-6 {
+  padding-top: px(60) !important;
+  @include media("<tablet") {
+    padding-top: px(16) !important;
+  }
+}
 // margin
 .mx-auto {
   margin-left: auto;
