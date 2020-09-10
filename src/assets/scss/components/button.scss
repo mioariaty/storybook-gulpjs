@@ -31,25 +31,32 @@
   font-size: px(18);
 }
 
-
 .btn--close {
   border: unset;
-  background-color: transparent;
-  padding: 0.4rem 0.8rem;
+  background-color: $color-dark;
+  padding: 0;
   line-height: 1;
-  border-radius: 2px;
+  border-radius: 50%;
   outline: none;
   cursor: pointer;
   color: $color-light;
   font-size: 2rem;
   position: absolute;
-  top: 16px;
+  top: 24px;
   right: 16px;
   z-index: 1;
   display: none;
 
+  i {
+    font-weight: $font-light;
+  }
   @include media("<desktop") {
-    display: block;
+    display: flex;
+    width: 31px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
   }
 }
 
