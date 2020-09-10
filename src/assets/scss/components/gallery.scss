@@ -60,6 +60,7 @@
   .gallery-nav__link {
     padding-left: px(40);
     &.is-active {
+      color: $color-dark;
       &:after {
         top: 50%;
         left: 0;

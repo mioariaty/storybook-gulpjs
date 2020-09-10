@@ -152,3 +152,12 @@
 .text-small--bold {
   font-weight: $font-bold;
 }
+
+.group-text--couting {
+  padding-top: 4rem;
+  margin-bottom: 12rem;
+
+  @include media("<tablet") {
+    padding-top: px(16);
+  }
+}

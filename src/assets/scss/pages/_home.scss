@@ -12,12 +12,6 @@
     font-size: px(48);
   }
 }
-
-.home-counting {
-  padding-top: px(40);
-  margin-bottom: px(120);
-}
-
 // home gallery
 .home-gallery {
   @include media("<=tablet") {

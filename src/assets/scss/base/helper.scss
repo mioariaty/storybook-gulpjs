@@ -1,7 +1,9 @@
 .text-center {
   text-align: center;
 }
-
+.text-right {
+  text-align: right;
+}
 .fadeIn-left {
   left: 20%;
 }
@@ -33,6 +35,10 @@
     padding: px(12) !important;
   }
 }
+.plr-1 {
+  padding-left: px(12);
+  padding-right: px(12);
+}
 .plr-6 {
   padding-left: px(60) !important;
   padding-right: px(60) !important;
@@ -43,6 +49,13 @@
 }
 .pl-6 {
   padding-left: px(60) !important;
+  @include media("<tablet") {
+    padding-right: px(12) !important;
+    padding-left: px(12) !important;
+  }
+}
+.pr-6 {
+  padding-right: px(60) !important;
   @include media("<tablet") {
     padding-right: px(12) !important;
     padding-left: px(12) !important;
@@ -88,6 +101,12 @@
   margin-bottom: 8rem !important;
   @include media("<=tablet") {
     margin-bottom: 3rem !important;
+  }
+}
+.mb-13 {
+  margin-bottom: px(130) !important;
+  @include media("<=tablet") {
+    margin-bottom: px(30) !important;
   }
 }
 .mb-16 {
@@ -160,9 +179,11 @@
 .bg-gray2 {
   background-color: $gray2 !important;
 }
-
 .bg-gray3 {
   background-color: $gray4 !important;
+}
+.bg-gray5 {
+  background-color: $gray5;
 }
 // text
 .uppercase {
@@ -213,7 +234,7 @@
 }
 
 .d-inline-block {
-  display: inline-block;
+  display: inline-block !important;
 }
 .d-block {
   display: block !important;
