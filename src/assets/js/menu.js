@@ -64,10 +64,23 @@
     forEach($('.menu > li.hasSubmenu li.hasSubmenu'), function (e) {
       e.addEventListener('mouseover', showMenu);
     });
-    
+
 
     document.addEventListener('click', hideAllInactiveMenus);
 
-    console.log(window);
+    function subResize() {
+      if (window.innerWidth < 768) {
+        const submenus = document.querySelectorAll('.hasSubmenu > ul');
+
+        submenus.forEach(menu => {
+          menu.classList.add('submenu')
+        })
+      }
+      return;
+    }
+    subResize()
+    window.addEventListener('resize', function () {
+      subResize()
+    })
   });
 })();

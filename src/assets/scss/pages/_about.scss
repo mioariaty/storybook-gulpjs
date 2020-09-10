@@ -3,7 +3,6 @@
     letter-spacing: 0.1rem;
     color: $color-dark;
   }
-
   @include media("<=tablet") {
     .text--intro {
       line-height: px(26);

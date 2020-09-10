@@ -52,6 +52,10 @@ ul.menu.-floating {
 }
 .menu li > ul.submenu {
   display: block;
+
+  @include media("<tablet") {
+    position: relative;
+  }
 }
 
 /* Menu animation */
@@ -199,6 +203,10 @@ ul.menu.-floating {
 .menu li > a {
   text-decoration: none;
   color: inherit;
+
+  @include media("<tablet") {
+    text-align: center;
+  }
 }
 .menu__item {
   font-family: $font-secondary;
