@@ -54,15 +54,15 @@
     });
 
     forEach($('.menu > li.hasSubmenu'), function (e) {
-      e.addEventListener('mouseover', showMenu);
+      e.addEventListener('mouseenter', showMenu);
     });
 
     forEach($('.menu > li.hasSubmenu li'), function (e) {
-      e.addEventListener('mouseover', hideAllInactiveMenus);
+      e.addEventListener('mouseenter', hideAllInactiveMenus);
     });
 
     forEach($('.menu > li.hasSubmenu li.hasSubmenu'), function (e) {
-      e.addEventListener('mouseover', showMenu);
+      e.addEventListener('mouseenter', showMenu);
     });
 
 
