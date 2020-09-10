@@ -5,18 +5,17 @@
   }
 
   function forEach(collection, iterator) {
-    for (var key in Object.keys(collection)) {
+    for (let key in Object.keys(collection)) {
       iterator(collection[key]);
     }
   }
 
   function showMenu(menu) {
     var menu = this;
-    var ul = $('ul', menu)[0];
-
+    const ul = $('ul', menu)[0];
     if (!ul || ul.classList.contains('submenu')) return;
+    menu.classList.add('active');
 
-    menu.classList.add('-active');
     ul.classList.add('-animating');
     ul.classList.add('submenu');
     setTimeout(function () {
@@ -24,13 +23,13 @@
     }, 25);
   }
 
-  function hideMenu(menu) {
-    var menu = this;
-    var ul = $('ul', menu)[0];
-
+  function hideMenu() {
+    let menu = this;
+    const ul = $('ul', menu)[0];
     if (!ul || !ul.classList.contains('submenu')) return;
 
-    menu.classList.remove('-active');
+    menu.classList.remove('active');
+
     ul.classList.add('-animating');
     setTimeout(function () {
       ul.classList.remove('submenu');
@@ -38,9 +37,8 @@
     }, 300);
   }
 
-  function hideAllInactiveMenus(menu) {
-    var menu = this;
-    forEach($('li.hasSubmenu.-active:not(:hover)', menu.parent), function (e) {
+  function hideAllInactiveMenus() {
+    forEach($('li.hasSubmenu.active:not(:hover)', this.parent), function (e) {
       e.hideMenu && e.hideMenu();
     });
   }
@@ -54,18 +52,22 @@
     forEach($('.menu > li.hasSubmenu'), function (e) {
       e.addEventListener('click', showMenu);
     });
+
     forEach($('.menu > li.hasSubmenu'), function (e) {
-      e.addEventListener('mouseenter', showMenu);
+      e.addEventListener('mouseover', showMenu);
     });
 
     forEach($('.menu > li.hasSubmenu li'), function (e) {
-      e.addEventListener('mouseenter', hideAllInactiveMenus);
+      e.addEventListener('mouseover', hideAllInactiveMenus);
     });
 
     forEach($('.menu > li.hasSubmenu li.hasSubmenu'), function (e) {
-      e.addEventListener('mouseenter', showMenu);
+      e.addEventListener('mouseover', showMenu);
     });
+    
 
     document.addEventListener('click', hideAllInactiveMenus);
+
+    console.log(window);
   });
 })();

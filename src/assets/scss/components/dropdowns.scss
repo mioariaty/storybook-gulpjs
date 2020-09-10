@@ -47,29 +47,24 @@ ul.menu.-floating {
 }
 
 /* Menu behaviour */
-.menu li > ul,
-.menu.-floating {
+.menu li > ul {
   display: none;
 }
-.menu li > ul.submenu,
-ul.menu.-floating.submenu {
+.menu li > ul.submenu {
   display: block;
 }
 
 /* Menu animation */
 .menu li > ul,
-.menu.-horizontal.-alignRight li > ul,
-.menu.-floating {
+.menu.-horizontal.-alignRight li > ul {
   opacity: 1;
   transform: scale(1) translateY(0px);
   transform-origin: left top;
 }
-.menu.-alignRight li > ul,
-.menu.-floating.-alignRight {
+.menu.-alignRight li > ul {
   transform-origin: right top;
 }
-.menu li > ul.-animating,
-.menu.-floating.-animating {
+.menu li > ul.-animating {
   opacity: 0 !important;
   transform: scale(0.96) translateX(-16px);
 }
@@ -79,8 +74,7 @@ ul.menu.-floating.submenu {
 .menu.-horizontal > li > ul.-animating {
   transform: scale(0.96) translateY(-16px);
 }
-.menu.-alignRight li > ul.-animating,
-.menu.-floating.-alignRight.-animating {
+.menu.-alignRight li > ul.-animating {
   transform: scale(0.96) translateX(16px);
 }
 .menu.-horizontal.-alignRight > li > ul.-animating {
@@ -88,38 +82,40 @@ ul.menu.-floating.submenu {
 }
 
 // /* Submenu chevrons */
-// .menu li.hasSubmenu > a:after {
-//   display: block;
-//   position: absolute;
+@include media("<tablet") {
+  .menu li.hasSubmenu > a:after {
+    display: block;
+    position: absolute;
 
-//   width: 8px;
-//   height: 8px;
-//   right: 8px;
-//   bottom: 0px;
-//   top: 0px;
-//   margin: auto 0px;
+    width: 8px;
+    height: 8px;
+    right: 8px;
+    bottom: 0px;
+    top: 0px;
+    margin: auto 0px;
 
-//   transform: rotate(45deg);
-//   border-width: 1px;
-//   border-color: black;
-//   border-style: solid solid none none;
+    transform: rotate(45deg);
+    border-width: 1px;
+    border-color: black;
+    border-style: solid solid none none;
 
-//   content: "";
-// }
-// .menu.-horizontal > li.hasSubmenu > a:after {
-//   width: 4px;
-//   height: 4px;
-//   bottom: 4px;
-//   top: auto;
-//   left: 0px;
-//   right: 0px;
-//   margin: 0px auto;
+    content: "";
+  }
+  .menu.-horizontal > li.hasSubmenu > a:after {
+    width: 4px;
+    height: 4px;
+    bottom: 4px;
+    top: auto;
+    left: 0px;
+    right: 0px;
+    margin: 0px auto;
 
-//   border-style: none solid solid none;
-// }
-// .menu li.hasSubmenu.-noChevron > a:after {
-//   display: none;
-// }
+    border-style: none solid solid none;
+  }
+  .menu li.hasSubmenu.-noChevron > a:after {
+    display: none;
+  }
+}
 
 /*
 ** Configurable values
@@ -154,9 +150,7 @@ ul.menu.-floating.submenu {
 }
 /* For submenus */
 .menu > li ul .Icon,
-.menu.-floating .Icon,
-.menu > li ul *[data-icon]:before,
-.menu.-floating *[data-icon]:before {
+.menu > li ul *[data-icon]:before {
   font-size: 18px;
 }
 
@@ -192,14 +186,12 @@ ul.menu.-floating.submenu {
 }
 
 /* Minimum width of dropdown menus */
-.menu.-horizontal li > ul,
-.menu.-floating {
+.menu.-horizontal li > ul {
   min-width: 200px;
 }
 
 /* Animation speed of dropdown menus */
-.menu li > ul,
-.menu.-floating {
+.menu li > ul {
   transition: width 0.1s, height 0.1s, transform 0.1s, opacity 0.1s;
 }
 
@@ -219,7 +211,7 @@ ul.menu.-floating.submenu {
 
 /* Colour of :hover shading */
 .menu li:hover > .menu__item:first-child,
-.menu li.-active > .menu__item:first-child {
+.menu li.active > .menu__item:first-child {
   color: $color-primary !important;
 }
 
