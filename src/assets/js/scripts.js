@@ -115,9 +115,11 @@ document.addEventListener('DOMContentLoaded', function () {
   // }
 
   const scrollToTop = document.querySelector('#scrollTop');
-  scrollToTop.addEventListener('click', function () {
-    window.scrollTo(0, 0);
-  });
+  if (scrollToTop) {
+    scrollToTop.addEventListener('click', function () {
+      window.scrollTo(0, 0);
+    });
+  }
 
   // label form effect
   const form = document.querySelector('#tab-form form');
@@ -126,6 +128,22 @@ document.addEventListener('DOMContentLoaded', function () {
     const labelsEle = Array.from(form.querySelectorAll('label'));
 
     const onFocus = () => inputsEle.forEach((input) => input.focus());
+
+    const handleOnChange = (e) => {
+      const { value } = e.target;
+      labelsEle.forEach((label) => {
+        if (label.classList.contains('active')) {
+          return;
+        }
+        else if (value.length > 0) {
+          label.classList.add('active');
+          onFocus();
+        } else {
+          label.classList.add('active');
+        }
+      });
+
+    }
 
     const handleClick = () => {
       labelsEle.forEach((label) => {
@@ -138,16 +156,21 @@ document.addEventListener('DOMContentLoaded', function () {
       });
     };
 
+    inputsEle.forEach(input => input.addEventListener("change", handleOnChange.bind(this)));
     inputsEle.forEach((input) => input.addEventListener('click', handleClick));
+
+
     labelsEle.forEach((label) => label.addEventListener('click', handleClick));
 
-    window.addEventListener('click', function () {
+    window.addEventListener('click', function (e) {
       if (
         !event.target.matches('.input-border--bottom') &&
         !event.target.matches('.form__item label')
       ) {
         labelsEle.forEach((label) => {
-          if (label.classList.contains('active')) label.classList.remove('active');
+          if (label.classList.contains('active')) {
+            label.classList.remove('active')
+          };
         });
       }
     });

@@ -103,20 +103,6 @@
   }
 }
 
-.author {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translate(-50%, 20%);
-  p {
-    margin: 0;
-    font-size: px(10);
-    font-family: $font-secondary;
-    letter-spacing: 0.15rem;
-    color: $color-secondary;
-  }
-}
-
 .text-border--left {
   border-left: 1px solid $gray3;
   color: $color-tertiary;

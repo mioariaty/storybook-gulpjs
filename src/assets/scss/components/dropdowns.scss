@@ -51,10 +51,19 @@ ul.menu.-floating {
   display: none;
 }
 .menu li > ul.submenu {
-  display: block;
+  display: none;
 
   @include media("<tablet") {
     position: relative;
+    display: block;
+  }
+}
+
+.hasSubmenu {
+  &:hover {
+    .submenu {
+      display: block;
+    }
   }
 }
 

@@ -33,7 +33,7 @@
             <li class="nav__item hasSubmenu">
               <a href="index.html" class="nav__link">Home</a>
               <!-- sub menu -->
-              <ul>
+              <ul class="submenu">
                 <li><a href="home2.html" class="menu__item light">Home 2</a></li>
               </ul>
               <!-- !sub menu -->
@@ -42,9 +42,8 @@
             <li class="nav__item hasSubmenu">
               <a href="about.html" class="nav__link">About</a>
               <!-- sub menu -->
-              <ul>
+              <ul class="submenu">
                 <li><a href="services.html" class="menu__item">Services</a></li>
-
               </ul>
               <!-- !sub menu -->
             </li>
@@ -53,7 +52,7 @@
               <a href="portfolio1.html" class="nav__link menu__item">Portfolio</a>
 
               <!-- sub menu -->
-              <ul>
+              <ul class="submenu">
                 <li><a href="portfolio2.html" class="menu__item">Portfolio 2</a></li>
                 <li><a href="portfolio3.html" class="menu__item">Portfolio 3</a></li>
               </ul>
@@ -63,7 +62,7 @@
             <li class="nav__item hasSubmenu">
               <a href="blog.html" class="nav__link menu__item">Blog</a>
               <!-- sub menu -->
-              <ul>
+              <ul class="submenu">
                 <li><a href="blog-single.html" class="menu__item">Blog single</a></li>
                 <li><a href="blog-standard.html" class="menu__item">Blog standard</a></li>
               </ul>
@@ -312,26 +311,25 @@
 
         </div>
       </div>
-
-      <div class="grid">
-        <div class="col-desk-12 text-center">
-          <p class="copy-right">COPYRIGHT 2014 BY <span>WILOKE</span></p>
-        </div>
-      </div>
     </footer>
   </div>
 
   <!-- outline -->
-  <div id="outline" class="divider--outline divider-outline--absolute divider-outline--2"></div>
+  <div class="outline outline--top"></div>
+  <div class="outline outline--bottom"></div>
+  <div class="outline outline--left"></div>
+  <div class="outline outline--right"></div>
   <!-- !outline -->
 
   <!-- scroll to top -->
-  <button class="btn btn--scroll" id="scrollTop">
-    <span>
-      scroll to top
-    </span>
-    <i class="pe-7s-upload"></i>
-  </button>
+  <div class="scrolltop">
+    <button class="btn btn--scroll" id="scrollTop">
+      <span>
+        scroll to top
+      </span>
+      <i class="pe-7s-upload"></i>
+    </button>
+  </div>
   <!-- !scroll to top -->
 
   <!-- group social icons -->
@@ -355,8 +353,11 @@
     <p>RALPH BOWMAN</p>
   </div>
 
+  <div class="copyright">
+    <p class="copy-right">COPYRIGHT 2014 BY <span>WILOKE</span></p>
+  </div>
+
   <!-- script -->
-  <script src="assets/js/menu.js"></script>
   <script src="assets/js/scripts.js"></script>
 </body>
 
