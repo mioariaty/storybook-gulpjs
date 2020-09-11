@@ -23,21 +23,30 @@
     top: 50%;
     transform: translateY(-50%);
   }
+
   .input--search {
+    width: 0;
+    will-change: width;
+
     @include media(">desktop") {
-      transform: translateX(100%);
       visibility: hidden;
       opacity: 0;
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
     }
   }
   .form {
     min-width: auto;
-  }
-  .input--search.hidden {
-    display: block;
-    visibility: visible;
-    opacity: 1;
-    transform: translateX(0%);
+
+    &:hover .input--search {
+      width: 200px;
+      display: block;
+      visibility: visible;
+      opacity: 1;
+      transform: translateX(0%) translateY(-50%);
+    }
   }
 }
 .navbar__brand {
