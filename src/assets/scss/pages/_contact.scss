@@ -21,24 +21,16 @@
   }
 
   form label {
-    position: absolute;
-    top: 50%;
-    left: 0;
     font-size: px(60);
     color: $gray3;
-    cursor: text;
-    -webkit-transition: color 0.2s ease-out, -webkit-transform 0.2s ease-out;
-    transition: color 0.2s ease-out, -webkit-transform 0.2s ease-out;
-    transition: transform 0.2s ease-out, color 0.2s ease-out;
-    transition: transform 0.2s ease-out, color 0.2s ease-out, -webkit-transform 0.2s ease-out;
-    -webkit-transform: translateY(-50%);
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 5px;
+    top: 50%;
     transform: translateY(-50%);
-    -webkit-transform-origin: 0 100%;
+    transition: all 0.3s ease;
     transform-origin: 0 100%;
-
-    &.active {
-      transform: translateY(-60px) scale(0.5);
-    }
 
     @include media("<tablet") {
       font-size: px(40);
@@ -46,11 +38,8 @@
   }
 
   .input-border--bottom {
-    font-size: px(60);
-
-    @include media("<tablet") {
-      font-size: px(40);
-    }
+    font-size: px(50);
+    -webkit-appearance: none;
 
     &:active,
     &:focus-within,
@@ -60,6 +49,13 @@
       border-right: unset !important;
       border-left: unset !important;
       box-shadow: none;
+    }
+    &:focus ~ label,
+    &.active ~ label {
+      transform: translateY(-70px) scale(0.75);
+    }
+    @include media("<tablet") {
+      font-size: px(40);
     }
   }
 }

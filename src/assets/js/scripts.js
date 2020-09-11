@@ -69,24 +69,24 @@ document.addEventListener('DOMContentLoaded', function () {
   /*
     hover focus input
   ***********************************/
-  const searchBtn = document.querySelector('.btn--search');
-  const searchInput = document.querySelector('#searchInput');
+  // const searchBtn = document.querySelector('.btn--search');
+  // const searchInput = document.querySelector('#searchInput');
 
-  if (searchInput) {
-    const handleHover = () => {
-      if (window.innerWidth > 1023) {
-        if (searchInput.classList.contains('hidden')) {
-          searchInput.classList.remove('hidden');
-        } else {
-          searchInput.classList.add('hidden');
-        }
-        searchInput.focus();
-      }
-    };
+  // if (searchInput) {
+  //   const handleHover = () => {
+  //     if (window.innerWidth > 1023) {
+  //       if (searchInput.classList.contains('hidden')) {
+  //         searchInput.classList.remove('hidden');
+  //       } else {
+  //         searchInput.classList.add('hidden');
+  //       }
+  //       searchInput.focus();
+  //     }
+  //   };
 
-    searchBtn.addEventListener('mouseenter', handleHover);
-    searchInput.addEventListener('mouseover', () => searchInput.focus());
-  }
+  //   searchBtn.addEventListener('mouseenter', handleHover);
+  //   searchInput.addEventListener('mouseenter', () => searchInput.focus());
+  // }
 
   /*
     click dropdown
@@ -120,59 +120,25 @@ document.addEventListener('DOMContentLoaded', function () {
       window.scrollTo(0, 0);
     });
   }
+  function hasClass(element, className) {
+    return ('' + element.className + '').indexOf('' + className + '') > -1;
+  }
 
   // label form effect
   const form = document.querySelector('#tab-form form');
   if (form) {
-    const inputsEle = Array.from(form.querySelectorAll('.input-control'));
-    const labelsEle = Array.from(form.querySelectorAll('label'));
+    window.addEventListener('load', function () {
+      const inputsEle = Array.from(document.querySelectorAll('.input-border--bottom'));
 
-    const onFocus = () => inputsEle.forEach((input) => input.focus());
-
-    const handleOnChange = (e) => {
-      const { value } = e.target;
-      labelsEle.forEach((label) => {
-        if (label.classList.contains('active')) {
-          return;
-        }
-        else if (value.length > 0) {
-          label.classList.add('active');
-          onFocus();
+      function onBlur() {
+        if (this.value) {
+          this.classList.add('active');
         } else {
-          label.classList.add('active');
+          this.classList.remove('active');
         }
-      });
-
-    }
-
-    const handleClick = () => {
-      labelsEle.forEach((label) => {
-        if (label.classList.contains('active')) {
-          return;
-        } else {
-          label.classList.add('active');
-          onFocus();
-        }
-      });
-    };
-
-    inputsEle.forEach(input => input.addEventListener("change", handleOnChange.bind(this)));
-    inputsEle.forEach((input) => input.addEventListener('click', handleClick));
-
-
-    labelsEle.forEach((label) => label.addEventListener('click', handleClick));
-
-    window.addEventListener('click', function (e) {
-      if (
-        !event.target.matches('.input-border--bottom') &&
-        !event.target.matches('.form__item label')
-      ) {
-        labelsEle.forEach((label) => {
-          if (label.classList.contains('active')) {
-            label.classList.remove('active')
-          };
-        });
       }
+      inputsEle.forEach(input => input.addEventListener('blur', onBlur));
     });
+
   }
 });
