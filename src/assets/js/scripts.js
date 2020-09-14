@@ -67,28 +67,6 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   /*
-    hover focus input
-  ***********************************/
-  // const searchBtn = document.querySelector('.btn--search');
-  // const searchInput = document.querySelector('#searchInput');
-
-  // if (searchInput) {
-  //   const handleHover = () => {
-  //     if (window.innerWidth > 1023) {
-  //       if (searchInput.classList.contains('hidden')) {
-  //         searchInput.classList.remove('hidden');
-  //       } else {
-  //         searchInput.classList.add('hidden');
-  //       }
-  //       searchInput.focus();
-  //     }
-  //   };
-
-  //   searchBtn.addEventListener('mouseenter', handleHover);
-  //   searchInput.addEventListener('mouseenter', () => searchInput.focus());
-  // }
-
-  /*
     click dropdown
   ***********************************/
   // const dropdown = document.querySelector('.dropdown');
@@ -120,6 +98,7 @@ document.addEventListener('DOMContentLoaded', function () {
       window.scrollTo(0, 0);
     });
   }
+
   function hasClass(element, className) {
     return ('' + element.className + '').indexOf('' + className + '') > -1;
   }
@@ -128,7 +107,8 @@ document.addEventListener('DOMContentLoaded', function () {
   const form = document.querySelector('#tab-form form');
   if (form) {
     window.addEventListener('load', function () {
-      const inputsEle = Array.from(document.querySelectorAll('.input-border--bottom'));
+      const inputsEle = Array.from(document.querySelectorAll(
+        '.input-border--bottom'));
 
       function onBlur() {
         if (this.value) {
@@ -137,8 +117,27 @@ document.addEventListener('DOMContentLoaded', function () {
           this.classList.remove('active');
         }
       }
-      inputsEle.forEach(input => input.addEventListener('blur', onBlur));
+      inputsEle.forEach(input => input.addEventListener('blur',
+        onBlur));
     });
+  }
 
+  // home 2
+  const btnOpening = document.querySelector(".home2-opening .icon");
+  const home2Opening = document.querySelector('.home2-opening');
+  const home2Sly = document.querySelector('.home-sly');
+
+  if (home2Opening) {
+    btnOpening.addEventListener('click', function (e) {
+      e.preventDefault();
+      if (home2Opening.classList.contains('hide') && !home2Sly.classList
+        .contains('hide')) {
+        home2Opening.classList.remove('hide');
+        home2Sly.classList.add('hide');
+      } else {
+        home2Opening.classList.add('hide');
+        home2Sly.classList.remove('hide');
+      }
+    })
   }
 });

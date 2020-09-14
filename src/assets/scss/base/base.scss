@@ -1,18 +1,15 @@
 #app {
   margin: 0 auto;
-  max-width: 90%;
-
   position: relative;
-  padding-top: px(100);
+  padding: px(120);
 
-  padding-left: px(10);
-  padding-right: px(10);
 
   @include media("<=tablet") {
     padding: 0;
     max-width: 100%;
   }
 }
+
 .section {
   position: relative;
   margin-bottom: px(60);
@@ -22,6 +19,7 @@
     margin-bottom: px(0) !important;
   }
 }
+
 .main {
   max-width: 1600px;
   margin-left: auto;
