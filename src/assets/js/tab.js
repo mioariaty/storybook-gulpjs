@@ -2,8 +2,13 @@
 const Tab = function (options) {
   // select tab element
   this.tabWrapper = document.querySelector(options.tabWrapper);
-  this.tabLinks = Array.from(this.tabWrapper.querySelectorAll(options.tabLinks));
-  this.tabPanes = Array.from(this.tabWrapper.querySelectorAll(options.tabPanes));
+  this.tabLinks = Array.from(this.tabWrapper.querySelectorAll(options
+    .tabLinks));
+  this.tabPanes = Array.from(this.tabWrapper.querySelectorAll(options
+    .tabPanes));
+
+  console.log(this.tabWrapper)
+  console.log(this.tabLinks)
 
   this.activeIndex = 0;
   this.isTabRender = false;
@@ -20,12 +25,14 @@ Tab.prototype = {
     link.addEventListener('click', (event) => {
       event.preventDefault();
       const currentTab = event.target.getAttribute('data-tab');
+
       this.getActiveNav(index);
       this.getActiveTabPane(currentTab);
     });
   },
   getActiveNav: function (index) {
-    if (index !== this.activeIndex && index >= 0 && index <= this.tabLinks.length) {
+    if (index !== this.activeIndex && index >= 0 && index <= this.tabLinks
+      .length) {
       this.tabLinks[this.activeIndex].classList.remove('is-active');
       this.tabLinks[index].classList.add('is-active');
       this.activeIndex = index;

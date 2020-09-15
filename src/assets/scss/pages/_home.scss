@@ -156,11 +156,10 @@
 .scrollbar {
   margin: px(20) auto 0;
   height: 2px;
-  width: 50%;
+  width: 30%;
 
   background-color: rgba($color: $gray5, $alpha: 0.5);
   line-height: 0;
-
 }
 
 .scrollbar .handle {

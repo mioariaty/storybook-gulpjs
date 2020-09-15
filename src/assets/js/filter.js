@@ -1,4 +1,5 @@
 'use strict';
+
 const DataFilter = function (options) {
   // define variables & dom selector
   this.wrapper = document.querySelector(options.wrapper);
