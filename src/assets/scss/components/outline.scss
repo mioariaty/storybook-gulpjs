@@ -10,6 +10,7 @@
     background-color: $color-light;
     border: unset;
   }
+
   &:before {
     content: "";
     position: absolute;
@@ -22,6 +23,7 @@
     display: none;
   }
 }
+
 .outline--top {
   top: 0;
   left: 0;
@@ -35,6 +37,7 @@
     width: 60px;
     height: 110%;
   }
+
   &:before {
     top: 0;
     right: 0;
@@ -42,6 +45,7 @@
     height: 110%;
   }
 }
+
 .outline--bottom {
   bottom: 0;
   left: 0;
@@ -55,6 +59,7 @@
     width: 60px;
     height: 110%;
   }
+
   &:before {
     top: 0;
     right: 0;
@@ -62,6 +67,7 @@
     height: 110%;
   }
 }
+
 .outline--left {
   top: 0;
   left: 0;
@@ -84,6 +90,7 @@
     height: 60px;
   }
 }
+
 .outline--right {
   top: 0;
   right: 0;
@@ -98,6 +105,7 @@
     width: 105%;
     height: 60px;
   }
+
   &:before {
     right: 0;
     bottom: 0;
@@ -118,9 +126,11 @@
   align-items: center;
   height: 60px;
   background-color: transparent;
+
   @include media("<tablet") {
     height: 30px;
   }
+
   p {
     margin: 0;
     font-size: px(10);
@@ -142,8 +152,4 @@
   align-items: center;
   height: 60px;
   background-color: transparent;
-
-  @include media("<tablet") {
-    height: 30px;
-  }
 }
