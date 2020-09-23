@@ -315,7 +315,7 @@
 
         <div class="scrollbar">
           <div class="handle">
-            <!-- <div class="mousearea"></div> -->
+            <div class="mousearea"></div>
           </div>
         </div>
       </section>
@@ -391,18 +391,22 @@
           mouseDragging: 1,
           touchDragging: 1,
           releaseSwing: 1,
-          startAt: 3,
           scrollBar: wrap.find('.scrollbar'),
-          scrollBy: 1,
-          activatePageOn: 'click',
+          scrollBy: 100,
           speed: 300,
           dragHandle: 1,
           dynamicHandle: 1,
           clickBar: 1,
+          firstItem: 1,
+          lastItem: 9,
+          minHandleSize: 30
         })
 
       }());
     });
+
+  </script>
+  <script type="text/javascript">
 
   </script>
 </body>
