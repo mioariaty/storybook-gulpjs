@@ -1,0 +1,57 @@
+// font
+$font-primary: "Quicksand", sans-serif !default;
+$font-secondary: "Montserrat", sans-serif;
+
+$font-light: 300;
+$font-regular: 400;
+$font-medium: 500;
+$font-semibold: 600;
+$font-bold: 700;
+
+// color
+$color-primary: #6ed3cf !default;
+$color-secondary: #7e7e7e;
+$color-tertiary: #a3a3a3;
+$color-quaternary: #34bf49;
+$color-light: #fff;
+$color-dark: #000;
+$color-blue: #325d94;
+// color helper
+$gray1: #cccccc;
+$gray2: #555555;
+$gray3: #a2a2a2;
+$gray4: #f0f0f0;
+$gray5: #f6f6f6;
+
+$light1: #eeeeee;
+
+$red1: #e74c3c;
+$red2: #c0392b;
+
+// GRID SYSTEM
+// desktop grid
+$grid-desktop-columns: 12;
+$grid-desktop-sideMargin: 80px;
+$grid-desktop-gutter: 30px;
+$grid-desktop-breakpoint: 1440px;
+
+// tablet grid
+$grid-tablet-columns: 12;
+$grid-tablet-sideMargin: 60px;
+$grid-tablet-gutter: 20px;
+$grid-tablet-breakpoint: 1020px;
+
+// mobile grid
+$grid-mobile-columns: 12;
+$grid-mobile-sideMargin: 30px;
+$grid-mobile-gutter: 10px;
+$grid-mobile-breakpoint: 767px;
+
+// pixels to % variables
+$desk-grid-width: 100% - (($grid-desktop-sideMargin * 2 / $grid-desktop-breakpoint) * 100%);
+$tab-grid-width: 100% - (($grid-tablet-sideMargin * 2 / $grid-tablet-breakpoint) * 100%);
+$mob-grid-width: 100% - (($grid-mobile-sideMargin * 2 / $grid-mobile-breakpoint) * 100%);
+
+$desk-gutter: (($grid-desktop-gutter / ($grid-desktop-breakpoint - ($grid-desktop-sideMargin * 2))) * 100%);
+$tab-gutter: (($grid-tablet-gutter / ($grid-tablet-breakpoint - ($grid-tablet-sideMargin * 2))) * 100%);
+$mob-gutter: (($grid-mobile-gutter / ($grid-mobile-breakpoint - ($grid-mobile-sideMargin * 2))) * 100%);

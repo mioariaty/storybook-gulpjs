@@ -1,0 +1,74 @@
+.input--rounded {
+  border-radius: px(20) !important;
+  font-family: $font-primary;
+  font-weight: $font-light;
+
+  &::placeholder {
+    color: $color-light;
+  }
+}
+
+.input--search {
+  padding-left: px(15) !important;
+  padding-right: px(15) !important;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-color: $color-dark;
+  color: $color-light !important;
+  flex: 1;
+  border: unset;
+
+  transition: 0.4s all ease;
+
+  @include media("<desktop") {
+    width: 100% !important;
+    transform: unset !important;
+  }
+
+  &:focus,
+  &:active {
+    outline: none;
+  }
+}
+
+.input-control {
+  list-style: none;
+  box-sizing: border-box;
+  margin: 0;
+  font-variant: tabular-nums;
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  min-width: 0;
+  padding: px(7) px(11);
+  color: $color-dark;
+  font-size: px(14);
+  border: 1px solid #d9d9d9;
+  border-radius: 2px;
+  transition: 0.3s all ease;
+  outline: none;
+
+  @include media("<tablet") {
+    padding: px(14) px(11) !important;
+  }
+
+  &:hover {
+    border-color: $color-primary;
+  }
+
+  &:focus {
+    border-color: $color-primary;
+    box-shadow: 0 0 0 2px rgba($color: $color-primary, $alpha: 0.3);
+    outline: none;
+  }
+}
+
+.input-border--bottom {
+  border: unset;
+  outline: none;
+  border-bottom: 1px solid $gray4;
+}
+
+.input--large {
+  font-size: px(60);
+}

@@ -1,0 +1,18 @@
+.avatar {
+  width: px(70);
+  height: px(70);
+  border-radius: 50%;
+  vertical-align: middle;
+}
+.avatar--small {
+  width: px(50);
+  height: auto;
+}
+.avatar--large {
+  width: px(120);
+  height: px(120);
+}
+.avatar--extra-large {
+  width: px(250);
+  height: px(250);
+}

@@ -1,0 +1,95 @@
+.btn {
+  border: 0;
+  background-color: $color-primary;
+  color: $color-light;
+  padding: px(16) px(50);
+  font-size: px(14);
+  cursor: pointer;
+  outline: none;
+  display: block;
+  position: relative;
+}
+
+.btn--secondary {
+  background-color: $color-dark;
+  letter-spacing: 0.25rem;
+}
+
+.btn--tertiary {
+  background-color: $color-tertiary;
+}
+.btn--rounded {
+  border-radius: 2px;
+}
+.btn--search {
+  border-radius: 100%;
+  padding: 0;
+  width: px(37) !important;
+  height: px(37);
+  background-color: $color-dark;
+  transition: 0.4s;
+  font-size: px(18);
+}
+
+.btn--close {
+  border: unset;
+  background-color: $color-dark;
+  padding: 0;
+  line-height: 1;
+  border-radius: 50%;
+  outline: none;
+  cursor: pointer;
+  color: $color-light;
+  font-size: 2rem;
+  position: absolute;
+  top: 24px;
+  right: 16px;
+  z-index: 15;
+  display: none;
+
+  i {
+    font-weight: $font-light;
+  }
+  @include media("<desktop") {
+    display: flex;
+    width: 31px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+}
+
+.btn--effect {
+  transition: 0.5s all ease;
+
+  &:hover {
+    &:after {
+      content: "";
+      display: block;
+      background-color: rgb(211, 188, 91);
+      border-radius: inherit;
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      opacity: 0.6;
+      border: 15px solid rgb(64, 156, 153);
+    }
+  }
+}
+
+.btn--subscribe {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  background-color: transparent;
+  font-size: px(12);
+  font-family: $font-secondary;
+  font-weight: $font-bold;
+  letter-spacing: 0.3rem;
+  padding: 0;
+}

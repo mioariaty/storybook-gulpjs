@@ -1,0 +1,31 @@
+.breadcrumb {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: 0.75rem 1rem;
+  margin-bottom: 1rem;
+  list-style: none;
+  border-radius: 0.25rem;
+}
+.breadcrumb__item {
+  padding-left: 0.5rem;
+
+  &.active {
+    .breadcrumb__link {
+      color: $color-primary !important;
+    }
+  }
+}
+.breadcrumb__item + .breadcrumb__item::before {
+  display: inline-block;
+  padding-right: 0.5rem;
+  color: #6c757d;
+  content: "/";
+}
+.breadcrumb__link {
+  font-family: $font-secondary;
+  color: $color-dark;
+  text-decoration: none;
+  font-size: px(14);
+}

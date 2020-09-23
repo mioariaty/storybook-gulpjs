@@ -1,0 +1,152 @@
+/*
+  BOX DEFAULT
+======================================================================== */
+.box {
+  position: relative;
+  transition: 0.5s all ease;
+  z-index: 1;
+  overflow: hidden;
+  margin-bottom: px(30);
+
+  &:hover {
+    .overlay {
+      opacity: 1;
+      visibility: visible;
+    }
+    .box__details {
+      opacity: 1;
+      bottom: 0;
+      left: 0;
+    }
+    .box__link {
+      opacity: 1;
+    }
+  }
+  a {
+    text-decoration: none;
+  }
+}
+
+// set style box default
+.box__details {
+  opacity: 0;
+  position: absolute;
+  z-index: 1;
+  bottom: -100%;
+  background-color: $color-light;
+
+  width: 100%;
+  text-align: center;
+  padding: 1em;
+
+  border-bottom: 1px solid $light1;
+
+  -webkit-transition: all 0.5s ease-in-out 0s;
+  -moz-transition: all 0.5s ease-in-out 0s;
+  transition: all 0.5s ease-in-out 0s;
+}
+.box__title,
+.box__desc {
+  font-size: px(14);
+  margin: 0;
+  text-align: center;
+  color: $color-dark;
+}
+.box__title {
+  font-family: $font-secondary;
+  font-weight: $font-bold;
+  letter-spacing: 0.25rem;
+}
+.box__desc {
+  font-family: $font-primary;
+  font-weight: $font-regular;
+}
+
+.box__link {
+  font-size: px(40);
+  color: $color-primary;
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: 0;
+  margin: 0;
+  transform: translate(-20%, -110%);
+}
+.box__image {
+  overflow: hidden;
+  position: relative;
+}
+
+/*
+  BOX OVERLAY
+======================================================================== */
+.box--overlay {
+  overflow: hidden;
+
+  &:hover {
+    .box__details {
+      left: 0;
+      top: 0;
+      position: absolute;
+    }
+  }
+
+  .box__details {
+    left: -50%;
+    top: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-bottom: unset;
+    background-color: transparent;
+  }
+
+  .box__image {
+    padding-top: getSizeImage(343, 343);
+
+    img {
+      @extend %absolute-center;
+      width: 100%;
+      max-width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+
+  .box__desc {
+    color: $color-light;
+    text-align: left;
+  }
+  .box__title {
+    color: $color-light;
+    text-align: left;
+    letter-spacing: normal;
+  }
+
+  .box__link {
+    bottom: 0;
+    right: 0;
+    transform: translate(-20%, -20%);
+    top: unset;
+  }
+}
+
+.overlay {
+  @extend %absolute-center;
+  background: rgba($color: $color-dark, $alpha: 0.7);
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  z-index: 1;
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+.box__divider {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: px(65);
+}

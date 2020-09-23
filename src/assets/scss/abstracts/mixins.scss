@@ -1,0 +1,50 @@
+@mixin flex($justify, $align, $wrap, $direction: row) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-wrap: $wrap;
+  flex-direction: $direction;
+}
+
+@mixin limit-line-text($line) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: $line;
+  -webkit-box-orient: vertical;
+}
+
+//Grid system
+@mixin col-props($i, $columns, $gutter) {
+  box-sizing: border-box;
+  width: col-width($i, $columns);
+  padding: $gutter/2;
+}
+
+@mixin grid-base($width) {
+  box-sizing: border-box;
+  @include flex(flex-start, stretch, wrap, row);
+  margin-left: auto;
+  margin-right: auto;
+  width: $width;
+}
+
+@mixin columns-loop($name, $columns, $gutter) {
+  @for $i from 0 through $columns {
+    &-#{$name}-#{$i} {
+      @include col-props($i, $columns, $gutter);
+    }
+  }
+}
+
+@mixin set-space($top, $right, $bottom, $left) {
+  margin-top: $top;
+  margin-right: $right;
+  margin-bottom: $bottom;
+  margin-left: $left;
+}
+
+@mixin aspect-ratio($height, $width) {
+  padding-top: getSizeImage($height, $width);
+  position: relative;
+}

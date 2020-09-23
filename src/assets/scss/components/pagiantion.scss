@@ -1,0 +1,56 @@
+.pagination {
+  display: flex;
+  padding-left: 0;
+  list-style: none;
+  border-radius: 0.25rem;
+  align-items: center;
+  position: relative;
+
+  padding-top: px(20);
+  padding-bottom: px(20);
+}
+.pagination__link {
+  position: relative;
+  display: block;
+  padding: 0.5rem px(20);
+  margin-left: -1px;
+  line-height: 1.25;
+  font-size: px(24);
+  text-decoration: none;
+  color: $color-dark;
+}
+.pagination__item.active {
+  .pagination__link {
+    color: $color-primary;
+    font-size: px(24);
+  }
+}
+
+.pagination {
+  p {
+    @include limit-line-text(1);
+    font-size: px(12);
+    font-family: $font-secondary;
+    letter-spacing: 0.2rem;
+  }
+}
+
+.pagination__menu {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  i {
+    font-size: px(40);
+  }
+  @include media("<desktop") {
+    display: none;
+  }
+}
+
+.pagination__item {
+  @include media("<desktop") {
+    padding: 0 0.8rem;
+  }
+}

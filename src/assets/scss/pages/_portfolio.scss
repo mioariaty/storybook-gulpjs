@@ -1,0 +1,87 @@
+.portfolio-intro {
+  @include media("<tablet") {
+    padding: px(0.4);
+  }
+
+  h3 {
+    font-size: px(22);
+  }
+
+  .text-border--left {
+    padding-left: px(100);
+
+    p {
+      line-height: px(34);
+      margin: 0;
+    }
+  }
+}
+
+.portfolio-content {
+  .text-border--left {
+    border-left: 2px solid $color-primary;
+    padding-bottom: px(20);
+
+    @include media("<=tablet") {
+      border-bottom: 2px solid $color-primary;
+      border-left: unset;
+    }
+  }
+  p {
+    font-size: px(16);
+    color: $color-dark;
+  }
+  .icon .primary {
+    font-size: px(60);
+
+    @include media("<tablet") {
+      font-size: px(40);
+    }
+  }
+
+  .group-icon {
+    justify-content: center;
+
+    .icon {
+      background-color: $gray4;
+      transition: 0.3s all ease;
+      margin: 0 px(8);
+      &:hover {
+        background-color: $color-blue;
+        i {
+          color: $color-light;
+        }
+      }
+    }
+    i {
+      font-size: px(16);
+      color: $color-dark;
+    }
+  }
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+
+  @include media("<tablet") {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.col-big {
+  grid-area: 1 / 1 / 3 / 3;
+
+  @include media("<tablet") {
+    grid-area: unset;
+  }
+}
+.col-big-2 {
+  grid-area: 4 / 2 / 6 / 4;
+
+  @include media("<tablet") {
+    grid-area: unset;
+  }
+}

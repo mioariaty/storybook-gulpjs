@@ -1,0 +1,61 @@
+#tab-form {
+  .btn.icon {
+    display: flex;
+    background-color: transparent;
+    border: unset;
+    padding: 0.8rem 2rem;
+
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(0, -50%);
+    i {
+      color: $gray3;
+      font-size: px(80);
+      border: unset;
+
+      @include media("<tablet") {
+        font-size: px(60);
+      }
+    }
+  }
+
+  form label {
+    font-size: px(60);
+    color: $gray3;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all 0.3s ease;
+    transform-origin: 0 100%;
+
+    @include media("<tablet") {
+      font-size: px(40);
+    }
+  }
+
+  .input-border--bottom {
+    font-size: px(50);
+    -webkit-appearance: none;
+
+    &:active,
+    &:focus-within,
+    &:focus {
+      outline: none;
+      border-top: unset !important;
+      border-right: unset !important;
+      border-left: unset !important;
+      box-shadow: none;
+    }
+    &:focus ~ label,
+    &.active ~ label {
+      transform: translateY(-70px) scale(0.75);
+    }
+    @include media("<tablet") {
+      font-size: px(40);
+    }
+  }
+}

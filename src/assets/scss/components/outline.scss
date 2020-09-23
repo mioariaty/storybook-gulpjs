@@ -1,0 +1,155 @@
+.outline {
+  position: fixed;
+  background-color: $color-light;
+  z-index: 10;
+
+  &:after {
+    content: "";
+    position: absolute;
+    z-index: 11;
+    background-color: $color-light;
+    border: unset;
+  }
+
+  &:before {
+    content: "";
+    position: absolute;
+    z-index: 11;
+    background-color: $color-light;
+    border: unset;
+  }
+
+  @include media("<tablet") {
+    display: none;
+  }
+}
+
+.outline--top {
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  border-bottom: 1px solid rgba($color: $gray2, $alpha: 0.16);
+
+  &:after {
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 110%;
+  }
+
+  &:before {
+    top: 0;
+    right: 0;
+    width: 60px;
+    height: 110%;
+  }
+}
+
+.outline--bottom {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  border-top: 1px solid rgba($color: $gray2, $alpha: 0.16);
+
+  &:after {
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 110%;
+  }
+
+  &:before {
+    top: 0;
+    right: 0;
+    width: 60px;
+    height: 110%;
+  }
+}
+
+.outline--left {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 60px;
+  border-right: 1px solid rgba($color: $gray2, $alpha: 0.16);
+
+  &:after {
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 105%;
+    height: 60px;
+  }
+
+  &:before {
+    left: 0;
+    bottom: 0;
+    width: 105%;
+    height: 60px;
+  }
+}
+
+.outline--right {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 60px;
+  border-left: 1px solid rgba($color: $gray2, $alpha: 0.16);
+
+  &:after {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 105%;
+    height: 60px;
+  }
+
+  &:before {
+    right: 0;
+    bottom: 0;
+    width: 105%;
+    height: 60px;
+  }
+}
+
+.author {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 11;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  background-color: transparent;
+
+  @include media("<tablet") {
+    height: 30px;
+  }
+
+  p {
+    margin: 0;
+    font-size: px(10);
+    font-family: $font-secondary;
+    letter-spacing: 0.15rem;
+    color: $color-secondary;
+  }
+}
+
+.copyright {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 11;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  background-color: transparent;
+}

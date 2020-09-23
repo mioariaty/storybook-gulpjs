@@ -1,0 +1,62 @@
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1440px;
+  width: 100%;
+  padding: 0 1rem;
+
+  @include media("<tablet") {
+    padding: 0.4rem;
+  }
+}
+.grid {
+  @include grid-base($desk-grid-width);
+
+  // tablet
+  @media screen and (max-width: $grid-tablet-breakpoint) {
+    width: $tab-grid-width;
+  }
+
+  // mobile
+  @media screen and (max-width: $grid-mobile-breakpoint) {
+    width: 100%;
+  }
+
+  &-fluid {
+    @include grid-base(100%);
+  }
+}
+
+.col {
+  @include columns-loop(desk, $grid-desktop-columns, $desk-gutter);
+
+  @media screen and (max-width: $grid-tablet-breakpoint) {
+    @include columns-loop(tab, $grid-tablet-columns, $tab-gutter);
+  }
+
+  @media screen and (max-width: $grid-mobile-breakpoint) {
+    @include columns-loop(mob, $grid-mobile-columns, $mob-gutter);
+  }
+}
+
+.row,
+.row:after,
+.row:before {
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+}
+
+.row-column {
+  @include media(">tablet") {
+    flex-direction: column;
+  }
+}
+
+.row-reverse {
+  @include media("<tablet") {
+    flex-direction: column-reverse;
+  }
+}

@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio3</title>
+
+  <link rel="shortcut icon" href="./assets/images/logo.png" type="image/x-icon">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="assets/vendors/fontawesome/all.min.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+
+  <div id="app">
+    <header class="header mb-5">
+      <nav class="navbar">
+        <a href="index.html" class="navbar__brand"><span>B</span>M.</a>
+        <button class="navbar__toggler">
+          <i class="fas fa-bars"></i>
+        </button>
+
+        <div class="navbar-collapse">
+          <button class="btn--close">
+            <i class="fas fa-times"></i>
+          </button>
+
+          <ul class="navbar-nav menu -horizontal pr-6">
+            <li class="nav__item hasSubmenu">
+              <a href="index.html" class="nav__link">Home</a>
+              <!-- sub menu -->
+              <ul class="submenu">
+                <li><a href="home2.html" class="menu__item light">Home 2</a>
+                </li>
+              </ul>
+              <!-- !sub menu -->
+            </li>
+
+            <li class="nav__item hasSubmenu">
+              <a href="about.html" class="nav__link">About</a>
+              <!-- sub menu -->
+              <ul class="submenu">
+                <li><a href="services.html" class="menu__item">Services</a></li>
+              </ul>
+              <!-- !sub menu -->
+            </li>
+
+            <li class="nav__item hasSubmenu">
+              <a href="portfolio1.html"
+                class="nav__link menu__item">Portfolio</a>
+
+              <!-- sub menu -->
+              <ul class="submenu">
+                <li><a href="portfolio2.html" class="menu__item">Portfolio 2</a>
+                </li>
+                <li><a href="portfolio3.html" class="menu__item">Portfolio 3</a>
+                </li>
+              </ul>
+              <!-- !sub menu -->
+            </li>
+
+            <li class="nav__item hasSubmenu">
+              <a href="blog.html" class="nav__link menu__item">Blog</a>
+              <!-- sub menu -->
+              <ul class="submenu">
+                <li><a href="blog-single.html" class="menu__item">Blog
+                    single</a></li>
+                <li><a href="blog-standard.html" class="menu__item">Blog
+                    standard</a></li>
+              </ul>
+              <!-- !sub menu -->
+            </li>
+
+            <li class="nav__item">
+              <a href="contact.html" class="nav__link">Contact</a>
+            </li>
+          </ul>
+
+          <form class="form form--horizontal">
+            <input type="search" placeholder="Search"
+              class="form-item__input input--rounded input--search "
+              id="searchInput">
+            <button class="btn btn--search">
+              <i class="pe-7s-search"></i>
+            </button>
+          </form>
+
+        </div>
+      </nav>
+    </header>
+
+    <main class="main">
+      <section class="section pd-sm-0">
+        <div class="grid-fluid">
+          <div class="col-desk-12">
+            <div class="background background--image"
+              style="background-image: url('assets/images/portfolio/banner.png')">
+              <h3 class="background__title">my portfilio</h3>
+              <nav aria-label="breadcrumb">
+                <ol class="breadcrumb pl-0">
+                  <li class="breadcrumb__item">
+                    <a href="#" class="breadcrumb__link text-white">Home</a>
+                  </li>
+                  <li class="breadcrumb__item active">
+                    <a href="#" class="breadcrumb__link text-white">Portflio</a>
+                  </li>
+                </ol>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- divider -->
+      <div class="divider">
+        <img src="./assets/images/divider.png" alt="">
+      </div>
+      <!-- !divider -->
+
+      <!-- work shop  -->
+      <section class="section workshop mb-0">
+
+        <div class="grid-fluid">
+          <div class="col-desk-12">
+            <div id="portfolio3" class="gallery">
+              <div class="row mb-5">
+                <div class="col-desk-10 col-mob-12 row">
+                  <div class="gallery-nav__link is-active" data-filter="all">All
+                  </div>
+                  <div class="gallery-nav__link" data-filter="nature">Nature
+                  </div>
+                  <div class="gallery-nav__link" data-filter="drinknfood">Drink
+                    & food
+                  </div>
+                  <div class="gallery-nav__link" data-filter="garden">Garden
+                  </div>
+                  <div class="gallery-nav__link" data-filter="animator">Animator
+                  </div>
+                </div>
+                <div class="col-desk-2 col-mob-12">
+                  <div class="dropdown">
+                    <form class="form">
+                      <select name="" id=""
+                        class="input-control input--rounded ">
+                        <option value="">Grid Creative</option>
+                        <option value="">Masonry</option>
+                      </select>
+                      <span class="icon icon--transparent dark">
+                        <i class="pe-7s-keypad dark"></i>
+                      </span>
+                    </form>
+                  </div>
+                </div>
+              </div>
+
+              <div class="masonry">
+
+                <div class="gallery__item" data-filter='["nature"]'>
+                  <div class="box">
+                    <a href="portfolio-detail.html">
+                      <div class="img-wrapper">
+                        <img src="assets/images/box-default1.png"
+                          class="img-cover" alt="" />
+                      </div>
+                      <div class="box__details">
+                        <p class="box__link">
+                          <span class="pe-7s-play"></span>
+                        </p>
+                        <h3 class="box__title">DENOUNCING PLEASURE</h3>
+                        <p class="box__desc">Drink & Food</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="gallery__item" data-filter='["drinknfood"]'>
+                  <div class="box">
+                    <a href="portfolio-detail.html">
+                      <div class="img-wrapper">
+                        <img src="assets/images/box-default2.png"
+                          class="img-cover" alt="" />
+                      </div>
+                      <div class="box__details">
+                        <p class="box__link">
+                          <span class="pe-7s-play"></span>
+                        </p>
+                        <h3 class="box__title">DENOUNCING PLEASURE</h3>
+                        <p class="box__desc">Drink & Food</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="gallery__item" data-filter='["garden"]'>
+                  <div class="box">
+                    <a href="portfolio-detail.html">
+                      <div class="img-wrapper">
+                        <img src="assets/images/box-default3.png"
+                          class="img-cover" alt="" />
+                      </div>
+                      <div class="box__details">
+                        <p class="box__link">
+                          <span class="pe-7s-play"></span>
+                        </p>
+                        <h3 class="box__title">DENOUNCING PLEASURE</h3>
+                        <p class="box__desc">Drink & Food</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="gallery__item" data-filter='["drinknfood"]'>
+                  <div class="box">
+                    <a href="portfolio-detail.html">
+                      <div class="img-wrapper">
+                        <img src="assets/images/box4.png" class="img-cover"
+                          alt="" />
+                      </div>
+                      <div class="box__details">
+                        <p class="box__link">
+                          <span class="pe-7s-play"></span>
+                        </p>
+                        <h3 class="box__title">DENOUNCING PLEASURE</h3>
+                        <p class="box__desc">Drink & Food</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="gallery__item" data-filter='["nature"]'>
+                  <div class="box">
+                    <a href="portfolio-detail.html">
+                      <div class="img-wrapper">
+                        <img src="assets/images/box5.png" class="img-cover"
+                          alt="" />
+                      </div>
+                      <div class="box__details">
+                        <p class="box__link">
+                          <span class="pe-7s-play"></span>
+                        </p>
+                        <h3 class="box__title">DENOUNCING PLEASURE</h3>
+                        <p class="box__desc">Drink & Food</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="gallery__item" data-filter='["animator"]'>
+                  <div class="box">
+                    <a href="portfolio-detail.html">
+                      <div class="img-wrapper">
+                        <img src="assets/images/box6.png" class="img-cover"
+                          alt="" />
+                      </div>
+                      <div class="box__details">
+                        <p class="box__link">
+                          <span class="pe-7s-play"></span>
+                        </p>
+                        <h3 class="box__title">DENOUNCING PLEASURE</h3>
+                        <p class="box__desc">Drink & Food</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="gallery__item" data-filter='["orange"]'>
+                  <div class="box">
+                    <a href="portfolio-detail.html">
+                      <div class="img-wrapper">
+                        <img src="assets/images/box7.png" class="img-cover"
+                          alt="" />
+                      </div>
+                      <div class="box__details">
+                        <p class="box__link">
+                          <span class="pe-7s-play"></span>
+                        </p>
+                        <h3 class="box__title">DENOUNCING PLEASURE</h3>
+                        <p class="box__desc">Drink & Food</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="gallery__item" data-filter='["garden"]'>
+                  <div class="box">
+                    <a href="portfolio-detail.html">
+                      <div class="img-wrapper">
+                        <img src="assets/images/box8.png" class="img-cover"
+                          alt="" />
+                      </div>
+                      <div class="box__details">
+                        <p class="box__link">
+                          <span class="pe-7s-play"></span>
+                        </p>
+                        <h3 class="box__title">DENOUNCING PLEASURE</h3>
+                        <p class="box__desc">Drink & Food</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="gallery__item" data-filter='["nature"]'>
+                  <div class="box">
+                    <a href="portfolio-detail.html">
+                      <div class="img-wrapper">
+                        <img src="assets/images/box9.png" class="img-cover"
+                          alt="" />
+                      </div>
+                      <div class="box__details">
+                        <p class="box__link">
+                          <span class="pe-7s-play"></span>
+                        </p>
+                        <h3 class="box__title">DENOUNCING PLEASURE</h3>
+                        <p class="box__desc">Drink & Food</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- !work shop  -->
+
+      <!-- divider -->
+      <div class="divider divider--vertical mt-0">
+        <img src="./assets/images/divider.png" alt="">
+      </div>
+      <!-- !divider -->
+    </main>
+
+    <footer class="footer">
+      <div class="grid-fluid">
+        <div class="col-desk-12 pt-0">
+          <div class="background background--image background--center"
+            style="background-image: url('./assets/images/banner1.png')">
+            <h3 class="background__title"><span>B</span>M.</h3>
+            <ul class="navbar-nav">
+              <li class="nav__item">
+                <a href="index.html" class="nav__link">Home</a>
+              </li>
+
+              <li class="nav__item">
+                <a href="about.html" class="nav__link">About</a>
+              </li>
+
+              <li class="nav__item">
+                <a href="portfolio1.html" class="nav__link">Portfolio</a>
+              </li>
+
+              <li class="nav__item">
+                <a href="blog.html" class="nav__link">Blog</a>
+              </li>
+
+              <li class="nav__item">
+                <a href="contact.html" class="nav__link">Contact</a>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+
+    </footer>
+  </div>
+
+  <!-- outline -->
+  <div class="outline outline--top"></div>
+  <div class="outline outline--bottom"></div>
+  <div class="outline outline--left"></div>
+  <div class="outline outline--right"></div>
+  <!-- !outline -->
+
+  <!-- scroll to top -->
+  <div class="scrolltop">
+    <button class="btn btn--scroll" id="scrollTop">
+      <span>
+        scroll to top
+      </span>
+      <i class="pe-7s-upload"></i>
+    </button>
+  </div>
+  <!-- !scroll to top -->
+
+  <!-- group social icons -->
+  <div class="group-icon group-icon--fixed">
+    <a href="" class="dark mbt-3">
+      <i class="fab fa-facebook-f"></i>
+    </a>
+    <a href="" class="dark mbt-3">
+      <i class="fab fa-twitter"></i>
+    </a>
+    <a href="" class="dark mbt-3">
+      <i class="fab fa-pinterest"></i>
+    </a>
+    <a href="" class="dark mbt-3">
+      <i class="fab fa-instagram"></i>
+    </a>
+  </div>
+  <!-- !group social icons -->
+
+  <div class="author">
+    <p>RALPH BOWMAN</p>
+  </div>
+
+  <div class="copyright">
+    <p class="copy-right">COPYRIGHT 2014 BY <span>WILOKE</span></p>
+  </div>
+
+  <!-- script -->
+  <script src="assets/js/scripts.js"></script>
+  <script src="assets/js/filter.js"></script>
+
+  <script type="text/javascript">
+    const gallery = new DataFilter({
+      wrapper: '#portfolio3',
+      navItems: '.gallery-nav__link',
+      listItems: '.gallery__item',
+      transitionSpeed: 'all 0.5s ease',
+    });
+    gallery.render();
+
+  </script>
+</body>
+
+</html>

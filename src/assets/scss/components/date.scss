@@ -1,0 +1,42 @@
+.calendar {
+  width: 100%;
+  max-width: px(90);
+  margin-right: 1rem;
+}
+
+.calendar__content {
+  padding: px(20) px(15);
+  border: 2px solid #cecece;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-43deg);
+    width: 1px;
+    height: 90%;
+    background-color: #cecece;
+    z-index: -1;
+  }
+}
+.calendar__month,
+.calendar__day {
+  font-family: $font-secondary;
+  font-weight: $font-bold;
+  line-height: 2.4rem;
+  color: $color-dark;
+}
+.calendar__month {
+  font-size: px(16);
+  letter-spacing: 0.25rem;
+}
+.calendar__day {
+  font-size: px(44);
+  line-height: 4.4rem;
+
+  @include media("<=tablet") {
+    font-size: px(36);
+  }
+}

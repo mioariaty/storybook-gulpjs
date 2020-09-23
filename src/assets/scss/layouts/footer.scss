@@ -1,0 +1,11 @@
+.footer {
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+
+  padding-bottom: px(60);
+
+  @include media("<tablet") {
+    padding-top: px(8);
+  }
+}

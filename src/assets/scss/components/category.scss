@@ -1,0 +1,15 @@
+.category {
+  color: $color-primary;
+  font-family: $font-secondary;
+  font-size: px(12);
+  font-weight: $font-bold;
+  margin-bottom: px(5);
+  display: inline-block;
+}
+.category-absolute--center {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(20%, 50%) rotate(270deg);
+  z-index: 3;
+}

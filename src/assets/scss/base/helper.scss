@@ -1,0 +1,350 @@
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.fadeIn-left {
+  left: 20%;
+}
+
+// padding
+.pl-0 {
+  padding-left: 0 !important;
+}
+
+.pr-0 {
+  padding-right: 0 !important;
+}
+
+.pb-0 {
+  padding-bottom: 0 !important;
+}
+
+.pt-0 {
+  padding-top: 0 !important;
+}
+
+.p-0 {
+  padding: 0 !important;
+}
+
+.pd-sm-0 {
+  @include media("<=tablet") {
+    padding: 0 !important;
+  }
+}
+
+.pd-6 {
+  padding: px(60) !important;
+
+  @include media("<tablet") {
+    padding: px(12) !important;
+  }
+}
+
+.plr-1 {
+  padding-left: px(12);
+  padding-right: px(12);
+}
+
+.plr-6 {
+  padding-left: px(60) !important;
+  padding-right: px(60) !important;
+
+  @include media("<tablet") {
+    padding-right: px(12) !important;
+    padding-left: px(12) !important;
+  }
+}
+
+.pl-6 {
+  padding-left: px(60) !important;
+
+  @include media("<tablet") {
+    padding-right: px(12) !important;
+    padding-left: px(12) !important;
+  }
+}
+
+.pr-6 {
+  padding-right: px(60) !important;
+
+  @include media("<tablet") {
+    padding-right: px(12) !important;
+    padding-left: px(12) !important;
+  }
+}
+
+.pt-6 {
+  padding-top: px(60) !important;
+
+  @include media("<tablet") {
+    padding-top: px(16) !important;
+  }
+}
+
+.p-12 {
+  padding: px(120) !important;
+
+  @include media("<tablet") {
+    padding: px(12) !important;
+  }
+}
+
+// margin
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.m-0 {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  margin-right: 0 !important;
+  margin-left: 0 !important;
+}
+
+.mbt-3 {
+  margin-top: px(7);
+  margin-bottom: px(7);
+}
+
+.mb-3 {
+  margin-bottom: px(30);
+
+  @include media("<=tablet") {
+    margin-bottom: px(15);
+  }
+}
+
+.mt-3 {
+  margin-top: px(30);
+
+  @include media("<=tablet") {
+    margin-top: px(15);
+  }
+}
+
+.mb-5 {
+  margin-bottom: 5rem;
+
+  @include media("<=tablet") {
+    margin-bottom: px(20);
+  }
+}
+
+.mt-5 {
+  margin-top: 5rem;
+}
+
+.mb-8 {
+  margin-bottom: 8rem !important;
+
+  @include media("<=tablet") {
+    margin-bottom: 3rem !important;
+  }
+}
+
+.mb-13 {
+  margin-bottom: px(130) !important;
+
+  @include media("<=tablet") {
+    margin-bottom: px(30) !important;
+  }
+}
+
+.mb-16 {
+  margin-bottom: px(160);
+
+  @include media("<=tablet") {
+    margin-bottom: px(30);
+  }
+}
+
+.mt-16 {
+  margin-top: px(160);
+
+  @include media("<=tablet") {
+    margin-top: px(30);
+  }
+}
+
+.mt-8 {
+  margin-top: 8rem !important;
+
+  @include media("<=tablet") {
+    margin-bottom: 3rem !important;
+  }
+}
+
+.mt-0 {
+  margin-top: 0 !important;
+}
+
+.mb-0 {
+  margin-bottom: 0 !important;
+}
+
+.mlr-2 {
+  margin-left: px(20);
+  margin-right: px(20);
+
+  @include media("<tablet") {
+    margin: 0;
+  }
+}
+
+.mlr-3 {
+  margin-left: px(8);
+  margin-right: px(8);
+}
+
+// color
+.text-white {
+  color: $color-light !important;
+}
+
+.light {
+  color: $color-light !important;
+}
+
+.dark {
+  color: $color-dark !important;
+}
+
+.primary {
+  color: $color-primary !important;
+}
+
+.secondary {
+  color: $color-secondary !important;
+}
+
+.gray1 {
+  color: $gray1;
+}
+
+.gray3 {
+  color: $gray3 !important;
+}
+
+.bg-dark {
+  background-color: $color-dark;
+}
+
+.bg-light {
+  background-color: $color-light;
+}
+
+.bg-gray {
+  background-color: $gray1 !important;
+}
+
+.bg-gray2 {
+  background-color: $gray2 !important;
+}
+
+.bg-gray3 {
+  background-color: $gray4 !important;
+}
+
+.bg-gray5 {
+  background-color: $gray5;
+}
+
+// text
+.uppercase {
+  text-transform: uppercase;
+}
+
+// image
+.img-cover {
+  width: 100%;
+  object-fit: cover;
+}
+
+.img-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+//
+.no-outline {
+
+  &:focus,
+  &:focus-within,
+  &:active,
+  &:hover {
+    outline: none;
+  }
+}
+
+.no-border {
+  border: unset;
+}
+
+.justify-inherit {
+  justify-content: inherit !important;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.align-self-center {
+  align-self: center;
+}
+
+.align-self-end {
+  align-self: flex-end;
+}
+
+// line height
+.lh-60 {
+  line-height: px(40);
+
+  @include media(">=desktop") {
+    line-height: px(60);
+  }
+}
+
+.d-inline-block {
+  display: inline-block !important;
+}
+
+.d-block {
+  display: block !important;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.no-decoration {
+  text-decoration: none;
+}
+
+// width, height
+.h-100 {
+  height: 100%;
+}
+
+.bg-transparent {
+  background-color: transparent !important;
+
+  &:after,
+  &::before {
+    background-color: transparent !important;
+  }
+}
+
+.clearfix {
+  overflow: auto;
+}

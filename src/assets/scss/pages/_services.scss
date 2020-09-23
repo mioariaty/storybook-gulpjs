@@ -1,0 +1,59 @@
+.service-content {
+  .box__divider {
+    font-size: px(120);
+  }
+
+  .overlay {
+    &:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      margin: auto;
+      width: 95%;
+      height: 95%;
+      border: 1px solid $gray3;
+    }
+  }
+
+  h2.text {
+    line-height: px(120);
+    font-size: px(100);
+
+    @include media("<tablet") {
+      margin-top: 0;
+    }
+  }
+
+  .text--underline {
+    &:after {
+      width: 100%;
+      height: 15px;
+    }
+  }
+}
+
+.service-slide {
+  padding: px(120);
+
+  @include media("<=tablet") {
+    padding: px(16);
+  }
+
+  .swiper-pagination {
+    right: 0;
+    top: 50%;
+    height: 50%;
+    transform: translate(0%, -50%);
+  }
+
+  .swiper-pagination-bullet-active {
+    background-color: $color-primary !important;
+  }
+
+  .swiper-pagination-bullet {
+    background-color: $color-dark;
+  }
+}

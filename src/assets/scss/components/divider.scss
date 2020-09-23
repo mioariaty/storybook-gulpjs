@@ -1,0 +1,75 @@
+.divider {
+  @include set-space(px(60), 0, px(60), 0);
+
+  @include media("<tablet") {
+    margin-top: px(30) !important;
+    margin-bottom: px(30) !important;
+  }
+
+  img {
+    margin: 0 auto;
+  }
+}
+.divider--vertical {
+  img {
+    transform: rotate(-90deg);
+  }
+}
+.divider--diagonally {
+  img {
+    transform: rotate(-45deg);
+  }
+}
+
+.divider--outline {
+  width: 95%;
+  background-color: transparent;
+  border: 1px solid rgba($color: $gray2, $alpha: 0.16);
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  z-index: -1;
+
+  @include media("<tablet") {
+    display: none;
+  }
+}
+
+.divider-outline--absolute {
+  position: absolute;
+  overflow: hidden;
+}
+.divider-outline--fixed {
+  position: fixed;
+}
+
+.divider-outline--1 {
+  height: 96%;
+  top: 1%;
+  transform: translateY(-2%);
+}
+
+.divider-outline--2 {
+  height: 97%;
+  top: 3%;
+  transform: translateY(-2%);
+}
+
+.divider-outline--3 {
+  height: 97%;
+  top: 3%;
+  transform: translateY(-2%);
+}
+
+.divider-outline--4 {
+  height: 96%;
+  top: 3%;
+  transform: translateY(-2%);
+}
+
+.divider-outline--5 {
+  height: 90%;
+  top: 0;
+  border: 1px solid $gray3;
+}

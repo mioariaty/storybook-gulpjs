@@ -1,0 +1,113 @@
+.icon {
+  width: px(60);
+  height: px(60);
+  background-color: $color-primary;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+
+  i {
+    font-size: px(30);
+    color: $color-light;
+  }
+}
+.icon--medium {
+  width: px(40);
+  height: px(40);
+}
+.icon--rounded {
+  border-radius: 50%;
+}
+.icon--shadow {
+  box-shadow: 0px 3px 10px rgba($color: #6ed3cf, $alpha: 0.5);
+}
+.icon-absolute--bot {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translate(80%, 50%);
+  z-index: 3;
+}
+.icon--reverse {
+  transform: rotate(180deg);
+}
+.icon-bg--primary {
+  background-color: $color-primary;
+}
+
+.icon--transparent {
+  width: auto;
+  height: auto;
+  background-color: transparent;
+}
+
+.group-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.group-icon--fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 0;
+  bottom: 0;
+  z-index: 11;
+
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+
+  @include media("<tablet") {
+    width: 30px;
+  }
+}
+
+.icon--effect {
+  position: relative;
+  &:before {
+    content: "";
+    display: block;
+    background-color: $color-primary;
+    border-radius: inherit;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0.75;
+    -webkit-animation: waves 1s infinite;
+    animation: waves 1s infinite;
+  }
+}
+@keyframes waves {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  100% {
+    -webkit-transform: scale(1.4);
+    transform: scale(1.4);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes waves {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  100% {
+    -webkit-transform: scale(1.4);
+    transform: scale(1.4);
+    opacity: 0;
+  }
+}
