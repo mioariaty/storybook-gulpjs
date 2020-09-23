@@ -129,20 +129,27 @@
       <!-- form -->
       <section id="tab-form" class="section mb-8">
         <div class="grid">
-          <div class="col-desk-8 col-mob-12 mx-auto">
+          <div class="col-desk-8 col-mob-12 mx-auto mb-5">
             <ul class="group-label p-0">
               <li class="form__label">
-                <a href="" class="nav__link no-decoration gray1 is-active"
+                <a href=""
+                  class="nav__link no-decoration gray1 is-active formTab"
                   data-tab="name">Your
                   Name*</a>
               </li>
+              <span class="icon icon--transparent m-0">
+                <i class="pe-7s-play gray3"></i>
+              </span>
               <li class="form__label">
-                <a href="" class="nav__link no-decoration gray1"
+                <a href="" class="nav__link no-decoration gray1 formTab"
                   data-tab="email">Your
                   Email*</a>
               </li>
+              <span class="icon icon--transparent m-0">
+                <i class="pe-7s-play gray3"></i>
+              </span>
               <li class="form__label">
-                <a href="" class="nav__link no-decoration gray1"
+                <a href="" class="nav__link no-decoration gray1 formTab"
                   data-tab="message">Message</a>
               </li>
             </ul>
@@ -155,9 +162,9 @@
                   class="input-control input-border--bottom dark" value="">
                 <label class="">Your Name</label>
 
-                <p class="btn icon">
+                <a href="#" class="nav__link btn icon formTab" data-tab="email">
                   <i class="pe-7s-right-arrow"></i>
-                </p>
+                </a>
 
               </div>
               <div class="form__item tab__pane" data-tab="email">
@@ -165,9 +172,10 @@
                   class="input-control input-border--bottom dark" value="">
                 <label class="">Your Email</label>
 
-                <p class="btn icon">
+                <a href="#" class="nav__link btn icon formTab"
+                  data-tab="message">
                   <i class="pe-7s-right-arrow"></i>
-                </p>
+                </a>
               </div>
               <div class="form__item tab__pane" data-tab="message">
                 <input type="text" name="text"
@@ -332,7 +340,7 @@
   <script>
     const tabForm = new Tab({
       tabWrapper: "#tab-form",
-      tabLinks: '.nav__link',
+      tabLinks: '.formTab',
       tabPanes: '.form__item'
     }).render();
 
